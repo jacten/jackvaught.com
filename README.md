@@ -1,8 +1,8 @@
-#jackvaught.com
+# jackvaught.com
 
 Look! It's a personal website for Jack Vaught. 
 
-##UNDER CONSTRUCTION
+## UNDER CONSTRUCTION
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
