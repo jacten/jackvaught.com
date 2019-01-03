@@ -18,36 +18,31 @@ a {
 
 
 .header {
-  transition: color 3s ease;
+  transition: 1s ease;
   font-size: 150px;
   color: white;
-  text-shadow: 1px 1px #00000060;
-  /* margin: 5px; */
   font-weight: bold;
 }
 
 .subheader {
-  transition: color 3s ease;
-  text-shadow: 1px 1px #00000060;
+  transition: 1s ease;
   font-size: 20px;
   color: white;
   font-weight: bold;
 }
 
 .link:hover .header,
-.link:hover .subheader{
-      color: rgba(238,174,202,1);
+.link:hover .subheader {
+  text-shadow: 100px 60px #0000002c;
 }
 
 @media only screen and (min-width: 600px) {
   .header {
     font-size: 300px;
-    text-shadow: 2px 2px #00000060;
   }
 
   .subheader {
     font-size: 40px;
-    text-shadow: 2px 2px #00000060;
   }
 
   .link:hover {
