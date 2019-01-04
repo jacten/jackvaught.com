@@ -4,7 +4,7 @@ Look! It's a personal website for Jack Vaught...
 
 [check it out here...](https://jackvaught.com)
 
-
+### More Info
 
 #### Create React App
 
