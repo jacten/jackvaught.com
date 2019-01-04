@@ -1,19 +1,19 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 
-import './Landing.css';
+import s from './landing.module.css';
 import '../../globals.css';
 
 class Landing extends Component {
   render() {
     return (
-      <div className="center">
-        <div className="title">
-          <div className="name">jackvaught</div>
-          <div className="about">software engineer</div>
+      <div className={s.center}>
+        <div className={s.title}>
+          <div className={s.name}>jackvaught</div>
+          <div className={s.about}>software engineer</div>
         </div>
-        <div className="buttons">
-          <Link className="button" to="/home"> ENTER </Link>
+        <div className={s.buttons}>
+          <Link className={s.button} to="/home"> ENTER </Link>
         </div>
       </div>
     );

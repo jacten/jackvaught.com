@@ -1,5 +1,36 @@
 
 :root {
+  /* variables */
   --primary-color: rgb(238,174,202);
   --secondary-color: rgb(148,187,233);
+  --font-color: white;
+  --border-color: white;
+
+  /* defaults */
+  color: var(--font-color);
+  font-size: 62.5%; /* 1rem === 10px */
 }
+
+
+/* Media Querie Template */
+/* Media querie ems came from http://bradfrost.com/blog/post/7-habits-of-highly-effective-media-queries/ */
+
+    /* S */ 
+    @media only screen and (min-width : 24em) {
+
+    }
+
+    /* M */
+    @media only screen and (min-width : 46.8em) {
+
+    }
+
+    /* L */
+    @media only screen and (min-width : 50em) {
+
+    }
+
+    /* XL */
+    @media only screen and (min-width : 73em) {
+
+    }

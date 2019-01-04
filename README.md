@@ -2,7 +2,7 @@
 
 Look! It's a personal website for Jack Vaught! [Check it out here...](https://jackvaught.com)
 
-## More Info
+## About
 
 ### Create React App
 

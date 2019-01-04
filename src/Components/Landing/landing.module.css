@@ -1,0 +1,103 @@
+.center {
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.name {
+  font-size: 5rem;
+  margin: 5px;
+  font-weight: bold;
+}
+
+.about {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.buttons {
+  width: auto;
+}
+
+.button {
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 80px;
+  display: inline-block;
+  text-decoration: none;
+  width: 160px;
+  height: 80px;
+  margin: 20px;
+  font-size: 34px;
+  background: transparent;
+  border: 5px solid var(--border-color);
+  transition: 0.3s;
+  
+}
+.button:hover {
+  transition: 0.3s;
+  -webkit-box-shadow: 5px 5px var(--primary-color), 10px 10px var(--secondary-color), 15px 15px var(--primary-color);
+  -moz-box-shadow:    5px 5px var(--primary-color), 10px 10px var(--secondary-color), 15px 15px var(--primary-color);
+  box-shadow:         5px 5px var(--primary-color), 10px 10px var(--secondary-color), 15px 15px var(--primary-color);
+  text-decoration:none; 
+  cursor:pointer;  
+}
+
+.logo {
+  margin: 40px auto 0;
+  width: 50px;
+  height: 50px;
+}
+
+    /* S */ 
+    @media only screen and (min-width : 24em) {
+
+    }
+
+    /* M */
+    @media only screen and (min-width : 46.8em) {
+      .logo {
+        margin: 100px auto;
+        width: 100px;
+        height: 100px;
+      }
+    
+      .button {
+        line-height: 150px;
+        width: 300px;
+        height: 150px;
+        margin: 30px;
+        font-size: 60px;
+        border: 7px solid var(--border-color);
+      }
+    
+      .name {
+        font-size: 12rem;
+        margin: 10px;
+        /* text-shadow: 4px 4px #00000067; */
+      }
+    
+      .about {
+        font-size: 40px;
+        font-weight: bold;
+      }
+    
+      .button:hover {
+        -webkit-box-shadow: 7px 7px var(--primary-color), 14px 14px var(--secondary-color), 21px 21px var(--primary-color);
+        -moz-box-shadow:    7px 7px var(--primary-color), 14px 14px var(--secondary-color), 21px 21px var(--primary-color);
+        box-shadow:         7px 7px var(--primary-color), 14px 14px var(--secondary-color), 21px 21px var(--primary-color);
+      }
+    }
+
+    /* L */
+    @media only screen and (min-width : 50em) {
+
+    }
+
+    /* XL */
+    @media only screen and (min-width : 73em) {
+
+    }

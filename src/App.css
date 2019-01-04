@@ -8,3 +8,6 @@ body {
   background: radial-gradient(circle, var(--primary-color) 0%, var(--secondary-color) 100%);
 }
 
+a {
+  color: var(--font-color);
+}
