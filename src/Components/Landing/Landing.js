@@ -13,8 +13,6 @@ class Landing extends Component {
         </div>
         <div className="buttons">
           <Link className="button" to="/home"> ENTER </Link>
-          {/* <a className="button" href={'https://twitter.com/Jack_Vaught'}>twitter</a>
-          <a className="button" href={'https://github.com/jacten'}>github</a> */}
         </div>
       </div>
     );
