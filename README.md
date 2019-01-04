@@ -2,6 +2,8 @@
 
 Look! It's a personal website for Jack Vaught...
 
+(https://jackvaught.com 'jackvaught.com')
+
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
