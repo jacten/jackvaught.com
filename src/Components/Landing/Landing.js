@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 
 import './Landing.css';
+import '../../globals.css';
 
 class Landing extends Component {
   render() {

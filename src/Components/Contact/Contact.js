@@ -1,17 +1,15 @@
 import React, { Component } from 'react';
 
-import './Contact.css';
+import s from './contact.module.css';
 
 class Contact extends Component {
-  constructor() {
-    super();
-  }
   
   render() {
     return (
-      <div>
+      <div className={s.test}>
+        CONTACT
       </div>
-    );
+    )
   }
 }
 
