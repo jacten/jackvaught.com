@@ -1,16 +1,14 @@
 # jackvaught.com
 
-Look! It's a personal website for Jack Vaught...
+Look! It's a personal website for Jack Vaught! [Check it out here...](https://jackvaught.com)
 
-[check it out here...](https://jackvaught.com)
+## More Info
 
-### More Info
-
-#### Create React App
+### Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app)
 
-#### Styling
+### Styling
 
 This project uses [CSS Modules](https://facebook.github.io/create-react-app/docs/adding-a-css-modules-stylesheet) that are built into create-react-app. CSS files written as *.module.css are locally scoped.
 
