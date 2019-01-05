@@ -13,7 +13,7 @@ class Landing extends Component {
           <div className={s.about}>software engineer</div>
         </div>
         <div className={s.buttons}>
-          <Link className={s.button} to="/home"> ENTER </Link>
+          <Link className={s.button} to="/main"> ENTER </Link>
         </div>
       </div>
     );

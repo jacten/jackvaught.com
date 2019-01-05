@@ -2,10 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch, } from "react-router-dom";
 
 import Landing from './Components/Landing/Landing';
-import Home from './Components/Home/Home';
-import About from './Components/About/About';
-import Contact from './Components/Contact/Contact';
-import Experience from './Components/Experience/Experience';
+import Main from './Components/Main/Main';
 import Projects from './Components/Projects/Projects';
 
 import NotFound from './Components/NotFound/NotFound';
@@ -17,10 +14,7 @@ class App extends Component {
       <Router>
         <Switch>
           <Route exact path="/" component={Landing}/>
-          <Route path="/home" component={Home}/>
-          <Route path="/about" component={About}/>
-          <Route path="/contact" component={Contact}/>
-          <Route path="/experience" component={Experience}/>
+          <Route path="/main" component={Main}/>
           <Route path="/projects" component={Projects}/>
           <Route component={NotFound}/>
         </Switch>
