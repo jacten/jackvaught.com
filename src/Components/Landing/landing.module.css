@@ -52,11 +52,6 @@
   height: 50px;
 }
 
-    /* S */ 
-    @media only screen and (min-width : 24em) {
-
-    }
-
     /* M */
     @media only screen and (min-width : 46.8em) {
       .logo {

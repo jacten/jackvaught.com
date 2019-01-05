@@ -9,7 +9,7 @@ import Experience from './Components/Experience/Experience';
 import Projects from './Components/Projects/Projects';
 
 import NotFound from './Components/NotFound/NotFound';
-import './app.css';
+import './app.module.css';
 
 class App extends Component {
   render() {

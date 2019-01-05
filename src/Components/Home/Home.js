@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
 
-import './Home.css';
+import SideNav from '../SideNav/SideNav';
+import s from './home.module.css';
 
 class Home extends Component {
   render() {
     return (
-      <div></div>
+      <div>
+        <SideNav/>
+      </div>
     );
   }
 }

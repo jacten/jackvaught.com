@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import './Experience.css';
+import s from './experience.module.css';
 
 class Experience extends Component {
   
