@@ -10,25 +10,26 @@
 /* Desktop */
 @media only screen and (min-width : 50em) {
   .container {
+    background-color: rgba(0, 0, 0, 0.267);
     height: 100%;
     position: fixed;
     top: 0;
     left: 0;
     border-right: .6rem solid var(--border-color);
+    transition: 2s;
   }
   
   .title {
     font-size: 4rem;
-    margin: 2rem 4rem;
+    margin: 2rem 4rem 3rem 4rem;
   }
 
   a {
-    padding: 8px 8px 8px 32px;
+    padding: 1rem 4rem;
     text-decoration: none;
-    font-size: 25px;
-    color: #818181;
+    font-size: 2.5rem;
+    color: var(--font-color);
     display: block;
-    transition: 0.3s;
   }
 }
 
