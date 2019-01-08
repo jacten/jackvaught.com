@@ -15,12 +15,11 @@ class Home extends Component {
       <div>
         <SideNav/>
         <Switch>
-          <Redirect exact from='/main' to='/main/about'/>
           <Route exact component={About} path="/main/about" />
           <Route exact component={Projects} path="/main/projects" />
           <Route exact component={Experience} path="/main/experience" />
           <Route exact component={Contact} path="/main/contact" />
-          <Route component={NotFound} />
+          <Redirect from='/main' to='/main/about'/>
         </Switch>
       </div>
     );

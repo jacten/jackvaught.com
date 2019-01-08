@@ -7,23 +7,13 @@ class SideNav extends Component {
   
   render() {
     return (
-      <div>
-        <div>Jack Vaught</div>
-        <div className="Nav__right">
-        <ul className="Nav__item-wrapper">
-          <li className="Nav__item">
-            <Link className="Nav__link" to="/main/about">About</Link>
-          </li>
-          <li className="Nav__item">
-            <Link className="Nav__link" to="/main/projects">Projects</Link>
-          </li>
-          <li className="Nav__item">
-            <Link className="Nav__link" to="/main/experience">Experience</Link>
-          </li>
-          <li className="Nav__item">
-            <Link className="Nav__link" to="/main/contact">Contact</Link>
-          </li>
-        </ul>
+      <div className={s.container}>
+        <div className={s.title}>jackvaught</div>
+        <div className={s.navContainer}>
+          <Link className={s.link} to="/main/about">About</Link>
+          <Link className={s.link} to="/main/projects">Projects</Link>
+          <Link className={s.link} to="/main/experience">Experience</Link>
+          <Link className={s.link} to="/main/contact">Contact</Link>
         </div>
       </div>
     );
