@@ -19,7 +19,12 @@ class About extends Component {
               src={jack2} />
           </div>
             <div className={s.description}>
-              Jack Vaught
+              <div className={s.name}>
+                JACK VAUGHT
+              </div>
+              <div className={s.job}>
+                Software Engineer
+              </div>
             </div>
         </div>
       </div>

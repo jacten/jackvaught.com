@@ -29,9 +29,18 @@
       }
 
       .description {
+        margin: var(--spacer-md);
+      }
+
+      .name {
         font-size: var(--secondary-fontsize);
-        padding: var(--spacer-lg);
+        padding: var(--spacer-sm);
         font-weight: bold;
+      }
+
+      .job {
+        font-size: var(--body-fontsize);
+        padding: var(--spacer-sm);
       }
 
       .card {
