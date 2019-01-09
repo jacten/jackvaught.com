@@ -2,10 +2,11 @@
 :root {
   /* variables */
   /* colors */
-  --primary-color: rgb(11, 104, 148);
-  --secondary-color: rgb(148,187,233);
+  --primary-color: rgb(89, 203, 255);
+  --secondary-color: rgb(107, 4, 190);
   --font-color: white;
-  --border-color: white;
+
+  --border: .1rem solid white;
 
   /* spacing */
   --spacer-sm: .5rem;
@@ -13,9 +14,9 @@
   --spacer-lg: 2rem;
 
   /* fonts */
-  --title-fontsize: 2rem;
-  --secondary-fontsize: 1.8rem;
-  --body-fontsize: 1rem;
+  --title-fontsize: 3rem;
+  --secondary-fontsize: 2.6rem;
+  --body-fontsize: 1.5rem;
 
   /* defaults */
   color: var(--font-color);

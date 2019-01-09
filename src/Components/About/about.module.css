@@ -5,7 +5,28 @@
 
     /* Desktop */
     @media only screen and (min-width : 50em) {
+      .container {
+        margin: 2rem;
+      }
 
+      .title {
+        font-size: var(--title-fontsize);
+        padding: var(--spacer-md);
+      }
+
+      .description {
+        font-size: var(--body-fontsize);
+        padding: var(--spacer-md);
+      }
+
+
+      .image {
+        max-width: 60%;
+        height: auto;
+        margin: var(--spacer-md);
+        /* border: var(--border); */
+        box-shadow: 0 1rem 2rem 0 rgba(0, 0, 0, 0.3), 0 1rem 2rem 0 rgba(0, 0, 0, 0.3);
+      }
     }
 
     /* XL Desktop */

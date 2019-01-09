@@ -21,8 +21,8 @@ class SideNav extends Component {
 
   shouldChangeColor = (link) => {
     return this.state.hover && this.state.hover !== link
-      ? {color: 'rgba(0, 0, 0, 0.267)', transition: '.5s'}
-      : {transition: '.5s'};
+      ? {color: 'rgba(0, 0, 0, 0.4)', transition: '.3s'}
+      : {transition: '.3s'};
   }
   
   render() {

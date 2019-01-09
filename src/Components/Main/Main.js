@@ -6,21 +6,22 @@ import About from '../About/About';
 import Projects from '../Projects/Projects';
 import Contact from '../Contact/Contact';
 import Experience from '../Experience/Experience';
-import NotFound from '../NotFound/NotFound';
 import s from './main.module.css';
 
 class Home extends Component {
   render() {
     return (
-      <div>
+      <div className={s.body}>
         <SideNav/>
-        <Switch>
-          <Route exact component={About} path="/main/about" />
-          <Route exact component={Projects} path="/main/projects" />
-          <Route exact component={Experience} path="/main/experience" />
-          <Route exact component={Contact} path="/main/contact" />
-          <Redirect from='/main' to='/main/about'/>
-        </Switch>
+        <div className={s.page}>
+          <Switch>
+            <Route exact component={About} path="/main/about" />
+            <Route exact component={Projects} path="/main/projects" />
+            <Route exact component={Experience} path="/main/experience" />
+            <Route exact component={Contact} path="/main/contact" />
+            <Redirect from='/main' to='/main/about'/>
+          </Switch>
+        </div>
       </div>
     );
   }

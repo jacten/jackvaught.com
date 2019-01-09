@@ -15,7 +15,6 @@ class App extends Component {
         <Switch>
           <Route exact path="/" component={Landing}/>
           <Route path="/main" component={Main}/>
-          <Route path="/projects" component={Projects}/>
           <Route component={NotFound}/>
         </Switch>
       </Router>
