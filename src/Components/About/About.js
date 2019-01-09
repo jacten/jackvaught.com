@@ -9,7 +9,7 @@ class About extends Component {
     return (
       <div className={s.container}>
         <div className={s.title}>
-          About
+          about
         </div>
         <div className={s.card}>
           <div className={s.imagebox}>
@@ -19,7 +19,7 @@ class About extends Component {
               src={jack} />
           </div>
             <div className={s.description}>
-            Wow! It's Jack Vaught! Isn't that something!
+            Wow! It's Jack Vaught! I make websites! Like this one!
             </div>
         </div>
       </div>

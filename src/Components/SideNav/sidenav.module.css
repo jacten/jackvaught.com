@@ -10,7 +10,7 @@
 /* Desktop */
 @media only screen and (min-width : 50em) {
   .container {
-    background-color: rgb(29, 29, 29);
+    background-color: var(--sidenav-color);
     height: 100vh;
     display: block;
     /* border-right: var(--border); */

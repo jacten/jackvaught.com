@@ -1,6 +1,6 @@
     .card {
-      background-color: white;
-      color: black;
+      background-color: var(--font-color);
+      color: var(--sidenav-color);
       display: flex;
       flex-direction: column;
       max-width: 60%;
@@ -15,21 +15,22 @@
     @media only screen and (min-width : 50em) {
 
       .imagebox {
-        
+
       }
 
       .container {
-        margin: 2rem;
+        margin: 2rem 4rem;
       }
 
       .title {
+        color: var(--font-color);
         font-size: var(--title-fontsize);
-        padding: var(--spacer-md);
+        margin-bottom: 4rem; 
       }
 
       .description {
         font-size: var(--body-fontsize);
-        padding: var(--spacer-md);
+        padding: var(--spacer-lg);
       }
 
       .card {
