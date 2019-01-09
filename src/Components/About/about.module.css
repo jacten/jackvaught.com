@@ -4,6 +4,19 @@
       display: flex;
       flex-direction: column;
       max-width: 35%;
+      box-shadow: 0 1rem 2rem 0 rgba(0, 0, 0, 0.3), 0 1rem 2rem 0 rgba(0, 0, 0, 0.3);
+
+    }
+
+    .card2 {
+      background-color: var(--font-color);
+      color: var(--sidenav-color);
+      display: flex;
+      flex-direction: column;
+      margin-left: 10rem;
+      height: 20rem;
+      width: 40rem;
+      box-shadow: 0 1rem 2rem 0 rgba(0, 0, 0, 0.3), 0 1rem 2rem 0 rgba(0, 0, 0, 0.3);
     }
     
     /* Tablet */
@@ -14,8 +27,10 @@
     /* Desktop */
     @media only screen and (min-width : 50em) {
 
-      .imagebox {
-
+      .body {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
       }
 
       .container {
@@ -25,17 +40,17 @@
       .title {
         color: var(--font-color);
         font-size: var(--title-fontsize);
-        margin-bottom: 4rem; 
+        margin-bottom: 4rem;
       }
 
       .description {
         margin: var(--spacer-md);
+        font-weight: lighter;
       }
 
       .name {
         font-size: var(--secondary-fontsize);
         padding: var(--spacer-sm);
-        font-weight: bold;
       }
 
       .job {
@@ -50,6 +65,15 @@
       .image {
         max-width: 100%;
         height: auto;
+      }
+
+      .card2head {
+        background-color: var(--sidenav-color);
+        color: var(--font-color);
+        font-size: var(--secondary-fontsize);
+        padding: var(--spacer-lg);
+        font-weight: lighter;
+
       }
     }
 
