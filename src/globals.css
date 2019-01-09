@@ -4,6 +4,7 @@
   /* colors */
   --primary-color: rgb(89, 203, 255);
   --secondary-color: rgb(107, 4, 190);
+  --darker-primary: rgba(100, 0, 177, 0.384);
   --font-color: white;
 
   --border: .1rem solid white;
@@ -14,7 +15,7 @@
   --spacer-lg: 2rem;
 
   /* fonts */
-  --title-fontsize: 3rem;
+  --title-fontsize: 4rem;
   --secondary-fontsize: 2.6rem;
   --body-fontsize: 1.5rem;
 
