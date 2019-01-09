@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import s from './about.module.css';
-import jack from '../../Assets/jack.jpg';
+import jack2 from '../../Assets/jack2.jpg';
 
 class About extends Component {
 
@@ -16,10 +16,10 @@ class About extends Component {
             <img 
               alt={'jack vaught should be here...'} 
               className={s.image}
-              src={jack} />
+              src={jack2} />
           </div>
             <div className={s.description}>
-            Wow! It's Jack Vaught! I make websites! Like this one!
+              Jack Vaught
             </div>
         </div>
       </div>

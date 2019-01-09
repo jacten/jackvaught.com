@@ -3,7 +3,7 @@
       color: var(--sidenav-color);
       display: flex;
       flex-direction: column;
-      max-width: 60%;
+      max-width: 35%;
     }
     
     /* Tablet */
@@ -29,8 +29,9 @@
       }
 
       .description {
-        font-size: var(--body-fontsize);
+        font-size: var(--secondary-fontsize);
         padding: var(--spacer-lg);
+        font-weight: bold;
       }
 
       .card {
