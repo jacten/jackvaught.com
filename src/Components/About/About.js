@@ -12,12 +12,14 @@ class About extends Component {
           About
         </div>
         <div className={s.card}>
-          <img 
-            alt={'jack vaught should be here...'} 
-            className={s.image}
-            src={jack} />
+          <div className={s.imagebox}>
+            <img 
+              alt={'jack vaught should be here...'} 
+              className={s.image}
+              src={jack} />
+          </div>
             <div className={s.description}>
-            Wow! It's Jack Vaught! I make terrible websites... like this one!
+            Wow! It's Jack Vaught! Isn't that something!
             </div>
         </div>
       </div>
