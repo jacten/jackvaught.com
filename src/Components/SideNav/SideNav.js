@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Route, Link } from 'react-router-dom';
 
 import s from './sidenav.module.css';
+import resume from '../../Assets/jack-vaught-resume.pdf';
 
 class SideNav extends Component {
   constructor(props) {
@@ -21,7 +22,7 @@ class SideNav extends Component {
 
   shouldChangeColor = (link) => {
     return this.state.hover && this.state.hover !== link
-      ? {color: 'var(--darker-primary)', transition: '.3s'}
+      ? {color: 'var(--darker-primary)', transition: '.3s', borderColor: 'var(--darker-primary)'}
       : {transition: '.3s'};
   }
   
@@ -34,30 +35,42 @@ class SideNav extends Component {
             onMouseOver={() => this.handleMouseEnter('about')} 
             onMouseLeave={() => this.handleMouseLeave('about')} 
             style={this.shouldChangeColor('about')}
-            className={s.link} to="/main/about">
+            className={s.link} 
+            to="/main/about">
             about
           </Link>
           <Link 
             onMouseOver={() => this.handleMouseEnter('projects')} 
             onMouseLeave={() => this.handleMouseLeave('projects')} 
             style={this.shouldChangeColor('projects')}
-            className={s.link} to="/main/projects">
+            className={s.link} 
+            to="/main/projects">
             projects
           </Link>
           <Link 
             onMouseOver={() => this.handleMouseEnter('experience')} 
             onMouseLeave={() => this.handleMouseLeave('experience')} 
             style={this.shouldChangeColor('experience')}
-            className={s.link} to="/main/experience">
+            className={s.link} 
+            to="/main/experience">
             experience
           </Link>
           <Link 
             onMouseOver={() => this.handleMouseEnter('contact')} 
             onMouseLeave={() => this.handleMouseLeave('contact')}
             style={this.shouldChangeColor('contact')}
-            className={s.link} to="/main/contact">
+            className={s.link} 
+            to="/main/contact">
             contact
           </Link>
+          <a 
+            onMouseOver={() => this.handleMouseEnter('resume')} 
+            onMouseLeave={() => this.handleMouseLeave('resume')}
+            style={this.shouldChangeColor('resume')}
+            className={s.resume} 
+            href={resume}>
+            resume
+          </a>
         </div>
       </div>
     );

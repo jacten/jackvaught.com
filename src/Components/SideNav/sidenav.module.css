@@ -30,6 +30,17 @@
     color: var(--font-color);
     display: block;
   }
+
+  .resume {
+    position: absolute;
+    bottom: 0;
+    line-height: 3rem;
+    height: 3rem;
+    margin: 3rem;
+    
+    padding: 1rem 5rem;
+    border: var(--border-sm);
+  }
 }
 
 /* XL Desktop */

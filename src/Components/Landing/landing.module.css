@@ -66,7 +66,8 @@
         height: 150px;
         margin: 30px;
         font-size: 60px;
-        border: 7px solid var(--font-color);
+        border: var(--border-lg);
+        font-weight: bolder;
       }
     
       .name {

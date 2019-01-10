@@ -8,7 +8,8 @@
   --font-color: rgb(243, 243, 243);
   --sidenav-color: rgb(29, 29, 29);
 
-  --border: .1rem solid white;
+  --border-sm: .3rem solid white;
+  --border-lg: .7rem solid white;
 
   /* spacing */
   --spacer-sm: .5rem;
