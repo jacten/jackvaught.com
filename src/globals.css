@@ -2,9 +2,9 @@
 :root {
   /* variables */
   /* colors */
-  --primary-color: rgb(89, 203, 255);
-  --secondary-color: rgb(107, 4, 190);
-  --darker-primary: rgba(100, 0, 177, 0.384);
+  --primary-color: rgb(107, 4, 190);
+  --secondary-color: rgb(89, 203, 255);
+  --darker-primary: rgba(110, 110, 110, 0.384);
   --font-color: rgb(243, 243, 243);
   --sidenav-color: rgb(29, 29, 29);
 
