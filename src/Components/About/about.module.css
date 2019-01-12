@@ -49,9 +49,10 @@
       }
 
       .description {
+        flex: 1 1 0;
         width: 40rem;
-        margin: var(--spacer-md);
-        margin-left: 2rem;
+        /* margin: var(--spacer-md);
+        margin-left: 2rem; */
         font-weight: lighter;
       }
 
@@ -73,7 +74,16 @@
 
       .image {
         /* max-width: 100%; */
+        /* background-size: cover; */
+        margin: 2rem;
+        flex: 1 1 0;
+        object-fit: cover;
         max-height: calc(100vh - 30rem);
+      }
+
+      .imageContainer {
+        margin: 2rem;
+        flex: 1 1 0;
       }
 
       .card2head {

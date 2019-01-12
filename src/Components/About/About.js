@@ -43,10 +43,12 @@ class About extends Component {
               )
             })}
             </div>
-            <img 
-              alt={'jack vaught should be here...'} 
-              className={s.image}
-              src={jack2} />
+            {/* <div className={s.imageContainer}> */}
+              <img 
+                alt={'jack vaught should be here...'} 
+                className={s.image}
+                src={jack2} />
+            {/* </div> */}
           </div>
         </div>
       </div>
