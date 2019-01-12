@@ -10,16 +10,18 @@
 /* Desktop */
 @media only screen and (min-width : 50em) {
   .container {
+    position: sticky;
+    top: 0;
     background-color: var(--sidenav-color);
-    height: 100vh;
-    display: block;
+    min-height: 100vh;
     transition: 2s;
+    width: 27rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
   
   .title {
     font-size: 4rem;
-    margin: 2rem 4rem 6rem 4rem;
+    padding: 2rem 4rem 6rem 4rem;
   }
 
   a {

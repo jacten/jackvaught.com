@@ -13,8 +13,8 @@
       color: var(--sidenav-color);
       display: flex;
       flex-direction: column;
-      margin-left: 10rem;
-      height: 20rem;
+      /* margin-left: 10rem; */
+      height: 30rem;
       width: 40rem;
       box-shadow: 0 1rem 2rem 0 rgba(0, 0, 0, 0.3), 0 1rem 2rem 0 rgba(0, 0, 0, 0.3);
     }
@@ -34,13 +34,16 @@
       }
 
       .container {
-        margin: 2rem 4rem;
+        height: 200vh;
+        /* margin: 2rem 4rem; */
+        /* max-width: 70%; */
+        display: block;
       }
 
       .title {
         color: var(--font-color);
         font-size: var(--title-fontsize);
-        margin-bottom: 4rem;
+        /* margin-bottom: 4rem; */
       }
 
       .description {
@@ -73,7 +76,6 @@
         font-size: var(--secondary-fontsize);
         padding: var(--spacer-lg);
         font-weight: lighter;
-
       }
     }
 

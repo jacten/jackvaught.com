@@ -43,10 +43,7 @@ class About extends Component {
           </div>
           <div className={s.card2}>
             <div className={s.card2head}>
-              3 Random Facts!
-              <button>
-                shuffle
-              </button>
+              Random Facts!
             </div>
             {Object.keys(aboutFacts).map((key, index) => {
               return (
