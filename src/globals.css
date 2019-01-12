@@ -3,7 +3,7 @@
   /* variables */
   /* colors */
   --primary-color: rgb(107, 4, 190);
-  --secondary-color: rgb(89, 203, 255);
+  --secondary-color: rgb(28, 182, 253);
   --darker-primary: rgba(110, 110, 110, 0.384);
   --font-color: rgb(243, 243, 243);
   --sidenav-color: rgb(29, 29, 29);
@@ -25,6 +25,10 @@
   /* defaults */
   color: var(--font-color);
   font-size: 62.5%; /* 1rem === 10px */
+}
+
+::-webkit-scrollbar { 
+  display: none; 
 }
 
 body {

@@ -26,25 +26,13 @@ class About extends Component {
         </div>
         <div className={s.body}> 
           <div className={s.card}>
-            <div className={s.imagebox}>
-              <img 
-                alt={'jack vaught should be here...'} 
-                className={s.image}
-                src={jack2} />
-            </div>
-              <div className={s.description}>
-                <div className={s.name}>
-                  JACK VAUGHT
-                </div>
-                <div className={s.job}>
-                  Software Engineer
-                </div>
+            <div className={s.description}>
+              <div className={s.name}>
+                JACK VAUGHT
               </div>
-          </div>
-          <div className={s.card2}>
-            <div className={s.card2head}>
-              Random Facts!
-            </div>
+              <div className={s.job}>
+                Software Engineer
+              </div>
             {Object.keys(aboutFacts).map((key, index) => {
               return (
                 <FactItem
@@ -54,6 +42,11 @@ class About extends Component {
                   fact={aboutFacts[key]} />
               )
             })}
+            </div>
+            <img 
+              alt={'jack vaught should be here...'} 
+              className={s.image}
+              src={jack2} />
           </div>
         </div>
       </div>

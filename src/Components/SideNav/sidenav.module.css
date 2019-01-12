@@ -16,12 +16,14 @@
     min-height: 100vh;
     transition: 2s;
     width: 27rem;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* box-shadow: 4px 0 8px 0 rgba(0, 0, 0, 0.2), 6px 0 20px 0 rgba(0, 0, 0, 0.19); */
   }
   
   .title {
     font-size: 4rem;
     padding: 2rem 4rem 6rem 4rem;
+    position: sticky;
+    top: 0;
   }
 
   a {
