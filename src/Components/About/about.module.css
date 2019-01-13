@@ -20,6 +20,10 @@
       width: 40rem;
       box-shadow: 0 1rem 2rem 0 rgba(0, 0, 0, 0.3), 0 1rem 2rem 0 rgba(0, 0, 0, 0.3);
     }
+
+    .container {
+      min-height: 150vh;
+    }
     
     /* Tablet */
     @media only screen and (min-width : 46.8em) {
@@ -76,7 +80,7 @@
       }
 
       .card {
-        margin: 4rem;
+        margin: 6rem;
         max-width: 70rem;
       }
 
