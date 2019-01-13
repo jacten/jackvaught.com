@@ -22,13 +22,16 @@ class About extends Component {
                 Software Engineer
               </div>
               <div className={s.text}>
+                I'm Jack! And the cat is Marlin! (not my cat).
+              </div>
+              <div className={s.text}>
                 I am a full stack software engineer based out of Los Angeles. I am currently looking for my next career opertunity!
               </div>
               <div className={s.text}>
                 I was born in Indiana, raised in Chicago (well really Evanston), and have lived on the West Coast for the past seven years.
               </div>
               <div className={s.text}>
-              I have a Russian wife and two Russian Blue Cats (not pictured). I enjoy cooking, NBA basketball, and Rocket League. 
+              I have a Russian wife and two Russian Blue Cats. I enjoy cooking, NBA basketball, and Rocket League. 
               </div>
             </div>
             <img 

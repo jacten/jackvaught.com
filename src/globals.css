@@ -2,8 +2,8 @@
 :root {
   /* variables */
   /* colors */
-  --primary-color: rgb(107, 4, 190);
-  --secondary-color: rgb(28, 182, 253);
+  --primary-color: rgb(5, 24, 18);
+  --secondary-color: rgb(195, 236, 195);
   --darker-primary: rgba(110, 110, 110, 0.384);
   --font-color: rgb(243, 243, 243);
   --sidenav-color: rgb(29, 29, 29);
@@ -45,6 +45,7 @@ body {
   font-family: sans-serif;
   background: var(--primary-color);
   background: radial-gradient(circle, var(--primary-color) 0%, var(--secondary-color) 100%);
+  background-attachment: fixed;
 }
 
 a {

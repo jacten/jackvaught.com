@@ -17,10 +17,6 @@
   font-weight: bold;
 }
 
-.buttons {
-  width: auto;
-}
-
 .button {
   position: relative;
   text-align: center;
@@ -30,7 +26,6 @@
   text-decoration: none;
   width: 160px;
   height: 80px;
-  margin: 20px;
   font-size: 34px;
   background: transparent;
   /* border: 5px solid var(--font-color); */
