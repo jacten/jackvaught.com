@@ -1,20 +1,8 @@
 import React, { Component } from 'react';
 
-import FactItem from './FactItem';
 
 import s from './about.module.css';
 import jack2 from '../../Assets/jack2.jpg';
-
-const aboutFacts = {
-  Born: "July 26, 1989 in Indianapolis Indiana.",
-  Education: "University of Illinois Champaign-Urbana. Majored in History.",
-  CodingCamp: "Went to Hack Reactor at the Beginning of 2018",
-  Cats: "I have two grey cats. But neither are the one in the picture to the left",
-  RocketLeague: "I play way too much Rocket League",
-  Basketball: "My favorite team is the Chicago Bulls. But they are currently trash.",
-  Food: "My favorite food is Thai Curry.",
-  Evanston: "I grew up in Evanston, Il. First suburb north of Chicago.",
-}
 
 class About extends Component {
 
@@ -33,22 +21,20 @@ class About extends Component {
               <div className={s.job}>
                 Software Engineer
               </div>
-            {Object.keys(aboutFacts).map((key, index) => {
-              return (
-                <FactItem
-                  key={index}
-                  category={key}
-                  index={index}
-                  fact={aboutFacts[key]} />
-              )
-            })}
+              <div className={s.text}>
+                I am a full stack software engineer based out of Los Angeles. I am currently looking for my next career opertunity!
+              </div>
+              <div className={s.text}>
+                I was born in Indiana, raised in Chicago (well really Evanston), and have lived on the West Coast for the past seven years.
+              </div>
+              <div className={s.text}>
+              I have a Russian wife and two Russian Blue Cats (not pictured). I enjoy cooking, NBA basketball, and Rocket League. 
+              </div>
             </div>
-            {/* <div className={s.imageContainer}> */}
-              <img 
-                alt={'jack vaught should be here...'} 
-                className={s.image}
-                src={jack2} />
-            {/* </div> */}
+            <img 
+              alt={'jack vaught should be here...'} 
+              className={s.image}
+              src={jack2} />
           </div>
         </div>
       </div>
