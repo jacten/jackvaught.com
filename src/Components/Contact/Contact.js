@@ -6,8 +6,10 @@ class Contact extends Component {
   
   render() {
     return (
-      <div className={s.test}>
-        CONTACT
+      <div className={s.container} id={"contact"}>
+        <div className={s.title}>
+          contact
+        </div>
       </div>
     )
   }

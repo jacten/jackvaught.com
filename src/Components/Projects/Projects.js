@@ -6,8 +6,10 @@ class Projects extends Component {
   
   render() {
     return (
-      <div className={s.body} >
-        PROJECTS
+      <div className={s.container} id={"projects"}>
+        <div className={s.title}>
+          projects
+        </div>
       </div>
     );
   }

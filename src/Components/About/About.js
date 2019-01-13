@@ -8,7 +8,7 @@ class About extends Component {
 
   render() {
     return (
-      <div className={s.container}>
+      <div className={s.container} id={"about"}>
         <div className={s.title}>
           about
         </div>

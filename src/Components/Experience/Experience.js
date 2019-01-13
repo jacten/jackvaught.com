@@ -6,8 +6,10 @@ class Experience extends Component {
   
   render() {
     return (
-      <div className="test">
-        EXPERIENCE
+      <div className={s.container} id={"experience"}>
+        <div className={s.title}>
+          experience
+        </div>
       </div>
     );
   }

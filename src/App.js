@@ -10,8 +10,7 @@ class App extends Component {
     return (
       <Router>
         <Switch>
-          <Redirect exact from='/' to='/home'/>
-          <Route exact path="/home" component={Main}/>
+          <Route exact path="/" component={Main}/>
           <Route component={NotFound}/>
         </Switch>
       </Router>

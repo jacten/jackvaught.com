@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 
 import s from './sidenav.module.css';
 import resume from '../../Assets/jack-vaught-resume.pdf';
@@ -31,38 +30,38 @@ class SideNav extends Component {
       <div className={s.container}>
         <div className={s.title}>jackvaught</div>
         <div className={s.navContainer}>
-          <Link 
+          <a
+            href={"#about"}
             onMouseOver={() => this.handleMouseEnter('about')} 
             onMouseLeave={() => this.handleMouseLeave('about')} 
             style={this.shouldChangeColor('about')}
-            className={s.link} 
-            to="/main/about">
+            className={s.link} >
             about
-          </Link>
-          <Link 
+          </a>
+          <a 
+            href={"#projects"}
             onMouseOver={() => this.handleMouseEnter('projects')} 
             onMouseLeave={() => this.handleMouseLeave('projects')} 
             style={this.shouldChangeColor('projects')}
-            className={s.link} 
-            to="/main/projects">
+            className={s.link}>
             projects
-          </Link>
-          <Link 
+          </a>
+          <a 
+            href={"#experience"}
             onMouseOver={() => this.handleMouseEnter('experience')} 
             onMouseLeave={() => this.handleMouseLeave('experience')} 
             style={this.shouldChangeColor('experience')}
-            className={s.link} 
-            to="/main/experience">
+            className={s.link}>
             experience
-          </Link>
-          <Link 
+          </a>
+          <a 
+            href={"#contact"}
             onMouseOver={() => this.handleMouseEnter('contact')} 
             onMouseLeave={() => this.handleMouseLeave('contact')}
             style={this.shouldChangeColor('contact')}
-            className={s.link} 
-            to="/main/contact">
+            className={s.link}>
             contact
-          </Link>
+          </a>
           <a 
             onMouseOver={() => this.handleMouseEnter('resume')} 
             onMouseLeave={() => this.handleMouseLeave('resume')}

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from "react-router-dom";
 
 import s from './landing.module.css';
 import '../../globals.css';
@@ -13,7 +12,9 @@ class Landing extends Component {
           <div className={s.about}>software engineer</div>
         </div>
         <div className={s.buttons}>
-          <Link className={s.button} to="/main"> ENTER </Link>
+          <a className={s.button} href={"#about"}>
+            &#8964;
+          </a>
         </div>
       </div>
     );
