@@ -5,6 +5,7 @@
       flex-direction: row;
       border-radius: var(--border-radius);
       flex-wrap: wrap;
+      box-shadow: var(--box-shadow);
     }
 
     .container {
@@ -18,7 +19,7 @@
       background-color: var(--transparent-color);
       font-size: 4rem;
       padding: 2rem 4rem 2.2rem 4rem;
-      box-shadow: 0 1rem 2rem 0 rgba(0, 0, 0, 0.1), 0 1rem 2rem 0 rgba(0, 0, 0, 0.1);
+      box-shadow: var(--box-shadow);
     }
 
 
@@ -52,7 +53,7 @@
     }
 
     .card {
-      margin: 4rem 8rem 0 8rem;
+      margin: 4rem 8rem 0rem 8rem;
       max-width: 70rem;
     }
 

@@ -17,6 +17,8 @@
   --border-lg: .7rem solid var(--secondary-color);
   --border-radius: .5rem;
 
+  --box-shadow: 0 .2rem .4rem 0 rgba(0, 0, 0, 0.055), 0 .2rem .4rem 0 rgba(0, 0, 0, 0.062);
+
   /* spacing */
   --spacer-sm: .5rem;
   --spacer-md: 1rem;

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Switch, Route, Redirect } from 'react-router-dom';
 
 import Landing from '../Landing/Landing';
 import SideNav from '../SideNav/SideNav';

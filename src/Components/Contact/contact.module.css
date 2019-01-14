@@ -9,7 +9,7 @@
   background-color: var(--transparent-color);
   font-size: 4rem;
   padding: 2rem 4rem 2.2rem 4rem;
-  box-shadow: 0 1rem 2rem 0 rgba(0, 0, 0, 0.1), 0 1rem 2rem 0 rgba(0, 0, 0, 0.1);
+  box-shadow: var(--box-shadow);
 }
 
 
