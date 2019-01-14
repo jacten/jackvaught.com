@@ -1,28 +1,14 @@
     .card {
-      background-color: var(--transparent-color);
+      background-color: var(--sidenav-color);
       color: var(--font-color);
       display: flex;
       flex-direction: row;
       border-radius: var(--border-radius);
-      /* justify-content: space-between;   */
-      /* max-width: 30%; */
-      /* box-shadow: 0 1rem 2rem 0 rgba(0, 0, 0, 0.1), 0 1rem 2rem 0 rgba(0, 0, 0, 0.1); */
-
-    }
-
-    .card2 {
-      background-color: var(--font-color);
-      color: var(--sidenav-color);
-      display: flex;
-      flex-direction: column;
-      /* margin-left: 10rem; */
-      height: 30rem;
-      width: 40rem;
-      box-shadow: 0 1rem 2rem 0 rgba(0, 0, 0, 0.3), 0 1rem 2rem 0 rgba(0, 0, 0, 0.3);
+      flex-wrap: wrap;
     }
 
     .container {
-      min-height: 140vh;
+      min-height: 120vh;
     }
 
     .title {
@@ -34,6 +20,48 @@
       padding: 2rem 4rem 2.2rem 4rem;
       box-shadow: 0 1rem 2rem 0 rgba(0, 0, 0, 0.1), 0 1rem 2rem 0 rgba(0, 0, 0, 0.1);
     }
+
+
+    .job {
+      border-bottom: 1px solid var(--secondary-color);
+    }
+
+    .description {
+      flex: 1 1 0;
+      width: 40rem;
+      margin: 2rem .3rem 2rem 2rem;
+      font-weight: lighter;
+      min-width: 20rem;
+    }
+    
+    .name {
+      font-size: var(--secondary-fontsize);
+      padding: var(--spacer-sm) var(--spacer-sm) 0 1rem;
+    }
+    
+    .job {
+      font-size: var(--body-fontsize);
+      padding: var(--spacer-sm) var(--spacer-sm) var(--spacer-lg) 1rem;
+    }
+    
+    .text {
+      color: var(--body-color);
+      font-size: var(--body-fontsize);
+      padding: var(--spacer-lg) var(--spacer-sm) var(--spacer-md) 1rem;
+      line-height: 2rem;
+    }
+
+    .card {
+      margin: 4rem 8rem 0 8rem;
+      max-width: 70rem;
+    }
+
+    .image {
+      margin: 2rem;
+      flex: 1 1 1;
+      object-fit: cover;
+      max-height: calc(100vh - 25rem);
+    }
     
     /* Tablet */
     @media only screen and (min-width : 46.8em) {
@@ -43,62 +71,6 @@
     /* Desktop */
     @media only screen and (min-width : 50em) {
 
-      .job {
-        border-bottom: 1px solid white;
-      }
-
-      .body {
-        /* display: flex;
-        flex-direction: row;
-        justify-content: flex-start; */
-      } 
-
-
-
-      
-      .description {
-        flex: 1 1 0;
-        width: 40rem;
-        margin: 2rem .3rem 2rem 2rem;
-        font-weight: lighter;
-      }
-      
-      .name {
-        font-size: var(--secondary-fontsize);
-        padding: var(--spacer-sm) var(--spacer-sm) 0 1rem;
-      }
-      
-      .job {
-        font-size: var(--body-fontsize);
-        padding: var(--spacer-sm) var(--spacer-sm) var(--spacer-lg) 1rem;
-      }
-      
-      .text {
-        color: var(--body-color);
-        font-size: var(--body-fontsize);
-        padding: var(--spacer-lg) var(--spacer-sm) var(--spacer-md) 1rem;
-        line-height: 2rem;
-      }
-
-      .card {
-        margin: 6rem 6rem 0 6rem;
-        max-width: 70rem;
-      }
-
-      .image {
-        margin: 2rem;
-        flex: 1 1 1;
-        object-fit: cover;
-        max-height: calc(100vh - 25rem);
-      }
-
-      .card2head {
-        background-color: var(--sidenav-color);
-        color: var(--font-color);
-        font-size: 2rem;
-        padding: var(--spacer-lg);
-        font-weight: lighter;
-      }
     }
 
     /* XL Desktop */

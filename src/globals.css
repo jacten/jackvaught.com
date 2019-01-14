@@ -2,15 +2,15 @@
 :root {
   /* variables */
   /* colors */
-  --primary-color: rgb(5, 24, 18);
-  --secondary-color: rgb(195, 236, 195);
+  --primary-color: rgb(56, 7, 7);
+  --secondary-color: rgb(246, 255, 118);
   --darker-primary: rgba(110, 110, 110, 0.384);
   --font-color: rgb(243, 243, 243);
   --sidenav-color: rgb(29, 29, 29);
-  --transparent-color: rgba(255, 255, 255, 0.322);
+  --transparent-color: rgba(255, 255, 255, 0.164);
 
-  --border-sm: .27rem solid white;
-  --border-lg: .7rem solid white;
+  --border-sm: .27rem solid var(--secondary-color);
+  --border-lg: .7rem solid var(--secondary-color);
   --border-radius: .5rem;
 
   /* spacing */

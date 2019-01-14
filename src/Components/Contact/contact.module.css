@@ -12,6 +12,29 @@
   box-shadow: 0 1rem 2rem 0 rgba(0, 0, 0, 0.1), 0 1rem 2rem 0 rgba(0, 0, 0, 0.1);
 }
 
+
+.body {
+  height: calc(100vh - 6rem);
+  white-space: nowrap;
+  text-align: center;
+}
+
+.helper {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.img {
+  vertical-align: middle;
+  width: 15%;
+  height: auto;
+  transition: 1s;
+}
+.img:hover {
+  width: 25%;
+  transition: 1s;
+}
 /* Tablet */
     @media only screen and (min-width : 46.8em) {
 
