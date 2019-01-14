@@ -1,5 +1,5 @@
 .container {
-  min-height: 140vh;
+  min-height: 163vh;
 }
 
 .title {
@@ -14,21 +14,19 @@
 
 
 .body {
-  height: calc(100vh - 6rem);
-  white-space: nowrap;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 15rem);
 }
 
-.helper {
-  display: inline-block;
-  height: 100%;
-  vertical-align: middle;
-}
 
 .imgbox {
-  height: auto;
   transition: 1s;
   cursor: copy;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .img {
