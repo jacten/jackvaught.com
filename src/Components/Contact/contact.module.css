@@ -25,15 +25,37 @@
   vertical-align: middle;
 }
 
-.img {
-  vertical-align: middle;
-  width: 15%;
+.imgbox {
   height: auto;
   transition: 1s;
+  cursor: copy;
 }
-.img:hover {
-  width: 25%;
-  transition: 1s;
+
+.img {
+  vertical-align: middle;
+  width: 19%;
+  transition: .3s;
+}
+
+.imgbox:hover .img{
+  width: 20%;
+  transition: .3s;
+}
+
+.email {
+  font-size: 1.9rem;
+  font-weight: lighter;
+  transition: .3s;
+}
+
+.imgbox:hover .email{
+  font-size: 2rem;
+  transition: .3s;
+}
+
+.textarea {
+  height: 0px;
+  opacity: 0;
 }
 /* Tablet */
     @media only screen and (min-width : 46.8em) {
