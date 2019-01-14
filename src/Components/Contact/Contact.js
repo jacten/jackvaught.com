@@ -27,6 +27,7 @@ class Contact extends Component {
         </div>
         <form>
           <textarea
+            readOnly
             className={s.textarea}
             ref={(textarea) => this.textArea = textarea}
             value='johnmvaught@gmail.com'
@@ -36,7 +37,6 @@ class Contact extends Component {
           {/* <div>
              {this.state.copySuccess}
            </div> */}
-          <span className={s.helper}/>
           <div className={s.imgbox}>
             <img className={s.img} src={email} alt={"email me!"}/>
             <span className={s.email}>johnmvaught@gmail.com</span>

@@ -15,7 +15,7 @@ class Home extends Component {
   render() {
     return (
       <div className={s.app}>
-        <div className={s.footer}>
+        <div className={s.header}>
           <Landing />
         </div>
         <div className={s.sidenav}>

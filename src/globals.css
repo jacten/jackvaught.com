@@ -4,6 +4,10 @@
   /* colors */
   --primary-color: rgb(28, 182, 253);
   --secondary-color: rgb(107, 4, 190);
+  --primary-color: rgb(253, 219, 28);
+  --secondary-color: rgb(119, 0, 0);
+  --primary-color: rgb(188, 92, 233);
+  --secondary-color: rgb(199, 151, 19);
   --darker-primary: rgba(110, 110, 110, 0.384);
   --font-color: rgb(243, 243, 243);
   --sidenav-color: rgb(29, 29, 29);
