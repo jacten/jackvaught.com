@@ -9,7 +9,8 @@
     }
 
     .container {
-      min-height: 120vh;
+      min-height: 200vh;
+      margin-bottom: .6rem;
     }
 
     .title {
@@ -65,16 +66,18 @@
     }
     
     /* Tablet */
-    @media only screen and (min-width : 46.8em) {
+    @media only screen and (min-width : 40em) {
 
     }
 
     /* Desktop */
     @media only screen and (min-width : 50em) {
-
+      .container {
+        min-height: 120vh;
+      }
     }
 
     /* XL Desktop */
-    @media only screen and (min-width : 73em) {
+    @media only screen and (min-width : 90em) {
 
     }

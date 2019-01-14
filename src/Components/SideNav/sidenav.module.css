@@ -35,7 +35,7 @@ a {
 
 
 /* Tablet */
-@media only screen and (min-width : 46.8em) {
+@media only screen and (min-width : 40em) {
 
 }
 
@@ -45,6 +45,6 @@ a {
 }
 
 /* XL Desktop */
-@media only screen and (min-width : 73em) {
+@media only screen and (min-width : 90em) {
 
 }

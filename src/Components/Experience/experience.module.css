@@ -1,5 +1,6 @@
 .container {
   min-height: 140vh;
+  margin-bottom: .6rem;
 }
 
 .title {
@@ -13,7 +14,7 @@
 }
 
 /* Tablet */
-    @media only screen and (min-width : 46.8em) {
+    @media only screen and (min-width : 40em) {
 
     }
 
@@ -23,6 +24,6 @@
     }
 
     /* XL Desktop */
-    @media only screen and (min-width : 73em) {
+    @media only screen and (min-width : 90em) {
 
     }
