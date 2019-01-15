@@ -21,12 +21,12 @@
 }
 
 .links {
-  padding-top: 4rem;
-  padding-left: 6rem;
+  padding-top: 2rem;
+  padding-left: 2rem;
 }
 
 .drawer {
-  width: 100vw;
+  width: 14rem;
   height: 100vh;
   transition: .5s;
 }
@@ -51,20 +51,24 @@
 
 a {
   font-weight: lighter;
-  padding: 1rem 4rem;
+  padding: .5rem 2rem;
   text-decoration: none;
-  font-size: 3rem;
+  font-size: 1.5rem;
   color: var(--font-color);
   display: block;
+  transition-delay: 1s;
+  transition: 1s;
 }
 
 .resume {
+  transition-delay: 1s;
+  transition: 1s;
   position: absolute;
   bottom: 0;
-  line-height: 3rem;
-  height: 3rem;
-  margin: 3rem;
-  padding: 1rem 5rem;
+  line-height: 2rem;
+  height: 2rem;
+  margin: 2rem;
+  padding: .5rem 1.75rem;
   border: var(--border-sm);
 }
 
@@ -76,7 +80,7 @@ a {
   }
 
   .drawer {
-    width: 24rem;
+    width: 22rem;
     height: 100vh;
     transition: .5s;
   }
@@ -116,6 +120,10 @@ a {
     margin: 2rem;
     padding: 1rem 2.5rem;
     border: var(--border-sm);
+  }
+  .links {
+    padding-top: 4rem;
+    padding-left: 5rem;
   }
 }
 

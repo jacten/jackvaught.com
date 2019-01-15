@@ -70,7 +70,7 @@ class SideNav extends Component {
             <img src={hamburger} alt={"Links!"} className={s.hamburger} onClick={this.burgerToggle}/>
           }
           {
-            (this.state.drawerOpen || this.state.sideNav) && this.state.showLinks &&
+            ((this.state.drawerOpen && this.state.showLinks) || this.state.sideNav) &&
             <div className={s.links}>
               <a
                 href={"#about"}
