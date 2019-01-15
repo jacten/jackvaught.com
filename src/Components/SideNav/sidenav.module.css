@@ -26,7 +26,7 @@
 }
 
 .drawer {
-  width: 14rem;
+  width: 14.5rem;
   height: 100vh;
   transition: .5s;
 }
@@ -34,7 +34,7 @@
 .drawerTitle {
   position: absolute;
   top: 58vh;
-  left: .7rem;
+  left: .6rem;
   font-size: 1.5rem;
   z-index: 0;
   transform: rotate(-90deg);
@@ -56,7 +56,6 @@ a {
   font-size: 1.5rem;
   color: var(--font-color);
   display: block;
-  transition-delay: 1s;
   transition: 1s;
 }
 
@@ -80,9 +79,7 @@ a {
   }
 
   .drawer {
-    width: 22rem;
-    height: 100vh;
-    transition: .5s;
+    width: 22.5rem;
   }
 
   .hamburger {
@@ -100,27 +97,13 @@ a {
   }
 
   a {
-    font-weight: lighter;
-    padding: .5rem 2rem;
-    text-decoration: none;
     font-size: 2.5rem;
-    color: var(--font-color);
-    display: block;
-    transition-delay: 1s;
-    transition: 1s;
   }
   
   .resume {
-    transition-delay: 1s;
-    transition: 1s;
-    position: absolute;
-    bottom: 0;
-    line-height: 2rem;
-    height: 2rem;
-    margin: 2rem;
     padding: 1rem 2.5rem;
-    border: var(--border-sm);
   }
+
   .links {
     padding-top: 4rem;
     padding-left: 5rem;
@@ -138,7 +121,6 @@ a {
   .container {
     position: sticky;
     top: 0;
-    min-height: 100vh;
     width: 27rem;
   }
   
@@ -148,22 +130,15 @@ a {
   }
   
   a {
-    font-weight: lighter;
     padding: 1rem 4rem;
-    text-decoration: none;
     font-size: 3rem;
-    color: var(--font-color);
-    display: block;
   }
   
   .resume {
-    position: absolute;
-    bottom: 0;
     line-height: 3rem;
     height: 3rem;
     margin: 3rem;
     padding: 1rem 5rem;
-    border: var(--border-sm);
   }
 }
 

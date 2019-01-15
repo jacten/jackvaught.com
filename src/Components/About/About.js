@@ -22,7 +22,7 @@ class About extends Component {
                 Software Engineer
               </div>
               <div className={s.text}>
-                I'm Jack!
+                Yo. I'm Jack!
               </div>
               <div className={s.text}>
                 I am a full stack software engineer based out of Los Angeles. I am currently looking for my next career opportunity!
