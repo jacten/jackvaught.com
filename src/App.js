@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Redirect, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-import Landing from './Components/Landing/Landing';
 import Main from './Components/Main/Main';
 import NotFound from './Components/NotFound/NotFound';
 

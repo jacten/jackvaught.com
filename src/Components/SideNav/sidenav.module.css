@@ -1,47 +1,112 @@
+
+.hamburger {
+  width: 2rem;
+  height: 2rem;
+  margin: auto;
+  display: block;
+  padding-left: .2rem;
+  z-index: 3;
+  position: absolute;
+  top: .3rem;
+  left: .4rem;
+}
+
 .container {
+}
+
+.container, .drawer {
   position: sticky;
   top: 0;
   background-color: var(--sidenav-color);
-  min-height: 100vh;
-  transition: 2s;
-  width: 27rem;
-
+  transition: 1s;
+  width: 3rem;
+  height: 100vh;
 }
 
-.title {
-  font-size: 4rem;
-  padding: 2rem 4rem 6rem 4rem;
+.drawer {
+  width: 100vw;
+  height: 100vh;
+  transition: 1s;
 }
 
-a {
-  font-weight: lighter;
-  padding: 1rem 4rem;
-  text-decoration: none;
-  font-size: 3rem;
-  color: var(--font-color);
-  display: block;
-}
-
-.resume {
+.drawerTitle {
   position: absolute;
-  bottom: 0;
-  line-height: 3rem;
-  height: 3rem;
-  margin: 3rem;
-  padding: 1rem 5rem;
-  border: var(--border-sm);
+  top: 58vh;
+  left: .7rem;
+  font-size: 1.5rem;
+  z-index: 0;
+  transform: rotate(-90deg);
+  transform-origin: 0 0;
+  -webkit-transform-origin: 0 0;
+  -moz-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  -o-transform-origin: 0 0;
+  -webkit-transform: rotate(-90deg); 
+  -moz-transform: rotate(-90deg); 
+  -ms-transform: rotate(-90deg); 
+  -o-transform: rotate(-90deg); 
 }
-
 
 
 /* Tablet */
-@media only screen and (min-width : 40em) {
+@media only screen and (min-width : 30em) {
+  .container, .drawer {
+    width: 6rem;
+  }
 
+  .drawerTitle {
+    width: 30vw;
+    height: 100vh;
+    transition: 1s;
+  }
+
+  .hamburger {
+    width: 4rem;
+    height: 4rem;
+    top: .6rem;
+    left: 1rem;
+  }
+
+  .drawerTitle{
+    font-size: 2.8rem;
+    position: absolute;
+    top: 60vh;
+    left: 1.3rem;
+  }
 }
 
 /* Desktop */
 @media only screen and (min-width : 50em) {
- 
+  .container {
+    position: sticky;
+    top: 0;
+    min-height: 100vh;
+    width: 27rem;
+  }
+  
+  .title {
+    font-size: 4rem;
+    padding: 2rem 4rem 6rem 4rem;
+  }
+  
+  a {
+    font-weight: lighter;
+    padding: 1rem 4rem;
+    text-decoration: none;
+    font-size: 3rem;
+    color: var(--font-color);
+    display: block;
+  }
+  
+  .resume {
+    position: absolute;
+    bottom: 0;
+    line-height: 3rem;
+    height: 3rem;
+    margin: 3rem;
+    padding: 1rem 5rem;
+    border: var(--border-sm);
+  }
 }
 
 /* XL Desktop */
