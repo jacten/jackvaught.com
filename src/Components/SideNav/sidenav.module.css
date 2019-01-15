@@ -11,9 +11,6 @@
   left: .4rem;
 }
 
-.container {
-}
-
 .container, .drawer {
   position: sticky;
   top: 0;
@@ -47,6 +44,25 @@
   -o-transform: rotate(-90deg); 
 }
 
+a {
+  font-weight: lighter;
+  padding: 1rem 4rem;
+  text-decoration: none;
+  font-size: 3rem;
+  color: var(--font-color);
+  display: block;
+}
+
+.resume {
+  position: absolute;
+  bottom: 0;
+  line-height: 3rem;
+  height: 3rem;
+  margin: 3rem;
+  padding: 1rem 5rem;
+  border: var(--border-sm);
+}
+
 
 /* Tablet */
 @media only screen and (min-width : 30em) {
@@ -54,7 +70,7 @@
     width: 6rem;
   }
 
-  .drawerTitle {
+  .drawer {
     width: 30vw;
     height: 100vh;
     transition: 1s;
