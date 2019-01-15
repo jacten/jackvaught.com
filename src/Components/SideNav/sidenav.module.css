@@ -15,15 +15,20 @@
   position: sticky;
   top: 0;
   background-color: var(--sidenav-color);
-  transition: 1s;
+  transition: .5s;
   width: 3rem;
   height: 100vh;
+}
+
+.links {
+  padding-top: 4rem;
+  padding-left: 6rem;
 }
 
 .drawer {
   width: 100vw;
   height: 100vh;
-  transition: 1s;
+  transition: .5s;
 }
 
 .drawerTitle {
@@ -71,9 +76,9 @@ a {
   }
 
   .drawer {
-    width: 30vw;
+    width: 24rem;
     height: 100vh;
-    transition: 1s;
+    transition: .5s;
   }
 
   .hamburger {
@@ -89,10 +94,39 @@ a {
     top: 60vh;
     left: 1.3rem;
   }
+
+  a {
+    font-weight: lighter;
+    padding: .5rem 2rem;
+    text-decoration: none;
+    font-size: 2.5rem;
+    color: var(--font-color);
+    display: block;
+    transition-delay: 1s;
+    transition: 1s;
+  }
+  
+  .resume {
+    transition-delay: 1s;
+    transition: 1s;
+    position: absolute;
+    bottom: 0;
+    line-height: 2rem;
+    height: 2rem;
+    margin: 2rem;
+    padding: 1rem 2.5rem;
+    border: var(--border-sm);
+  }
 }
 
 /* Desktop */
 @media only screen and (min-width : 50em) {
+
+  .links {
+    padding-top: 0rem;
+    padding-left: 0rem;
+  }
+
   .container {
     position: sticky;
     top: 0;

@@ -12,6 +12,7 @@ class SideNav extends Component {
       hover: null,
       sideNav: false,
       drawerOpen: false,
+      showLinks: false,
     };
 
     this.navNarrow = React.createRef();
@@ -51,12 +52,17 @@ class SideNav extends Component {
       this.setState({
         drawerOpen: !this.state.drawerOpen,
       })
+      setTimeout(() => {
+        this.setState({
+          showLinks: this.state.drawerOpen,
+        })
+      },500)
     }
   }
   
   render() {
     return (
-      <nav className={this.state.drawerOpen ? s.drawer : s.container}>
+      <nav onClick={this.burgerToggle} className={this.state.drawerOpen ? s.drawer : s.container}>
             <div className={!this.state.sideNav ? s.drawerTitle : s.title}>jackvaught</div>
             <div className={s.navContainer}>
           {
@@ -64,8 +70,8 @@ class SideNav extends Component {
             <img src={hamburger} alt={"Links!"} className={s.hamburger} onClick={this.burgerToggle}/>
           }
           {
-            (this.state.drawerOpen || this.state.sideNav) &&
-            <div className={s.narrowLinks}>
+            (this.state.drawerOpen || this.state.sideNav) && this.state.showLinks &&
+            <div className={s.links}>
               <a
                 href={"#about"}
                 onClick={this.burgerToggle}
