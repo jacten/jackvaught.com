@@ -6,12 +6,12 @@
   --secondary-color: rgb(107, 4, 190);
   --primary-color: rgb(253, 219, 28);
   --secondary-color: rgb(228, 11, 11);
-  --primary-color: rgb(255, 0, 21);
-  --secondary-color: rgb(187, 255, 0);
+  --primary-color: rgb(0, 89, 255);
+  --secondary-color: rgb(190, 48, 48);
   --darker-primary: rgba(110, 110, 110, 0.384);
   --font-color: rgb(243, 243, 243);
   --sidenav-color: rgb(29, 29, 29);
-  --transparent-color: rgba(255, 255, 255, 0.164);
+  --transparent-color: rgba(255, 255, 255, 0.322);
 
   --border-sm: .2rem solid var(--secondary-color);
   --border-lg: .7rem solid var(--secondary-color);

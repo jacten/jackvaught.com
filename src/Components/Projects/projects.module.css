@@ -3,28 +3,17 @@
   margin-bottom: .6rem;
 }
 
-.title {
-  z-index: 1;
-  position: sticky;
-  top: 0;
-  color: var(--font-color);
-  background-color: var(--transparent-color);
-  font-size: 4rem;
-  padding: 2rem 4rem 2.2rem 4rem;
-  box-shadow: var(--box-shadow);
+/* Tablet */
+@media only screen and (min-width : 30em) {
+
 }
-    
-    /* Tablet */
-    @media only screen and (min-width : 40em) {
 
-    }
+/* Desktop */
+@media only screen and (min-width : 50em) {
 
-    /* Desktop */
-    @media only screen and (min-width : 50em) {
+}
 
-    }
+/* XL Desktop */
+@media only screen and (min-width : 90em) {
 
-    /* XL Desktop */
-    @media only screen and (min-width : 90em) {
-
-    }
+}
