@@ -121,24 +121,24 @@ a {
   .container {
     position: sticky;
     top: 0;
-    width: 27rem;
+    width: 20.5rem;
   }
   
   .title {
-    font-size: 4rem;
-    padding: 2rem 4rem 6rem 4rem;
+    font-size: 3rem;
+    padding: 1.8rem 3rem 6rem 3rem;
   }
   
   a {
-    padding: 1rem 4rem;
-    font-size: 3rem;
+    padding: 1rem 3rem;
+    font-size: 2.5rem;
   }
   
   .resume {
     line-height: 3rem;
     height: 3rem;
     margin: 3rem;
-    padding: 1rem 5rem;
+    padding: 1rem 3rem;
   }
 }
 

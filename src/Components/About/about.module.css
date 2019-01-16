@@ -9,20 +9,9 @@
     }
 
     .container {
-      min-height: 200vh;
+      min-height: 100vh;
       margin-bottom: .6rem;
     }
-
-    .title {
-      position: sticky;
-      top: 0;
-      color: var(--font-color);
-      background-color: var(--transparent-color);
-      font-size: 4rem;
-      padding: 2rem 4rem 2.2rem 4rem;
-      box-shadow: var(--box-shadow);
-    }
-
 
     .job {
       border-bottom: 1px solid var(--secondary-color);
@@ -30,54 +19,105 @@
 
     .description {
       flex: 1 1 0;
-      width: 40rem;
-      margin: 2rem .3rem 2rem 2rem;
+      margin: 1rem;
       font-weight: lighter;
-      min-width: 20rem;
     }
     
     .name {
-      font-size: var(--secondary-fontsize);
+      font-size: var(--secondary-fontsize-sm);
       padding: var(--spacer-sm) var(--spacer-sm) 0 1rem;
     }
     
     .job {
-      font-size: var(--body-fontsize);
+      font-size: var(--body-fontsize-sm);
       padding: var(--spacer-sm) var(--spacer-sm) var(--spacer-lg) 1rem;
     }
     
     .text {
+      margin-top: 1.5rem;
       color: var(--body-color);
-      font-size: var(--body-fontsize);
-      padding: var(--spacer-lg) var(--spacer-sm) var(--spacer-md) 1rem;
-      line-height: 2rem;
+      font-size: var(--body-fontsize-sm);
+      padding: var(--spacer-sm);
+      line-height: 1.5rem;
     }
 
     .card {
-      margin: 4rem 8rem 0rem 8rem;
-      max-width: 70rem;
+      margin: 2rem auto 0 auto;
+      max-width: 90%;
     }
 
     .image {
-      margin: 2rem;
+      margin: 1rem;
       flex: 1 1 1;
       object-fit: cover;
-      max-height: calc(100vh - 25rem);
+      max-height: 30rem;
+      max-width: 30rem;
     }
     
-    /* Tablet */
-    @media only screen and (min-width : 40em) {
+/* Tablet */
+@media only screen and (min-width : 30em) {
+  .container {
+    min-height: 200vh;
+    margin-bottom: .6rem;
+  }
+  .image {
+    margin: 2rem;
+    max-height: 40rem;
+    max-width: 40rem;
+  }
+  .card {
+    margin: 4rem auto 0 auto;
+    max-width: 90%;
+  }
+  .name {
+    font-size: var(--secondary-fontsize-md);
+  }
+  
+  .job {
+    font-size: var(--body-fontsize-md);
+  }
+  
+  .text {
+    font-size: var(--body-fontsize-md);
+    line-height: 2rem;
+  }
 
-    }
+}
 
-    /* Desktop */
-    @media only screen and (min-width : 50em) {
-      .container {
-        min-height: 120vh;
-      }
-    }
+/* Desktop */
+@media only screen and (min-width : 50em) {
+  .container {
+    min-height: 110vh;
+  }
+  .card {
+    padding: 2rem;
+    max-width: 80%;
+  }
+  .name {
+    font-size: var(--secondary-fontsize-lg);
+  }
+  
+  .job {
+    font-size: var(--body-fontsize-lg);
+  }
+  
+  .text {
+    font-size: var(--body-fontsize-lg);
+    line-height: 2rem;
+  }
+}
 
-    /* XL Desktop */
-    @media only screen and (min-width : 90em) {
+/* Desktop */
+@media only screen and (min-width : 60em) {
+  .card {
+    max-width: 70%;
+  }
+}
 
-    }
+/* XL Desktop */
+@media only screen and (min-width : 90em) {
+  .card {
+    margin: 10rem auto 0 auto;
+    max-width: 60%;
+  }
+}

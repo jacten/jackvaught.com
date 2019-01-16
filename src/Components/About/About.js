@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import Title from '../Title/Title.js';
 import s from './about.module.css';
-import jack2 from '../../Assets/jack2.jpg';
+import jack from '../../Assets/jack.jpg';
 
 class About extends Component {
 
@@ -35,7 +35,7 @@ class About extends Component {
             <img 
               alt={'jack vaught should be here...'} 
               className={s.image}
-              src={jack2} />
+              src={jack} />
           </div>
         </div>
       </div>
