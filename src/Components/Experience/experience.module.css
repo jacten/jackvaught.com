@@ -3,13 +3,59 @@
   margin-bottom: .6rem;
 }
 
-.body {
+.card {
+  background-color: var(--transparent-color-dark);
+  color: var(--font-color);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  justify-content: flex-start;
+  margin: 2rem;
+  margin-top: 2rem;
+  max-width: 90%;
+  border: var(--border-sm);
+  overflow: hidden;
+}
+
+.sideNav {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  max-height: 90vh;
+  justify-content: flex-start;
+  align-items: center;
+  border-right: var(--border-sm);
+  height: 60vh;
+  padding-bottom: 6rem;
+}
+
+.buttonBox {
+  transition: .5s;
+  height: 2rem;
+  margin-top: 8rem;
+}
+
+.button {
+  cursor: pointer;
+  width: 24rem;
+  padding: 2rem 2rem 2rem 3rem;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  margin: 1rem;
+  font-size: var(--title-fontsize-sm);
+  border-radius: var(--border-radius);
+  background-color: var(--sidenav-color);
+  transition: .2s linear;
+  color: var(--font-color);
+  /* border: var(--border-sm); */
+  box-shadow: var(--box-shadow);
+}
+
+.button:hover {
+  transition: .2s linear;
+  top: 1rem;
+  margin-top: .2rem;
+  margin-bottom: 1.2rem;
 }
 
 /* Tablet */

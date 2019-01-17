@@ -9,6 +9,9 @@
   justify-content: center;
   padding: 2rem;
   margin: 2rem;
+  margin-top: 2rem;
+  max-width: 90%;
+  border: var(--border-sm);
 }
 
 .container {
@@ -46,9 +49,7 @@
 }
 
 .card {
-  margin-top: 2rem;
-  max-width: 90%;
-  border: var(--border-sm);
+
 }
 
 .image {

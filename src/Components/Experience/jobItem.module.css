@@ -13,7 +13,7 @@
   line-height: 2rem;
   margin: 1rem;
   font-size: var(--title-fontsize-sm);
-  background-color: var(--sidenav-color);
+  background-color: transparent;
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
   transition: .2s linear;
