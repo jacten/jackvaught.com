@@ -3,19 +3,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 3rem;
-  height: 8rem;
+  margin-left: 2rem;
+  height: 6rem;
 }
 
 
 .card {
   cursor: pointer;
-  width: 40rem;
-  height: 4rem;
-  padding: 2rem;
-  padding-left: 4rem;
+  width: 22rem;
+  height: 2rem;
+  padding: 2rem 2rem 2rem 3rem;
+  line-height: 2rem;
   margin: 1rem;
-  font-size: var(--title-fontsize-md);
+  font-size: var(--title-fontsize-sm);
   background-color: var(--sidenav-color);
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
@@ -28,4 +28,47 @@
   top: 1rem;
   margin-top: .2rem;
   margin-bottom: 1.2rem;
+}
+
+/* Tablet */
+@media only screen and (min-width : 30em) {
+  .container {
+    margin-top: 6rem;
+    margin-left: 3rem;
+    height: 6rem;
+  }
+
+  .card {
+    width: 40rem;
+    height: 4rem;
+    line-height: 4rem;
+    padding: 2rem;
+    padding-left: 4rem;
+    margin: 1rem;
+    font-size: var(--title-fontsize-md);
+  }
+}
+
+/* Desktop */
+@media only screen and (min-width : 50em) {
+
+}
+
+/* XL Desktop */
+@media only screen and (min-width : 90em) {
+  .container {
+    margin-top: 8rem;
+    margin-left: 3rem;
+    height: 8rem;
+  }
+
+  .card {
+    width: 60rem;
+    height: 6rem;
+    line-height: 6rem;
+    padding: 2.5rem;
+    padding-left: 6rem;
+    margin: 1rem;
+    font-size: var(--title-fontsize-lg);
+  }
 }
