@@ -28,9 +28,7 @@ class About extends Component {
               <div className={s.text}>
                 I was born in Indiana, raised in Chicago (well really Evanston), and have lived on the West Coast for the past seven years.
               </div>
-              <div className={s.text}>
-              I have a Russian wife and two Russian Blue Cats (not pictured). I enjoy cooking, NBA basketball, and Rocket League. 
-              </div>
+              <div className={s.text}>I have a Russian wife and two Russian Blue Cats (not pictured). I enjoy cooking, NBA basketball, and Rocket League. </div>
             </div>
             <img 
               alt={'jack vaught should be here...'} 

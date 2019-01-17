@@ -52,6 +52,11 @@ class SideNav extends Component {
       this.setState({
         drawerOpen: !this.state.drawerOpen,
       })
+      if (!!this.state.hover) {
+        this.setState({
+          hover: null,
+        })
+      }
       setTimeout(() => {
         this.setState({
           showLinks: this.state.drawerOpen,
