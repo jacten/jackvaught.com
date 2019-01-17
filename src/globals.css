@@ -4,8 +4,10 @@
   /* colors */
   --primary-color: rgb(28, 182, 253);
   --secondary-color: rgb(107, 4, 190);
-  --primary-color: rgb(0, 140, 255);
-  --secondary-color: rgb(142, 255, 67);
+  /* --primary-color: rgb(140, 0, 255);
+  --secondary-color: rgb(66, 85, 255); */
+  /* --primary-color: rgb(0, 140, 255);
+  --secondary-color: rgb(142, 255, 67); */
   /* --primary-color: rgb(0, 89, 255);
   --secondary-color: rgb(190, 48, 48); */
   --darker-primary: rgba(110, 110, 110, 0.384);
@@ -15,7 +17,7 @@
 
   --border-sm: .2rem solid var(--secondary-color);
   --border-lg: .7rem solid var(--secondary-color);
-  --border-radius: .5rem;
+  --border-radius: 5rem;
 
   --box-shadow: 0 .2rem .4rem 0 rgba(0, 0, 0, 0.055), 0 .2rem .4rem 0 rgba(0, 0, 0, 0.062);
 

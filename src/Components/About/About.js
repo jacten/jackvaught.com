@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import Title from '../Title/Title.js';
 import s from './about.module.css';
-import jack from '../../Assets/jack.jpg';
+import jack from '../../Assets/jack2.jpg';
 
 class About extends Component {
 

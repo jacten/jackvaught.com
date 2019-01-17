@@ -1,64 +1,72 @@
-    .card {
-      background-color: var(--sidenav-color);
-      color: var(--font-color);
-      display: flex;
-      flex-direction: row;
-      border-radius: var(--border-radius);
-      flex-wrap: wrap;
-      box-shadow: var(--box-shadow);
-    }
+.card {
+  background-color: var(--sidenav-color);
+  color: var(--font-color);
+  display: flex;
+  flex-direction: row;
+  border-radius: var(--border-radius);
+  flex-wrap: wrap;
+  box-shadow: var(--box-shadow);
+}
 
-    .container {
-      min-height: 100vh;
-      margin-bottom: .6rem;
-    }
+.container {
+  min-height: 100vh;
+  margin-bottom: .6rem;
+  max-width: calc(100vw - 3rem);
+}
 
-    .job {
-      border-bottom: 1px solid var(--secondary-color);
-    }
+.job {
+  border-bottom: 1px solid var(--secondary-color);
+}
 
-    .description {
-      flex: 1 1 0;
-      margin: 1rem;
-      font-weight: lighter;
-    }
-    
-    .name {
-      font-size: var(--secondary-fontsize-sm);
-      padding: var(--spacer-sm) var(--spacer-sm) 0 1rem;
-    }
-    
-    .job {
-      font-size: var(--body-fontsize-sm);
-      padding: var(--spacer-sm) var(--spacer-sm) var(--spacer-lg) 1rem;
-    }
-    
-    .text {
-      margin-top: 1.5rem;
-      color: var(--body-color);
-      font-size: var(--body-fontsize-sm);
-      padding: var(--spacer-sm);
-      line-height: 1.5rem;
-    }
+.description {
+  flex: 1 1 0;
+  margin: 1rem;
+  font-weight: lighter;
+}
 
-    .card {
-      margin: 2rem auto 0 auto;
-      max-width: 90%;
-    }
+.name {
+  font-size: var(--secondary-fontsize-sm);
+  padding: var(--spacer-sm) var(--spacer-sm) 0 1rem;
+}
 
-    .image {
-      margin: 1rem;
-      flex: 1 1 1;
-      object-fit: cover;
-      max-height: 30rem;
-      max-width: 30rem;
-    }
-    
+.job {
+  font-size: var(--body-fontsize-sm);
+  padding: var(--spacer-sm) var(--spacer-sm) var(--spacer-lg) 1rem;
+}
+
+.text {
+  margin-top: 1.5rem;
+  color: var(--body-color);
+  font-size: var(--body-fontsize-sm);
+  padding: var(--spacer-sm);
+  line-height: 1.5rem;
+}
+
+.card {
+  margin-top: 2rem;
+  max-width: 90%;
+  border: var(--border-sm);
+}
+
+.image {
+  margin: 1rem;
+  flex: 1 1 1;
+  object-fit: cover;
+  max-height: 30rem;
+  max-width: 30rem;
+}
+
+.body {
+  display: flex;
+  justify-content: center;
+}
+
 /* Tablet */
 @media only screen and (min-width : 30em) {
   .container {
     min-height: 200vh;
     margin-bottom: .6rem;
+    max-width: calc(100vw - 6rem);
   }
   .image {
     margin: 2rem;
@@ -66,7 +74,7 @@
     max-width: 40rem;
   }
   .card {
-    margin: 4rem auto 0 auto;
+    margin-top: 4rem;
     max-width: 90%;
   }
   .name {
@@ -88,6 +96,7 @@
 @media only screen and (min-width : 50em) {
   .container {
     min-height: 110vh;
+    max-width: calc(100vw - 20rem);
   }
   .card {
     padding: 2rem;
@@ -117,7 +126,7 @@
 /* XL Desktop */
 @media only screen and (min-width : 90em) {
   .card {
-    margin: 10rem auto 0 auto;
+    margin-top: 10rem;
     max-width: 60%;
   }
 }

@@ -3,6 +3,13 @@
   margin-bottom: .6rem;
 }
 
+.body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
 /* Tablet */
 @media only screen and (min-width : 30em) {
 
