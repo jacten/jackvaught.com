@@ -34,8 +34,8 @@ class Experience extends Component {
         <Title page={'experience'}/>
         <div className={s.body}>
           {
-            jobData.map(item => {
-              return <JobItem job={item}/>
+            jobData.map((item, index) => {
+              return <JobItem job={item} key={index}/>
             })
           }
         </div>

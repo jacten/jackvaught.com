@@ -14,8 +14,6 @@ class SideNav extends Component {
       drawerOpen: false,
       showLinks: false,
     };
-
-    this.navNarrow = React.createRef();
   }
 
   handleMouseEnter = (link) => {

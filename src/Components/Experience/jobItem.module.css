@@ -1,10 +1,7 @@
 .container {
   margin-top: 3rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin-left: 2rem;
-  height: 6rem;
+  transition: .5s;
 }
 
 
@@ -28,6 +25,17 @@
   top: 1rem;
   margin-top: .2rem;
   margin-bottom: 1.2rem;
+}
+
+.expanded .card {
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 20rem;
+}
+
+
+.expanded.container {
+  height: 22rem;
 }
 
 /* Tablet */
