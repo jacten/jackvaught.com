@@ -4,7 +4,7 @@ import linkIcon from '../../Assets/link.png';
 import s from './job.module.css';
 
 const Job = ({item}) => {
-  const {company, title, dates, location, bullets, link}= item;
+  const {company, title, dates, location, bullets, link} = item;
   return (
     <div className={s.container}>
       <div className={s.header}>

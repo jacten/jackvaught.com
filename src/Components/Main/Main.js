@@ -16,6 +16,8 @@ const colorTheme = [
   'theme3',
   'theme4',
   'theme5',
+  'theme6',
+  'theme7'
 ];
 
 class Home extends Component {
@@ -29,13 +31,13 @@ class Home extends Component {
 
   componentDidMount = () => {
     this.setState({
-      theme: Math.floor(Math.random() * 5),
+      theme: Math.floor(Math.random() * colorTheme.length),
     })
   }
 
   changeColors = () => {
     this.setState({
-      theme: ((this.state.theme + 1) % 5)
+      theme: ((this.state.theme + 1) % colorTheme.length)
     })
   }
 
