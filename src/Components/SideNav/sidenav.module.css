@@ -59,6 +59,10 @@ a {
   transition: 1s;
 }
 
+.title {
+  color: var(--font-color);
+}
+
 .resume {
   transition-delay: 1s;
   transition: 1s;
@@ -70,6 +74,17 @@ a {
   padding: .5rem 1.75rem;
   border: var(--border-sm);
   border-radius: var(--border-radius);
+}
+
+.colors {
+  width: 4rem;
+  height: 4rem;
+  margin: auto;
+  display: block;
+  margin-left: 8rem;
+  z-index: 3;
+  position: absolute;
+  bottom: 13rem;
 }
 
 

@@ -10,15 +10,37 @@ import Footer from '../Footer/Footer';
 
 import s from './main.module.css';
 
+const colorTheme = [
+  'theme1',
+  'theme2',
+  'theme3',
+  'theme4',
+  'theme5',
+];
+
 class Home extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = { 
+      theme: '0',
+    };
+  }
+
+  changeColors = () => {
+    this.setState({
+      theme: ((this.state.theme + 1) % 5)
+    })
+  }
+
   render() {
     return (
-      <div className={s.app}>
+      <div className={`${s.app} ${colorTheme[this.state.theme]}`}>
         <div className={s.header}>
           <Landing />
         </div>
         <div className={s.sidenav}>
-          <SideNav/>
+          <SideNav changeColors={this.changeColors}/>
         </div>
         <div className={s.main}>
           <About/>

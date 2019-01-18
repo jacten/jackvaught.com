@@ -30,7 +30,7 @@ class Experience extends Component {
           {
             jobData.map((job, index) => {
               return (
-                <div className={s.buttonBox}>
+                <div className={s.buttonBox} key={index}>
                   <div 
                     className={s.button} 
                     onClick={() => this.handleJobClick(index)} 

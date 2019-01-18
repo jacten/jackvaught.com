@@ -66,7 +66,7 @@ class SideNav extends Component {
   render() {
     return (
       <nav onClick={this.burgerToggle} className={this.state.drawerOpen ? s.drawer : s.container}>
-            <div className={!this.state.sideNav ? s.drawerTitle : s.title}>jackvaught</div>
+            <div onClick={this.props.changeColors} className={!this.state.sideNav ? s.drawerTitle : s.title}>jackvaught</div>
             <div className={s.navContainer}>
           {
             !this.state.sideNav && 

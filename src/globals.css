@@ -2,22 +2,13 @@
 :root {
   /* variables */
   /* colors */
-  --primary-color: rgb(28, 182, 253);
-  --secondary-color: rgb(107, 4, 190);
-  --primary-color: rgb(140, 0, 255);
-  --secondary-color: rgb(66, 85, 255);
-  /* --primary-color: rgb(0, 140, 255);
-  --secondary-color: rgb(142, 255, 67); */
-  --primary-color: rgb(27, 67, 141);
-  --secondary-color: rgb(48, 190, 147);
-  --darker-primary: rgb(73, 121, 87);
   --font-color: rgb(243, 243, 243);
   --sidenav-color: rgb(29, 29, 29);
   --transparent-color: rgba(255, 255, 255, 0.322);
   --transparent-color-dark: rgba(0, 0, 0, 0.452);
-
-  --border-sm: .2rem solid var(--secondary-color);
-  --border-lg: .7rem solid var(--secondary-color);
+  --primary-color: rgb(140, 0, 255);
+  --secondary-color: rgb(66, 85, 255);
+  --darker-primary: rgb(94, 31, 119);
   --border-radius: 5rem;
 
   --box-shadow: 0 .2rem .4rem 0 rgba(0, 0, 0, 0.055), 0 .2rem .4rem 0 rgba(0, 0, 0, 0.062);
@@ -47,6 +38,57 @@
   font-size: 62.5%; /* 1rem === 10px */
 }
 
+.theme1 {
+  --primary-color: rgb(140, 0, 255);
+  --secondary-color: rgb(32, 72, 173);
+  --darker-primary: rgb(94, 31, 119);
+  --border-sm: .1rem solid var(--secondary-color);
+  --border-lg: .7rem solid var(--secondary-color);
+  background: radial-gradient(circle, var(--primary-color) 0%, var(--secondary-color) 100%);
+  background-attachment: fixed;
+}
+
+.theme2 {
+  --primary-color: rgb(0, 140, 255);
+  --secondary-color: rgb(189, 228, 163);
+  --darker-primary: rgb(31, 69, 119);
+  --border-sm: .1rem solid var(--secondary-color);
+  --border-lg: .7rem solid var(--secondary-color);
+  background: radial-gradient(circle, var(--primary-color) 0%, var(--secondary-color) 100%);
+  background-attachment: fixed;
+}
+
+.theme3 {
+  --primary-color: rgb(255, 251, 0);
+  --secondary-color: rgb(177, 35, 177);
+  --darker-primary: rgb(119, 106, 31);
+  --border-sm: .1rem solid var(--secondary-color);
+  --border-lg: .7rem solid var(--secondary-color);
+  background: radial-gradient(circle, var(--primary-color) 0%, var(--secondary-color) 100%);
+  background-attachment: fixed;
+}
+
+.theme4 {
+  --primary-color: rgb(175, 29, 29);
+  --secondary-color: rgb(202, 202, 202);
+  --darker-primary: rgb(24, 24, 24);
+  --border-sm: .1rem solid var(--secondary-color);
+  --border-lg: .7rem solid var(--secondary-color);
+  background: radial-gradient(circle, var(--primary-color) 0%, var(--secondary-color) 100%);
+  background-attachment: fixed;
+}
+
+.theme5 {
+  --primary-color: rgb(27, 67, 141);
+  --secondary-color: rgb(48, 190, 147);
+  --darker-primary: rgb(73, 121, 87);
+  --border-sm: .1rem solid var(--secondary-color);
+  --border-lg: .7rem solid var(--secondary-color);
+  background: radial-gradient(circle, var(--primary-color) 0%, var(--secondary-color) 100%);
+  background-attachment: fixed;
+}
+
+
 html {
   scroll-behavior: smooth;
 }
@@ -60,9 +102,7 @@ body {
   height: 100vh;
   width: 100vw;
   font-family: sans-serif;
-  background: var(--primary-color);
-  background: radial-gradient(circle, var(--primary-color) 0%, var(--secondary-color) 100%);
-  background-attachment: fixed;
+  background: grey;
 }
 
 a {
@@ -71,7 +111,6 @@ a {
 
 
 /* Media Querie Template */
-/* Media querie ems came from http://bradfrost.com/blog/post/7-habits-of-highly-effective-media-queries/ */
 
     /* Tablet */
     @media only screen and (min-width : 46.8em) {
