@@ -24,15 +24,15 @@
   /* sm */
   --title-fontsize-sm: 2rem;
   --secondary-fontsize-sm: 1.8rem;
-  --body-fontsize-sm: 1.3rem;
+  --body-fontsize-sm: 1.5rem;
   /* md */
   --title-fontsize-md: 3rem;
   --secondary-fontsize-md: 2.1rem;
-  --body-fontsize-md: 1.4rem;
+  --body-fontsize-md: 1.6rem;
   /* lg */
   --title-fontsize-lg: 4rem;
   --secondary-fontsize-lg: 2.4rem;
-  --body-fontsize-lg: 1.5rem;
+  --body-fontsize-lg: 1.7rem;
 
 
   /* defaults */
