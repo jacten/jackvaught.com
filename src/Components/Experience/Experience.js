@@ -61,6 +61,7 @@ const jobData = [
       'Built out superdeluxe.com/watch and redesigned apps.superdeluxe.com pages and maintained main website',
       'Deployed staging server for live-kit API and established better tech to user development pipeline through improved release management, new feature demos, and weekly feedback meetings'
     ],
+    link: 'https://en.wikipedia.org/wiki/Super_Deluxe',
   },
   {
     company: 'Edmunds.com, Inc',
@@ -72,6 +73,7 @@ const jobData = [
       'Improved UX of new and legacy data entry/publishing systems with offshore development team',
       'Improved efficiency by analyzing year-to-date performance using SQL queries',
     ],
+    link: 'https://www.edmunds.com/',
   },
   {
     company: 'Northwestern University',
@@ -82,5 +84,6 @@ const jobData = [
       'Managed data migration from internal server to box.com',
       'Set up Mobile Device Management (MDM) systems on hundreds of iPads',
     ],
+    link: 'https://www.sesp.northwestern.edu/',
   },
 ];

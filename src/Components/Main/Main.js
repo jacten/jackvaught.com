@@ -23,8 +23,14 @@ class Home extends Component {
     super(props);
 
     this.state = { 
-      theme: '0',
+      theme: null,
     };
+  }
+
+  componentDidMount = () => {
+    this.setState({
+      theme: Math.floor(Math.random() * 5),
+    })
   }
 
   changeColors = () => {

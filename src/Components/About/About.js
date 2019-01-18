@@ -20,15 +20,15 @@ class About extends Component {
                 Software Engineer
               </div>
               <div className={s.text}>
-                Yo. I'm Jack!
+                Yo. I'm Jack! I am a full stack software engineer based out of Los Angeles.
               </div>
               <div className={s.text}>
-                I am a full stack software engineer based out of Los Angeles. I am currently looking for my next career opportunity!
+                I have always been a creative person. From music production, to writing screenplays, and now to designing and building unique web apps without relying on other libraries. 
               </div>
-              <div className={s.text}>
-                I was born in Indiana, raised in Chicago (well really Evanston), and have lived on the West Coast for the past seven years.
+              <div className={s.text}>I am also a very logical person. I have always been good at math and nearly went to law school. This sort of logical deduciton allows me to quickly understand new techonology and solve complex problems.
               </div>
-              <div className={s.text}>I have a Russian wife and two Russian Blue Cats (not pictured). I enjoy cooking, NBA basketball, and Rocket League. </div>
+            <div className={s.text}>When I am not coding, I enjoy cooking, NBA basketball, and Rocket League.
+            </div>
             </div>
             <img 
               alt={'jack vaught should be here...'} 

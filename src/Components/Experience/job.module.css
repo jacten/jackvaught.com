@@ -37,3 +37,24 @@
   padding: 1rem;
   line-height: 2rem;
 }
+
+.a {
+  width: 3rem;
+  height: 3rem;
+  float: right;
+}
+.link {
+  width: 3rem;
+  height: 3rem;
+  float: right;
+  transition: .5s;
+  border-radius: var(--border-radius);
+  padding: 1rem;
+  border: .1rem solid transparent;
+}
+
+.link:hover {
+  border: var(--border-sm);
+  transition: .5s;
+
+}

@@ -40,7 +40,7 @@
 
 .theme1 {
   --primary-color: rgb(140, 0, 255);
-  --secondary-color: rgb(32, 72, 173);
+  --secondary-color: rgb(110, 151, 255);
   --darker-primary: rgb(94, 31, 119);
   --border-sm: .1rem solid var(--secondary-color);
   --border-lg: .7rem solid var(--secondary-color);
@@ -60,7 +60,7 @@
 
 .theme3 {
   --primary-color: rgb(255, 251, 0);
-  --secondary-color: rgb(177, 35, 177);
+  --secondary-color: rgb(180, 86, 180);
   --darker-primary: rgb(119, 106, 31);
   --border-sm: .1rem solid var(--secondary-color);
   --border-lg: .7rem solid var(--secondary-color);
@@ -69,7 +69,7 @@
 }
 
 .theme4 {
-  --primary-color: rgb(175, 29, 29);
+  --primary-color: rgb(65, 65, 65);
   --secondary-color: rgb(202, 202, 202);
   --darker-primary: rgb(24, 24, 24);
   --border-sm: .1rem solid var(--secondary-color);
@@ -80,7 +80,7 @@
 
 .theme5 {
   --primary-color: rgb(27, 67, 141);
-  --secondary-color: rgb(48, 190, 147);
+  --secondary-color: rgb(90, 194, 163);
   --darker-primary: rgb(73, 121, 87);
   --border-sm: .1rem solid var(--secondary-color);
   --border-lg: .7rem solid var(--secondary-color);
