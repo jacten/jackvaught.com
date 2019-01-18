@@ -1,6 +1,7 @@
 .container {
   min-height: 100vh;
   margin-bottom: .6rem;
+  max-width: calc(100vw - 3rem);
 }
 
 .card {
@@ -12,38 +13,43 @@
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
   justify-content: flex-start;
-  margin: 2rem;
-  margin-top: 2rem;
-  max-width: 90%;
+  margin: 1rem;
+  max-width: 100%;
   border: var(--border-sm);
   overflow: hidden;
 }
 
 .sideNav {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: flex-start;
+  flex-wrap: nowrap;
   align-items: center;
-  min-height: 60vh;
-  padding-bottom: 4rem;
+  min-height: 0rem;
+  padding-bottom: 2rem;
+  margin: 0 .5rem;
 }
 
 .buttonBox {
   transition: .5s;
-  height: 4rem;
-  margin: 4rem 0;
+  height: 2rem;
+  margin-bottom: 5.5rem;
 }
 
 .button {
+  display:block;
+  text-align:center;
   cursor: pointer;
-  width: 22rem;
-  padding: 2rem 3rem 2rem 4rem;
+  width: auto;
+  /* padding: 1.4rem 1rem 1rem 1rem; */
   font-weight: lighter;
-  height: 4rem;
-  line-height: 4rem;
-  margin: 1rem;
-  font-size: var(--title-fontsize-sm);
-  border-radius: var(--border-radius);
+  height: 7rem;
+  width: 7rem;
+  border-radius: 100%;
+  line-height: 7rem;
+  margin: 1rem .5rem 2rem .5rem;
+  font-size: var(--body-fontsize-lg);
+  /* border-radius: var(--border-radius); */
   background-color: var(--sidenav-color);
   transition: .2s linear;
   color: var(--font-color);
@@ -60,12 +66,59 @@
 
 /* Tablet */
 @media only screen and (min-width : 30em) {
-
+  .sideNav {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 /* Desktop */
 @media only screen and (min-width : 50em) {
-
+  
+  .card {
+    margin: 4rem;
+    max-width: 90%;
+  }
+  
+  .sideNav {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+    min-height: 60vh;
+    padding-bottom: 4rem;
+  }
+  
+  .buttonBox {
+    transition: .5s;
+    height: 4rem;
+    margin: 4rem 0;
+  }
+  
+  .button {
+    cursor: pointer;
+    width: 22rem;
+    padding: 2rem 3rem 2rem 4rem;
+    font-weight: lighter;
+    height: 4rem;
+    line-height: 4rem;
+    margin: 1rem;
+    font-size: var(--title-fontsize-sm);
+    border-radius: var(--border-radius);
+    background-color: var(--sidenav-color);
+    transition: .2s linear;
+    color: var(--font-color);
+    border: var(--border-sm);
+    box-shadow: var(--box-shadow);
+  }
+  
+  .button:hover {
+    transition: .2s linear;
+    top: 1rem;
+    margin-top: .2rem;
+    margin-bottom: 1.2rem;
+  }
 }
 
 /* XL Desktop */

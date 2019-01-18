@@ -10,6 +10,8 @@
   --secondary-color: rgb(66, 85, 255);
   --darker-primary: rgb(94, 31, 119);
   --border-radius: 5rem;
+  --border-width-sm: .2rem;
+  --border-width-lg: .5rem;
 
   --box-shadow: 0 .2rem .4rem 0 rgba(0, 0, 0, 0.055), 0 .2rem .4rem 0 rgba(0, 0, 0, 0.062);
 
@@ -22,7 +24,7 @@
   /* sm */
   --title-fontsize-sm: 2rem;
   --secondary-fontsize-sm: 1.8rem;
-  --body-fontsize-sm: 1rem;
+  --body-fontsize-sm: 1.3rem;
   /* md */
   --title-fontsize-md: 3rem;
   --secondary-fontsize-md: 2.1rem;
@@ -42,8 +44,8 @@
   --primary-color: rgb(140, 0, 255);
   --secondary-color: rgb(110, 151, 255);
   --darker-primary: rgb(94, 31, 119);
-  --border-sm: .1rem solid var(--secondary-color);
-  --border-lg: .7rem solid var(--secondary-color);
+  --border-sm: var(--border-width-sm) solid var(--secondary-color);
+  --border-lg: var(--border-width-lg) solid var(--secondary-color);
   background: radial-gradient(circle, var(--primary-color) 0%, var(--secondary-color) 100%);
   background-attachment: fixed;
 }
@@ -52,8 +54,8 @@
   --primary-color: rgb(0, 140, 255);
   --secondary-color: rgb(189, 228, 163);
   --darker-primary: rgb(31, 69, 119);
-  --border-sm: .1rem solid var(--secondary-color);
-  --border-lg: .7rem solid var(--secondary-color);
+  --border-sm: var(--border-width-sm) solid var(--secondary-color);
+  --border-lg: var(--border-width-lg) solid var(--secondary-color);
   background: radial-gradient(circle, var(--primary-color) 0%, var(--secondary-color) 100%);
   background-attachment: fixed;
 }
@@ -62,28 +64,28 @@
   --primary-color: rgb(255, 251, 0);
   --secondary-color: rgb(180, 86, 180);
   --darker-primary: rgb(119, 106, 31);
-  --border-sm: .1rem solid var(--secondary-color);
-  --border-lg: .7rem solid var(--secondary-color);
+  --border-sm: var(--border-width-sm) solid var(--secondary-color);
+  --border-lg: var(--border-width-lg) solid var(--secondary-color);
   background: radial-gradient(circle, var(--primary-color) 0%, var(--secondary-color) 100%);
   background-attachment: fixed;
 }
 
 .theme4 {
-  --primary-color: rgb(65, 65, 65);
-  --secondary-color: rgb(202, 202, 202);
-  --darker-primary: rgb(24, 24, 24);
-  --border-sm: .1rem solid var(--secondary-color);
-  --border-lg: .7rem solid var(--secondary-color);
+  --primary-color: rgb(136, 72, 255);
+  --secondary-color: rgb(110, 255, 110);
+  --darker-primary: rgb(60, 15, 102);
+  --border-sm: var(--border-width-sm) solid var(--secondary-color);
+  --border-lg: var(--border-width-lg) solid var(--secondary-color);
   background: radial-gradient(circle, var(--primary-color) 0%, var(--secondary-color) 100%);
   background-attachment: fixed;
 }
 
 .theme5 {
-  --primary-color: rgb(27, 67, 141);
-  --secondary-color: rgb(90, 194, 163);
-  --darker-primary: rgb(73, 121, 87);
-  --border-sm: .1rem solid var(--secondary-color);
-  --border-lg: .7rem solid var(--secondary-color);
+  --primary-color: rgb(23, 162, 255);
+  --secondary-color: rgb(255, 230, 0);
+  --darker-primary: rgb(40, 54, 114);
+  --border-sm: var(--border-width-sm) solid var(--secondary-color);
+  --border-lg: var(--border-width-lg) solid var(--secondary-color);
   background: radial-gradient(circle, var(--primary-color) 0%, var(--secondary-color) 100%);
   background-attachment: fixed;
 }

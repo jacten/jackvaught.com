@@ -1,26 +1,26 @@
 .container {
   background-color: var(--sidenav-color);
   flex: 1;
-  padding: 5rem;
+  padding: 2rem;
 }
 
 .company {
-  font-size: var(--title-fontsize-lg);
+  font-size: var(--title-fontsize-sm);
   padding-bottom: .2rem;
 }
 
 .title {
-  font-size: var(--secondary-fontsize-lg);
+  font-size: var(--secondary-fontsize-sm);
   padding-bottom: .5rem;
 }
 
 .dates {
-  font-size: var(--body-fontsize-lg);
+  font-size: var(--body-fontsize-sm);
   padding-bottom: .5rem;
 }
 
 .location {
-  font-size: var(--body-fontsize-lg);
+  font-size: var(--body-fontsize-sm);
   padding-bottom: 1rem;
 }
 
@@ -33,7 +33,7 @@
 }
 
 .bullet {
-  font-size: var(--body-fontsize-md);
+  font-size: var(--body-fontsize-sm);
   padding: 1rem;
   line-height: 2rem;
 }
@@ -50,11 +50,81 @@
   transition: .5s;
   border-radius: var(--border-radius);
   padding: 1rem;
-  border: .1rem solid transparent;
+  border: var(--border-width-sm) solid transparent;
 }
 
 .link:hover {
   border: var(--border-sm);
   transition: .5s;
+}
+
+/* Tablet */
+@media only screen and (min-width : 30em) {
+  .container {
+    padding: 5rem;
+  }
+  
+  .company {
+    font-size: var(--title-fontsize-lg);
+    padding-bottom: .2rem;
+  }
+  
+  .title {
+    font-size: var(--secondary-fontsize-lg);
+    padding-bottom: .5rem;
+  }
+  
+  .dates {
+    font-size: var(--body-fontsize-lg);
+    padding-bottom: .5rem;
+  }
+  
+  .location {
+    font-size: var(--body-fontsize-lg);
+    padding-bottom: 1rem;
+  }
+  
+  .header {
+    border-bottom: var(--border-sm);
+  }
+  
+  .bullets {
+    padding: 2rem 0 0 0;
+  }
+  
+  .bullet {
+    font-size: var(--body-fontsize-md);
+    padding: 1rem;
+    line-height: 2rem;
+  }
+  
+  .a {
+    width: 3rem;
+    height: 3rem;
+    float: right;
+  }
+  .link {
+    width: 3rem;
+    height: 3rem;
+    float: right;
+    transition: .5s;
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    border: var(--border-width-sm) solid transparent;
+  }
+  
+  .link:hover {
+    border: var(--border-sm);
+    transition: .5s;
+  }
+}
+
+/* Desktop */
+@media only screen and (min-width : 50em) {
+
+}
+
+/* XL Desktop */
+@media only screen and (min-width : 90em) {
 
 }

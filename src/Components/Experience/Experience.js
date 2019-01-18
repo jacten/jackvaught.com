@@ -34,7 +34,7 @@ class Experience extends Component {
                   <div 
                     className={s.button} 
                     onClick={() => this.handleJobClick(index)} 
-                    key={index}>{job.company}
+                    key={index}>{job.shortened}
                   </div>
                 </div>
               )
@@ -53,6 +53,7 @@ export default Experience;
 const jobData = [
   {
     company: 'Super Deluxe',
+    shortened: 'SD',
     title: 'Lead Software Engineer',
     dates: '2018',
     location: 'Los Angeles, CA',
@@ -65,6 +66,7 @@ const jobData = [
   },
   {
     company: 'Edmunds.com, Inc',
+    shortened: 'Edmunds',
     title: 'Vehicle Data Editor',
     dates: '2012 - 2017',
     location: 'Santa Monica, CA',
@@ -77,6 +79,7 @@ const jobData = [
   },
   {
     company: 'Northwestern University',
+    shortened: 'NU',
     title: 'IT Assistant - School of Education and Social Policy',
     dates: '2012',
     location: 'Evanston, IL',
