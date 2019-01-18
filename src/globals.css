@@ -10,7 +10,7 @@
   --secondary-color: rgb(142, 255, 67); */
   --primary-color: rgb(27, 67, 141);
   --secondary-color: rgb(48, 190, 147);
-  --darker-primary: rgb(192, 118, 118);
+  --darker-primary: rgb(73, 121, 87);
   --font-color: rgb(243, 243, 243);
   --sidenav-color: rgb(29, 29, 29);
   --transparent-color: rgba(255, 255, 255, 0.322);
@@ -35,7 +35,7 @@
   /* md */
   --title-fontsize-md: 3rem;
   --secondary-fontsize-md: 2.1rem;
-  --body-fontsize-md: 1.25rem;
+  --body-fontsize-md: 1.4rem;
   /* lg */
   --title-fontsize-lg: 4rem;
   --secondary-fontsize-lg: 2.4rem;

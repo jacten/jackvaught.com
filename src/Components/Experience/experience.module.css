@@ -25,29 +25,30 @@
   justify-content: flex-start;
   align-items: center;
   border-right: var(--border-sm);
-  height: 60vh;
-  padding-bottom: 6rem;
+  min-height: 60vh;
+  padding-bottom: 4rem;
 }
 
 .buttonBox {
   transition: .5s;
-  height: 2rem;
-  margin-top: 8rem;
+  height: 4rem;
+  margin: 4rem 0;
 }
 
 .button {
   cursor: pointer;
-  width: 24rem;
-  padding: 2rem 2rem 2rem 3rem;
-  height: 1.5rem;
-  line-height: 1.5rem;
+  width: 22rem;
+  padding: 2rem 3rem 2rem 4rem;
+  font-weight: lighter;
+  height: 4rem;
+  line-height: 4rem;
   margin: 1rem;
   font-size: var(--title-fontsize-sm);
   border-radius: var(--border-radius);
   background-color: var(--sidenav-color);
   transition: .2s linear;
   color: var(--font-color);
-  /* border: var(--border-sm); */
+  border: var(--border-sm);
   box-shadow: var(--box-shadow);
 }
 

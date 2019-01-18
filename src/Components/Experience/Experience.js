@@ -65,7 +65,7 @@ const jobData = [
   {
     company: 'Edmunds.com, Inc',
     title: 'Vehicle Data Editor',
-    dates: '2012-2017',
+    dates: '2012 - 2017',
     location: 'Santa Monica, CA',
     bullets: [
       'Verified and maintained content for website with 14 million unique monthly visitors',

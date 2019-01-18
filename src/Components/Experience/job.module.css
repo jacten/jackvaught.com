@@ -1,4 +1,39 @@
 .container {
   background-color: var(--sidenav-color);
   flex: 1;
+  padding: 5rem;
+}
+
+.company {
+  font-size: var(--title-fontsize-lg);
+  padding-bottom: .2rem;
+}
+
+.title {
+  font-size: var(--secondary-fontsize-lg);
+  padding-bottom: .5rem;
+}
+
+.dates {
+  font-size: var(--body-fontsize-lg);
+  padding-bottom: .5rem;
+}
+
+.location {
+  font-size: var(--body-fontsize-lg);
+  padding-bottom: 1rem;
+}
+
+.header {
+  border-bottom: var(--border-sm);
+}
+
+.bullets {
+  padding: 2rem 0 0 0;
+}
+
+.bullet {
+  font-size: var(--body-fontsize-md);
+  padding: 1rem;
+  line-height: 2rem;
 }
