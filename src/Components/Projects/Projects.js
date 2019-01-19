@@ -51,7 +51,7 @@ const projectData = [
     name: 'MatchaMe (Mobile)',
     link: 'https://github.com/jacten/MobileMM',
     about: [
-      'Mobile version of MatchaMe, a matchmaking/dating app where users are rate other users on a scale from 1 - 10. An algorythem then generates potential matches based on that average score and those are presented to the users.',
+      'Mobile version of MatchaMe, a matchmaking/dating app where users are rate other users on a scale from 1 - 10. An algorithm then generates potential matches based on that average score and those are presented to the users.',
       'Shared a majority of the back-end with the web version. ',
     ],
     techstack: [

@@ -1,9 +1,158 @@
 .image {
-  max-width: 20rem;
+  /* object-fit: cover;  */
+  background-repeat: repeat-y;
+  background-position: center;
+  background-size: cover;
+  min-height: 80vh;
 }
 
 .card {
+  overflow: hidden;
+  min-height: 80vh;
+  margin: 2rem 1rem 4rem 1rem;
+  z-index: 99;
+  border-radius: var(--border-radius);
+  border: var(--border-sm);
+}
+
+.filter {
   height: 80vh;
-  background-size: cover;
-  background-position: center;
+  background-color: rgba(0, 0, 0, 0.801);
+  padding: 4rem;
+}
+
+.name {
+  font-size: var(--title-fontsize-sm);
+  padding-bottom: .2rem;
+}
+
+.techstack {
+  font-size: var(--body-fontsize-sm);
+  padding-bottom: 1rem;
+}
+
+.header {
+  border-bottom: var(--border-sm);
+}
+
+.about {
+  font-size: var(--body-fontsize-sm);
+  padding: 1rem;
+  line-height: 2rem;
+}
+
+.a {
+  width: 3rem;
+  height: 3rem;
+  float: right;
+}
+.link {
+  width: 3rem;
+  height: 3rem;
+  float: right;
+  transition: .5s;
+  border-radius: var(--border-radius);
+  padding: 1rem;
+  border: var(--border-width-sm) solid transparent;
+}
+
+.link:hover {
+  border: var(--border-sm);
+  transition: .5s;
+}
+
+/* Tablet */
+@media only screen and (min-width : 30em) {
+  .container {
+    padding: 5rem;
+  }
+  
+  .name {
+    font-size: var(--title-fontsize-md);
+    padding-bottom: .2rem;
+  }
+  
+  .techstack {
+    font-size: var(--body-fontsize-md);
+    padding-bottom: .5rem;
+  }
+  
+  .location {
+    font-size: var(--body-fontsize-md);
+    padding-bottom: 1rem;
+  }
+  
+  .header {
+    border-bottom: var(--border-sm);
+  }
+
+  .about {
+    font-size: var(--body-fontsize-md);
+    padding: 1rem;
+    line-height: 2rem;
+  }
+  
+  .a {
+    width: 3rem;
+    height: 3rem;
+    float: right;
+  }
+  .link {
+    width: 3rem;
+    height: 3rem;
+    float: right;
+    transition: .5s;
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    border: var(--border-width-sm) solid transparent;
+  }
+  
+  .link:hover {
+    border: var(--border-sm);
+    transition: .5s;
+  }
+}
+
+/* Desktop */
+@media only screen and (min-width : 50em) {
+  
+  .name {
+    font-size: var(--title-fontsize-lg);
+    padding-bottom: .2rem;
+  }
+  
+  .techstack {
+    font-size: var(--body-fontsize-lg);
+    padding-bottom: .5rem;
+  }
+  
+  .header {
+    border-bottom: var(--border-sm);
+  }
+  
+  .about {
+    font-size: var(--body-fontsize-md);
+    padding: 1rem;
+    line-height: 2rem;
+  }
+
+  .link {
+    width: 3rem;
+    height: 3rem;
+    float: right;
+    transition: .5s;
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    border: var(--border-width-sm) solid transparent;
+  }
+  
+  .link:hover {
+    border: var(--border-sm);
+    transition: .5s;
+  }
+}
+
+/* XL Desktop */
+@media only screen and (min-width : 90em) {
+
 }
