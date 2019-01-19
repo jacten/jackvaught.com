@@ -4,7 +4,7 @@
 }
 
 .card {
-  background-color: var(--transparent-color);
+  background-color: var(--transparent-color-dark);
   color: var(--font-color);
   display: flex;
   flex-direction: column;
@@ -20,16 +20,18 @@
   min-height: 60vh;
 } 
 
-  svg {
-    width: 20px;
-    height: 20px;
-    fill: var(--font-color);
-    vertical-align: middle;
-  }
+svg {
+  padding: 1rem;
+  width: 5rem;
+  height: 5rem;
+  fill: var(--secondary-color);
+  vertical-align: middle;
+  transition: .5s;
+}
 
 
 .inner {
-  background-color: var(--sidenav-color);
+  /* background-color: var(--sidenav-color); */
   height: 60vh;
 }
 
@@ -51,7 +53,23 @@
 .icon {
   vertical-align: middle;
   width: 3rem;
-  transition: .3s;
+  transition: .5s;
+}
+
+.contact {
+  font-size: var(--secondary-fontsize-lg);
+  color: var(--secondary-color);
+  transition: .5s;
+}
+
+.contact:hover {
+  color: var(--primary-color);
+  transition: .5s;
+}
+
+.contact:hover svg {
+  fill: var(--primary-color);
+  transition: .5s;
 }
 
 .imgbox:hover .img{

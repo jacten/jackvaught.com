@@ -5,12 +5,6 @@ import s from './contact.module.css';
 
 import { IconGithub, IconLinkedin, IconInstagram, IconTwitter } from '../Icons';
 
-import email from '../../Assets/email.png';
-import twitter from '../../Assets/twitter.png';
-import linkedin from '../../Assets/linkedin.png';
-import github from '../../Assets/github.png';
-import instagram from '../../Assets/instagram.png';
-
 class Contact extends Component {
 
   constructor(props) {
@@ -35,7 +29,7 @@ class Contact extends Component {
             {
               contactData.map((contact, index) => {
                 return (
-                  <div key={index}>
+                  <div className={s.contact} key={index}>
                     {contact.icon}
                     {contact.site}
                   </div>
@@ -75,7 +69,7 @@ const contactData = [
   {
     site: 'johnmvaught@gmail.com',
     link: null,
-    icon: email,  
+    icon: null,  
   },
 ];
 
