@@ -2,7 +2,7 @@
 .title {
   position: sticky;
   top: 0;
-  color: var(--sidenav-color);
+  color: var(--font-color);
   background-color: var(--transparent-color);
   font-size: 1.4rem;
   padding: .4rem 1.6rem .4rem 1.6rem;

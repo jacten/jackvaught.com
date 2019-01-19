@@ -13,9 +13,10 @@
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
   justify-content: flex-start;
-  margin: 1rem;
+  margin: 1.5rem 1.5rem 3rem 1.5rem;
   max-width: 100%;
-  border: var(--border-sm);
+  /* border: var(--border-sm); */
+  box-shadow: var(--box-shadow-lg);
   overflow: hidden;
 }
 

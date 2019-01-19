@@ -4,7 +4,7 @@ import Title from '../Title/Title';
 import ProItem from './ProItem';
 
 import natemoji from '../../Assets/natemoji.png';
-import mmm1 from '../../Assets/mmm1.png';
+import mmm2 from '../../Assets/mmm2.png';
 import matchame1 from '../../Assets/matchame1.png';
 import instasmurf from '../../Assets/instasmurf.png';
 import s from './projects.module.css';
@@ -35,9 +35,7 @@ const projectData = [
     link: 'https://youtu.be/u3wpiLeOVtI?t=208',
     about: [
       'An emoji app for iOS and Android',
-      'I ported the existing Natemoji to Android from iOS.',
-      'I also updated the assets and for the iOS version and published both to the App Store and Google Play Store',
-      'Unfortunately SuperDeluxe went out of business a month after it launched so it is only available on my phone or any of the hundreds of people who downloaded it.'
+      'I ported the existing iOS Natemoji to Android. I also updated the assets and for the iOS version and published both to the App Store and Google Play Store',
     ],
     techstack: [
       'Java',
@@ -49,21 +47,22 @@ const projectData = [
     name: 'MatchaMe (Mobile)',
     link: 'https://github.com/jacten/MobileMM',
     about: [
-      'Mobile version of MatchaMe, a matchmaking/dating app where users are rate other users on a scale from 1 - 10. An algorithm then generates potential matches based on that average score and those are presented to the users.',
-      'Shared a majority of the back-end with the web version. ',
+      'matchmaking/dating app.',
+      'Users are rated on a scale from 1 - 10. An algorithm then generates potential matches based on that average score and those are presented to the users.',
     ],
     techstack: [
       'React-Native',
       'React Navigation',
       'Node/Express'
     ],
-    image: mmm1,
+    image: mmm2,
   },
   {
     name: 'MatchaMe (WebApp)',
     link: 'https://github.com/the-storage-room/MatchaMe',
     about: [
-      'Web version of MatchaMe. Was built as thesis project for Hack Reactor with my team. I fell in love with the idea which lead me to creating the mobile version. Still debating if I should release it.'
+      'Web version of MatchaMe.',
+      'Was built as thesis project for Hack Reactor with my team. I fell in love with the idea which lead me to creating the mobile version. Still debating if I should release it.'
     ],
     techstack: [
       'React',
@@ -76,7 +75,7 @@ const projectData = [
     name: 'InstaSmurf',
     link: 'https://github.com/quadReactor/papaRepo',
     about: [
-      `An instagram clone with, for reasons unknown to me, a Smurf theme. Was built as my 'greenfield' project at Hack Reactor. I did all of the CSS in an exagerated cartoon like theme. Not exactly modern design but not the worst.`
+      `An instagram clone with, for reasons unknown to me, a Smurf theme. Was built as my 'greenfield' project at Hack Reactor. I did all of the CSS in an exagerated cartoon like theme. Not exactly modern design but I like it.`
     ],
     techstack: [
       'React',

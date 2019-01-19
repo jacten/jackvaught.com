@@ -5,21 +5,30 @@
   background-size: cover;
 }
 
+.image:hover .filter {
+  opacity: 0;
+  transition: .5s;
+}
+
 .tech {
   padding: 1rem;
 }
 
 .card {
+  max-width: 45rem;
+  height: 100%;
   overflow: hidden;
-  margin: 2rem 1rem 4rem 1rem;
-  z-index: 99;
+  margin: 2rem 1.5rem 4rem 1.5rem;
   border-radius: var(--border-radius);
+  /* box-shadow: var(--box-shadow-lg); */
   border: var(--border-sm);
 }
 
 .filter {
-  width: 50%;
-  background-color: rgba(0, 0, 0, 0.849);
+  transition: .5s;
+  height: 100%;
+  width: 45%;
+  background-color: rgba(0, 0, 0, 0.897);
   padding: 4rem 3rem;
 }
 

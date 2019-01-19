@@ -5,13 +5,13 @@
   flex-direction: row;
   flex-wrap: wrap;
   border-radius: var(--border-radius);
-  box-shadow: var(--box-shadow);
   justify-content: center;
   padding: 2rem;
   margin: 2rem;
   margin-top: 2rem;
   max-width: 90%;
-  border: var(--border-sm);
+  /* border: var(--border-sm); */
+  box-shadow: var(--box-shadow-lg);
 }
 
 .container {
