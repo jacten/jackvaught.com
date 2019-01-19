@@ -47,13 +47,12 @@ const projectData = [
     name: 'MatchaMe (Mobile)',
     link: 'https://github.com/jacten/MobileMM',
     about: [
-      'matchmaking/dating app.',
-      'Users are rated on a scale from 1 - 10. An algorithm then generates potential matches based on that average score and those are presented to the users.',
+      'Matchmaking/Dating app.',
+      'I built a lot of reusable components such as an image carousel',
     ],
     techstack: [
       'React-Native',
       'React Navigation',
-      'Node/Express'
     ],
     image: mmm2,
   },
@@ -62,7 +61,7 @@ const projectData = [
     link: 'https://github.com/the-storage-room/MatchaMe',
     about: [
       'Web version of MatchaMe.',
-      'Was built as thesis project for Hack Reactor with my team. I fell in love with the idea which lead me to creating the mobile version. Still debating if I should release it.'
+      'Users are rated on a scale from 1 - 10. An algorithm then generates potential matches based on that average score and those are presented to the users.'
     ],
     techstack: [
       'React',

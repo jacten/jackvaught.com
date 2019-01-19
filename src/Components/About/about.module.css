@@ -10,8 +10,8 @@
   margin: 2rem;
   margin-top: 2rem;
   max-width: 90%;
-  /* border: var(--border-sm); */
-  box-shadow: var(--box-shadow-lg);
+  border: var(--border-sm);
+  /* box-shadow: var(--box-shadow-lg); */
 }
 
 .container {
