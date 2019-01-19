@@ -16,11 +16,13 @@ const ProItem = ({project}) => {
                 <img src={linkIcon} alt={link} className={s.link}/>
               </a>
             </div>
+            <div className={s.tech}>
               {
                 techstack.map((tech, index) => {
                   return <div className={s.techstack} key={index}>{tech}</div>
                 })
               }
+            </div>
           </div>
           {
             about.map((info, index) => {

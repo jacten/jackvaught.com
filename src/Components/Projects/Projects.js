@@ -42,8 +42,6 @@ const projectData = [
     techstack: [
       'Java',
       'Swift',
-      'Android Studio',
-      'Google Play Store',
     ],
     image: natemoji,
   },
@@ -57,7 +55,7 @@ const projectData = [
     techstack: [
       'React-Native',
       'React Navigation',
-      'Express/Node'
+      'Node/Express'
     ],
     image: mmm1,
   },
@@ -69,8 +67,6 @@ const projectData = [
     ],
     techstack: [
       'React',
-      'Express',
-      'CSS grids',
       'socket.io',
       'mySQL',
     ],
@@ -85,8 +81,7 @@ const projectData = [
     techstack: [
       'React',
       'NodeJS',
-      'firebase',
-      'mongoDV',
+      'mongoDB',
     ],
     image: instasmurf,
   },

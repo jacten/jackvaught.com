@@ -3,12 +3,14 @@
   background-repeat: repeat-y;
   background-position: center;
   background-size: cover;
-  min-height: 80vh;
+}
+
+.tech {
+  padding: 1rem;
 }
 
 .card {
   overflow: hidden;
-  min-height: 80vh;
   margin: 2rem 1rem 4rem 1rem;
   z-index: 99;
   border-radius: var(--border-radius);
@@ -16,9 +18,9 @@
 }
 
 .filter {
-  height: 80vh;
-  background-color: rgba(0, 0, 0, 0.801);
-  padding: 4rem;
+  width: 50%;
+  background-color: rgba(0, 0, 0, 0.849);
+  padding: 4rem 3rem;
 }
 
 .name {
@@ -28,7 +30,7 @@
 
 .techstack {
   font-size: var(--body-fontsize-sm);
-  padding-bottom: 1rem;
+  padding: .31rem;
 }
 
 .header {
