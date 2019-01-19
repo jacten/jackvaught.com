@@ -103,11 +103,11 @@
     max-width: calc(100vw - 20rem);
   }
   .card {
-    padding: 2rem;
+    padding: 3rem;
     max-width: 80%;
   }
   .name {
-    font-size: var(--secondary-fontsize-lg);
+    font-size: var(--title-fontsize-md);
   }
   
   .job {
