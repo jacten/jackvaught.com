@@ -31,21 +31,24 @@ export default Projects;
 
 const projectData = [
   {
-    name: 'Natemoji',
-    link: '',
-    github: '',
+    name: 'Natemoji for Android',
+    link: 'https://youtu.be/u3wpiLeOVtI?t=208',
     about: [
-
+      'An emoji app for iOS and Android',
+      'I ported the existing Natemoji to Android from iOS',
+      'I also updated the assets and for the iOS version and published both to the App Store and Google Play Store',
     ],
     techstack: [
-
+      'Java',
+      'Swift',
+      'Android Studio',
+      'Google Play Store',
     ],
     image: natemoji,
   },
   {
-    name: 'Natemoji',
-    link: '',
-    github: '',
+    name: 'MatchaMe (Mobile)',
+    link: 'https://github.com/jacten/MobileMM',
     about: [
 
     ],
@@ -55,9 +58,8 @@ const projectData = [
     image: mmm1,
   },
   {
-    name: 'Natemoji',
-    link: '',
-    github: '',
+    name: 'MatchaMe (WebApp)',
+    link: 'https://github.com/the-storage-room/MatchaMe',
     about: [
 
     ],
@@ -67,9 +69,8 @@ const projectData = [
     image: matchame1,
   },
   {
-    name: 'Natemoji',
-    link: '',
-    github: '',
+    name: 'InstaSmurf',
+    link: 'https://github.com/quadReactor/papaRepo',
     about: [
 
     ],

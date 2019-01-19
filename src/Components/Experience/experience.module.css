@@ -101,7 +101,7 @@
     height: 4rem;
     line-height: 4rem;
     margin: 1rem;
-    font-size: var(--title-fontsize-sm);
+    font-size: var(--secondary-fontsize-lg);
     border-radius: var(--border-radius);
     background-color: var(--sidenav-color);
     transition: .2s linear;

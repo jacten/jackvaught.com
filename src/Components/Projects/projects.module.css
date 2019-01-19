@@ -1,6 +1,13 @@
 .container {
   min-height: 140vh;
   margin-bottom: .6rem;
+  max-width: calc(100vw - 3rem);
+}
+
+.body {
+  margin: 1rem auto;
+  width: 100%;
+  
 }
 
 /* Tablet */
