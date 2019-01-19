@@ -1,8 +1,15 @@
 import React, { Component } from 'react';
 
 import Title from '../Title/Title.js';
-import email from '../../Assets/email.png';
 import s from './contact.module.css';
+
+import { IconGithub, IconLinkedin, IconInstagram, IconTwitter } from '../Icons';
+
+import email from '../../Assets/email.png';
+import twitter from '../../Assets/twitter.png';
+import linkedin from '../../Assets/linkedin.png';
+import github from '../../Assets/github.png';
+import instagram from '../../Assets/instagram.png';
 
 class Contact extends Component {
 
@@ -23,21 +30,18 @@ class Contact extends Component {
     return (
       <div className={s.container} id={"contact"}>
         <Title page={'contact'}/>
-        <form>
-          <textarea
-            readOnly
-            className={s.textarea}
-            ref={(textarea) => this.textArea = textarea}
-            value='johnmvaught@gmail.com'
-           />
-         </form>
-        <div className={s.body} onClick={this.copyToClipboard}>
-          {/* <div>
-             {this.state.copySuccess}
-           </div> */}
-          <div className={s.imgbox}>
-            <img className={s.img} src={email} alt={"email me!"}/>
-            <span className={s.email}>johnmvaught@gmail.com</span>
+        <div className={s.card}>
+          <div className={s.inner}>
+            {
+              contactData.map((contact, index) => {
+                return (
+                  <div key={index}>
+                    {contact.icon}
+                    {contact.site}
+                  </div>
+                )
+              })
+            }
           </div>
         </div>
       </div>
@@ -46,3 +50,60 @@ class Contact extends Component {
 }
 
 export default Contact;
+
+const contactData = [
+  {
+    site: 'Github',
+    link: 'https://github.com/jacten',
+    icon: <IconGithub/>,
+  },
+  {
+    site: 'LinkedIn',
+    link: 'https://www.linkedin.com/in/jmvaught/',
+    icon: <IconLinkedin/>,
+  },
+  {
+    site: 'Twitter',
+    link: 'https://twitter.com/Jack_Vaught',
+    icon: <IconTwitter/>,
+  },
+  {
+    site: 'Instagram',
+    link: 'https://www.instagram.com/jackvaught/',
+    icon: <IconInstagram/>,
+  },
+  {
+    site: 'johnmvaught@gmail.com',
+    link: null,
+    icon: email,  
+  },
+];
+
+            // {/* <div className={s.contact}>
+            //   <form>
+            //     <textarea
+            //       readOnly
+            //       className={s.textarea}
+            //       ref={(textarea) => this.textArea = textarea}
+            //       value='johnmvaught@gmail.com'
+            //     />
+            //   </form>
+            //   <div className={s.link} onClick={this.copyToClipboard}>
+            //     {/* <div>
+            //       {this.state.copySuccess}
+            //     </div> */}
+            //     <div>
+            //       <img className={s.icon} src={email} alt={"email me!"}/>
+            //       <span className={s.text}>johnmvaught@gmail.com</span>
+            //     </div>
+            //   </div>
+            // </div>
+            // <div className={s.contact}>
+            //   Twitter
+            // </div>
+            // <div className={s.contact}>
+            //   Github
+            // </div>
+            // <div className={s.contact}>
+            //   LinkedIn
+            // </div> */}

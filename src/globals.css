@@ -85,7 +85,7 @@
 .theme5 {
   --primary-color: rgb(23, 162, 255);
   --secondary-color: rgb(255, 230, 0);
-  --darker-primary: rgb(40, 54, 114);
+  --darker-primary: rgb(13, 80, 126);
   --border-sm: var(--border-width-sm) solid var(--secondary-color);
   --border-lg: var(--border-width-lg) solid var(--secondary-color);
   background: radial-gradient(circle, var(--primary-color) 0%, var(--secondary-color) 100%);

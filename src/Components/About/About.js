@@ -26,10 +26,10 @@ class About extends Component {
                 From music production to writing screenplays, I have always been a creative person. I see software development as an extention of that creativity. 
               </div>
               <div className={s.text}>
-                This website isn't just my resume. It's meant to be a bit more informal, and hopefully a bit more real. :)
+                This is V1 of the site. It is a work in progress. Scrolling uses CSS scroll-behavior which isn't compatible on all browsers. I may do this the javascript way, or maybe not... <span>🤷‍</span>
               </div>
-            <div className={s.text}>When I am not coding, I enjoy cooking, NBA basketball, and Rocket League. Mostly just a lot of Rocket League. 
-            </div>
+              <div className={s.text}>When I am not coding, I enjoy cooking, NBA basketball, and Rocket League. Mostly just a lot of Rocket League. 
+              </div>
             </div>
             <img 
               alt={'jack vaught should be here...'} 

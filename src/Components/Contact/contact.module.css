@@ -3,6 +3,36 @@
   margin-bottom: .6rem;
 }
 
+.card {
+  background-color: var(--transparent-color);
+  color: var(--font-color);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  justify-content: center;
+  padding: 6rem 0;
+  margin: 2rem;
+  margin-top: 2rem;
+  max-width: 80%;
+  box-shadow: var(--box-shadow-lg);
+  min-height: 60vh;
+} 
+
+  svg {
+    width: 20px;
+    height: 20px;
+    fill: var(--font-color);
+    vertical-align: middle;
+  }
+
+
+.inner {
+  background-color: var(--sidenav-color);
+  height: 60vh;
+}
+
 .body {
   display: flex;
   justify-content: center;
@@ -18,9 +48,9 @@
   align-items: center;
 }
 
-.img {
+.icon {
   vertical-align: middle;
-  width: 19%;
+  width: 3rem;
   transition: .3s;
 }
 
@@ -29,16 +59,6 @@
   transition: .3s;
 }
 
-.email {
-  font-size: 1.9rem;
-  font-weight: lighter;
-  transition: .3s;
-}
-
-.imgbox:hover .email{
-  font-size: 2rem;
-  transition: .3s;
-}
 
 .textarea {
   height: 0px;
