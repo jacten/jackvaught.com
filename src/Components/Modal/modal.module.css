@@ -1,0 +1,38 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.63);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+}
+
+.image {
+  max-width: 75%;
+  max-height: 75%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.x {
+  height: 3rem;
+  width: 3rem;
+  position: fixed;
+  top: 3rem;
+  right: 3rem;
+  background-color: var(--font-color);
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+}
+
+.x:hover {
+  transition: .3s;
+  background-color: var(--secondary-color);
+  padding: 1.5rem;
+}

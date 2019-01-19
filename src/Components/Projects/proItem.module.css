@@ -31,7 +31,7 @@
   transition: .5s;
   height: 100%;
   width: 45%;
-  background-color: var(--transparent-color-dark);
+  background-color: var(--transparent-color-darker);
   padding: 4rem 3rem;
 }
 
@@ -60,14 +60,9 @@
   flex-direction: column;
   position: absolute;
   top: 1rem;
-  right: -10rem;
-  transition: .5s;
+  right: 3rem;
 }
 
-.card:hover .links {
-  right: 3rem;
-  transition: .5s;
-}
 
 .a {
   width: 2rem;
@@ -75,15 +70,15 @@
   padding: 1rem;
   margin: .5rem;
 }
+
 .link {
   width: 2rem;
   height: 2rem;
   transition: .5s;
-  background-color: var(--transparent-color-dark);
+  background-color: var(--transparent-color-darker);
   border-radius: var(--border-radius);
   padding: 1rem;
   border: var(--border-width-sm) solid transparent;
-  box-shadow: var(--box-shadow-lg);
 }
 
 .link:hover {
@@ -126,22 +121,24 @@
     width: 3rem;
     height: 3rem;
   }
-  .link {
-    width: 3rem;
-    height: 3rem;
-    transition: .5s;
-    border-radius: var(--border-radius);
-    border: var(--border-width-sm) solid transparent;
-  }
-  
-  .link:hover {
-    border: var(--border-sm);
-    transition: .5s;
-  }
 }
 
 /* Desktop */
 @media only screen and (min-width : 50em) {
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 1rem;
+    right: -10rem;
+    transition: .5s;
+  }
+  
+  .card:hover .links {
+    right: 3rem;
+    transition: .5s;
+  }
 
   .card {
     max-width: 55rem;
@@ -171,13 +168,6 @@
   .link {
     width: 3rem;
     height: 3rem;
-    transition: .5s;
-    border-radius: var(--border-radius);
-    border: var(--border-width-sm) solid transparent;
-  }
-  
-  .link:hover {
-    border: var(--border-sm);
     transition: .5s;
   }
 }

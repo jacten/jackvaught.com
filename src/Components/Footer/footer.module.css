@@ -1,10 +1,21 @@
 .footer {
-  background-color: rgba(255, 255, 255, 0.849);
-  height: 10rem;
+  background-color: var(--darker-primary);
+  height: 12rem;
   display: block;
   line-height: 10rem;
   text-align: center;
-  font-size: 1rem;
-  color: black;
   width: 100vw;
+}
+
+.a {
+  width: auto;
+  height: auto;
+  color: var(--font-color);
+  transition: .3s;
+  font-size: 1.5rem;
+}
+
+.a:hover {
+  color: var(--secondary-color);
+  transition: .3s;
 }

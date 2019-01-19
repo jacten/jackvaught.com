@@ -5,7 +5,8 @@
   --font-color: rgb(243, 243, 243);
   --sidenav-color: rgb(29, 29, 29);
   --transparent-color: rgba(58, 58, 58, 0.404);
-  --transparent-color-dark: rgba(0, 0, 0, 0.9);
+  --transparent-color-dark: rgba(0, 0, 0, 0.4);
+  --transparent-color-darker: rgba(0, 0, 0, 0.8);
   --primary-color: rgb(140, 0, 255);
   --secondary-color: rgb(66, 85, 255);
   --darker-primary: rgb(94, 31, 119);
@@ -103,9 +104,9 @@
 
 
 .theme7 {
-  --primary-color: rgb(184, 184, 184);
-  --secondary-color: rgb(86, 152, 156);
-  --darker-primary: rgb(68, 68, 68);
+  --primary-color: rgb(255, 0, 0);
+  --secondary-color: rgb(126, 161, 255);
+  --darker-primary: rgb(66, 12, 12);
   --border-sm: var(--border-width-sm) solid var(--secondary-color);
   --border-lg: var(--border-width-lg) solid var(--secondary-color);
   background: radial-gradient(circle, var(--primary-color) 0%, var(--secondary-color) 100%);

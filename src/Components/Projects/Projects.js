@@ -4,7 +4,7 @@ import Title from '../Title/Title';
 import ProItem from './ProItem';
 
 import natemoji from '../../Assets/natemoji.png';
-import mmm2 from '../../Assets/mmm2.png';
+import mmm1 from '../../Assets/mmm1.png';
 import matchame1 from '../../Assets/matchame1.png';
 import instasmurf from '../../Assets/instasmurf.png';
 import s from './projects.module.css';
@@ -54,7 +54,7 @@ const projectData = [
       'React-Native',
       'React Navigation',
     ],
-    image: mmm2,
+    image: mmm1,
   },
   {
     name: 'MatchaMe (web)',
