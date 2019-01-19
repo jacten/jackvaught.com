@@ -35,8 +35,9 @@ const projectData = [
     link: 'https://youtu.be/u3wpiLeOVtI?t=208',
     about: [
       'An emoji app for iOS and Android',
-      'I ported the existing Natemoji to Android from iOS',
+      'I ported the existing Natemoji to Android from iOS.',
       'I also updated the assets and for the iOS version and published both to the App Store and Google Play Store',
+      'Unfortunately SuperDeluxe went out of business a month after it launched so it is only available on my phone or any of the hundreds of people who downloaded it.'
     ],
     techstack: [
       'Java',
@@ -50,10 +51,13 @@ const projectData = [
     name: 'MatchaMe (Mobile)',
     link: 'https://github.com/jacten/MobileMM',
     about: [
-
+      'Mobile version of MatchaMe, a matchmaking/dating app where users are rate other users on a scale from 1 - 10. An algorythem then generates potential matches based on that average score and those are presented to the users.',
+      'Shared a majority of the back-end with the web version. ',
     ],
     techstack: [
-
+      'React-Native',
+      'React Navigation',
+      'Express/Node'
     ],
     image: mmm1,
   },
@@ -61,10 +65,14 @@ const projectData = [
     name: 'MatchaMe (WebApp)',
     link: 'https://github.com/the-storage-room/MatchaMe',
     about: [
-
+      'Web version of MatchaMe. Was built as thesis project for Hack Reactor with my team. I fell in love with the idea which lead me to creating the mobile version. Still debating if I should release it.'
     ],
     techstack: [
-
+      'React',
+      'Express',
+      'CSS grids',
+      'socket.io',
+      'mySQL',
     ],
     image: matchame1,
   },
@@ -72,10 +80,13 @@ const projectData = [
     name: 'InstaSmurf',
     link: 'https://github.com/quadReactor/papaRepo',
     about: [
-
+      `An instagram clone with, for reasons unknown to me, a Smurf theme. Was built as my 'greenfield' project at Hack Reactor. I did all of the CSS in an exagerated cartoon like theme. Not exactly modern design but not the worst.`
     ],
     techstack: [
-
+      'React',
+      'NodeJS',
+      'firebase',
+      'mongoDV',
     ],
     image: instasmurf,
   },

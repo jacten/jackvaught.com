@@ -29,7 +29,7 @@ const Job = ({item}) => {
           bullets.map((bullet, index)=> {
             return (
               <div className={s.bullet} key={index}>
-              &#8226; {bullet}
+              {bullet}
               </div>
             )
           })
