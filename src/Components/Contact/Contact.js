@@ -3,14 +3,22 @@ import React, { Component } from 'react';
 import Title from '../Title/Title.js';
 import s from './contact.module.css';
 
-import { IconGithub, IconLinkedin, IconInstagram, IconTwitter, IconGmail } from '../Icons';
+import { 
+  IconGithub, 
+  IconLinkedin, 
+  IconInstagram, 
+  IconTwitter, 
+  IconGmail, 
+  IconCopy, 
+  IconLink,
+} from '../Icons';
 
 class Contact extends Component {
 
   constructor(props) {
     super(props);
     this.state = { 
-      copySuccess: '',
+      status: 'Copy?',
     }
   }
 
@@ -24,19 +32,29 @@ class Contact extends Component {
     return (
       <div className={s.container} id={"contact"}>
         <Title page={'contact'}/>
-        <div className={s.card}>
-          {
-            contactData.map((contact, index) => {
-              return (
-                <a href={contact.link} className={s.contact}>
-                  <div key={index}>
-                    {contact.icon}
-                    {contact.site}
+        <div className={s.body}>
+          <div className={s.card}>
+            {
+              contactData.map((contact, index) => {
+                return (
+                  <div key={index} className={s.contact}>
+                    <div className={s.iconDiv}>
+                      {contact.icon(s.icon)}
+                    </div>
+                      <div className={s.copyDiv}>
+                      <IconCopy className={s.copy}/>
+                      </div>
+                      <div className={s.linkDiv}>
+                      <IconLink className={s.link}/>
+                      </div>
                   </div>
-                </a>
-              )
-            })
-          }
+                )
+              })
+            }
+          </div>
+          <div className={s.status}>
+            Hit Me Up!
+          </div>
         </div>
       </div>
     )
@@ -49,27 +67,32 @@ const contactData = [
   {
     site: 'Github',
     link: 'https://github.com/jacten',
-    icon: <IconGithub/>,
+    username: 'github.com/jacten',
+    icon: (className = '') => <IconGithub className={className}/>,
   },
   {
     site: 'LinkedIn',
     link: 'https://www.linkedin.com/in/jmvaught/',
-    icon: <IconLinkedin/>,
+    username: 'linkedin.com/in/jmvaught/',
+    icon: (className = '') => <IconLinkedin className={className}/>,
   },
   {
     site: 'Twitter',
     link: 'https://twitter.com/Jack_Vaught',
-    icon: <IconTwitter/>,
+    username: 'twitter.com/Jack_Vaught',
+    icon: (className = '') => <IconTwitter className={className}/>,
   },
   {
     site: 'Instagram',
     link: 'https://www.instagram.com/jackvaught/',
-    icon: <IconInstagram/>,
+    username: 'instagram.com/jackvaught/',
+    icon: (className = '') => <IconInstagram className={className}/>,
   },
   {
-    site: 'johnmvaught@gmail.com',
+    site: 'Gmail',
     link: 'mailto:johnmvaught@gmail.com',
-    icon: <IconGmail/>,  
+    username: 'johnmvaught@gmail.com',
+    icon: (className = '') => <IconGmail className={className}/>,  
   },
 ];
 

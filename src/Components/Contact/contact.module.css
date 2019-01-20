@@ -1,48 +1,88 @@
 .container {
-  min-height: 120vh;
-  margin-bottom: .6rem;
+  min-height: 110vh;
+}
+
+.body {
+  margin: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
 }
 
 .card {
-  /* background-color: var(--transparent-color-dark-md); */
+  background-color: var(--transparent-color-dark-md);
   color: var(--font-color);
   border-radius: var(--border-radius);
-  width: auto;
-  margin: 6rem;
-  /* box-shadow: var(--box-shadow-lg); */
-  min-height: 60vh;
-} 
-
-svg {
+  width: 20rem;
+  margin: 2rem;
   padding: 1rem;
-  width: 5rem;
-  height: 5rem;
-  fill: var(--secondary-color);
-  vertical-align: middle;
-  transition: .5s;
+  box-shadow: var(--box-shadow-lg);
 }
 
-
-.inner {
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  justify-content: center;
-  align-items: flex-start;
+.status {
+  flex: 1;
+  margin: 2rem 0rem 2rem 20rem;
+  font-size: 15rem;
 }
 
 .contact {
   cursor: pointer;
   background-color: var(--transparent-color-dark-md);
   border-radius: var(--border-radius);
-  /* box-shadow: var(--box-shadow); */
-  margin: 2rem;
-  /* border: var(--border-sm); */
-  padding: .3rem 0 .3rem 6rem;
+  margin: 1rem;
+  padding: .3rem 0rem .3rem 6rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 12rem;
+  transition: 1s;
 }
 .contact:hover {
   background-color: var(--sidenav-color);
-  box-shadow: none;
+  width: 35rem;
+  transition: 1s;
+}
+
+.contact:hover {
+  color: var(--primary-color);
+  transition: .5s;
+}
+
+
+.link, .copy, .icon {
+  width: 5rem;
+  height: 8rem;
+  fill: var(--secondary-color);
+  transition: .3s;
+}
+
+.link, .copy {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.contact:hover .link, .contact:hover .icon, .contact:hover .copy {
+  fill: var(--secondary-color);
+  transition: .5s;
+  margin-right: 6rem;
+}
+
+.contact:hover .copy, .contact:hover .link {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility .3s linear .3s, opacity .3s linear .3s, fill .1s;
+}
+/* 
+.link:hover, .copy:hover {
+  fill: var(--primary-color);
+} */
+
+
+.copyDiv:hover .copy, .linkDiv:hover .link{
+  fill: var(--primary-color);
 }
 
 .body {
@@ -60,25 +100,9 @@ svg {
   align-items: center;
 }
 
-.icon {
-  vertical-align: middle;
-  width: 3rem;
-  transition: .5s;
-}
-
 .contact {
   font-size: var(--secondary-fontsize-lg);
   color: var(--secondary-color);
-  transition: .5s;
-}
-
-.contact:hover {
-  color: var(--primary-color);
-  transition: .5s;
-}
-
-.contact:hover svg {
-  fill: var(--primary-color);
   transition: .5s;
 }
 
