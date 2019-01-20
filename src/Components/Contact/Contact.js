@@ -108,32 +108,3 @@ const contactData = [
     icon: (className = '') => <IconGmail className={className}/>,  
   },
 ];
-
-            // {/* <div className={s.contact}>
-            //   <form>
-            //     <textarea
-            //       readOnly
-            //       className={s.textarea}
-            //       ref={(textarea) => this.textArea = textarea}
-            //       value='johnmvaught@gmail.com'
-            //     />
-            //   </form>
-            //   <div className={s.link} onClick={this.copyToClipboard}>
-            //     {/* <div>
-            //       {this.state.copySuccess}
-            //     </div> */}
-            //     <div>
-            //       <img className={s.icon} src={email} alt={"email me!"}/>
-            //       <span className={s.text}>johnmvaught@gmail.com</span>
-            //     </div>
-            //   </div>
-            // </div>
-            // <div className={s.contact}>
-            //   Twitter
-            // </div>
-            // <div className={s.contact}>
-            //   Github
-            // </div>
-            // <div className={s.contact}>
-            //   LinkedIn
-            // </div> */}
