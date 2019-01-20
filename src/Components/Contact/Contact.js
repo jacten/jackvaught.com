@@ -78,6 +78,12 @@ export default Contact;
 
 const contactData = [
   {
+    site: 'Gmail',
+    link: 'mailto:johnmvaught@gmail.com',
+    copy: 'johnmvaught@gmail.com',
+    icon: (className = '') => <IconGmail className={className}/>,  
+  },
+  {
     site: 'Github',
     link: 'https://github.com/jacten',
     copy: 'github.com/jacten',
@@ -100,11 +106,5 @@ const contactData = [
     link: 'https://www.instagram.com/jackvaught/',
     copy: 'instagram.com/jackvaught/',
     icon: (className = '') => <IconInstagram className={className}/>,
-  },
-  {
-    site: 'Gmail',
-    link: 'mailto:johnmvaught@gmail.com',
-    copy: 'johnmvaught@gmail.com',
-    icon: (className = '') => <IconGmail className={className}/>,  
   },
 ];

@@ -47,8 +47,9 @@ const projectData = [
     name: 'MatchaMe (andoid/iOS)',
     link: 'https://github.com/jacten/MobileMM',
     about: [
-      'Matchmaking/Dating app.',
-      'I built a lot of reusable components such as an image carousel',
+      'Mobile version of MatchaMe.',
+      'Users are rated on a scale from 1 - 10. An algorithm then generates potential matches based on that average score and those are presented to the users.',
+      'I built a lot of reusable components such as an image carousel.',
     ],
     techstack: [
       'React-Native',
@@ -61,7 +62,7 @@ const projectData = [
     link: 'https://github.com/the-storage-room/MatchaMe',
     about: [
       'Web version of MatchaMe.',
-      'Users are rated on a scale from 1 - 10. An algorithm then generates potential matches based on that average score and those are presented to the users.'
+      'Has a gamified approach to matchmaking where users gain or lose points depending on how sucsessful the matches they vote on are.'
     ],
     techstack: [
       'React',
@@ -74,7 +75,8 @@ const projectData = [
     name: 'InstaSmurf',
     link: 'https://github.com/quadReactor/papaRepo',
     about: [
-      `An instagram clone with, for reasons unknown to me, a Smurf theme. Was built as my 'greenfield' project at Hack Reactor. I did all of the CSS in an exagerated cartoon like theme. Not exactly modern design but I like it.`
+      `An instagram clone with, for some reason, a Smurf theme.`,
+      `I did the CSS in an exagerated cartoon theme. Not exactly modern design but I kinda like it.`
     ],
     techstack: [
       'React',

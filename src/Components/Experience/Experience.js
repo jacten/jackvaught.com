@@ -58,10 +58,10 @@ const jobData = [
     dates: '2018',
     location: 'Los Angeles, CA',
     bullets: [
-      'Super Deluxe (RIP) was an entertainment company that was mostly famous for their youtube videos.',
-      'Most of my time was spent building out new features on the live-kit api that they used to add interactivity to livestreams on facebook. For example, the live team had a "Build a Candidate" show and wanted me to create a closed caption overlay for the stream. I built it out in a few days using CSS transitions.',
-      'I was also responsible for all the tech needs of the other departments. This meant I helped launch a few mobile games, deployed microsites, and added pages to the main SD website.',
-      'We were in the process of planning out what the next version of that SD website would be when the company was shut down. Oh well!',
+      'Super Deluxe was an entertainment company, mostly famous for their youtube videos.',
+      'Most of my time was spent building out new features on the live-kit api used to add interactivity to livestreams on facebook. For example, the live team had a "Build a Candidate" show and wanted me to create a closed caption overlay for the stream, which I built out to take in .txt files and output a scolling overlay using CSS transitions.',
+      'I was also responsible for all the tech needs of the other departments. I helped launch a few mobile games, deployed microsites, and added pages to the main SD website.',
+      'We were in the process of planning out what the next version of that SD website would be when the company was shut down!',
     ],
     link: 'https://en.wikipedia.org/wiki/Super_Deluxe',
   },
@@ -73,9 +73,10 @@ const jobData = [
     location: 'Santa Monica, CA',
     bullets: [
       `Edmunds.com is an automotive website. They originally started out as a car information pamphlet and now their main focus is on trying to get people to buy cars online.`,
-      `Much of the work I did was pretty repetitive. We used a tool to enter in information about all the new car models as they were released. Then we used the tool create sets of rules for what different options were available with which styles and which colors. The rule creation portion was used in order to be able to custom build these cars on the Edmunds website.`,
-      `The most interesting thing I did there was a project where I had to review a new feature that our tech team built to attempt to automatize part of our job. That system would parse PDFs and attempt to extract the data from it. It then gave a score of to what degree it was confident in it's findings. I had to test it out, explain why it didn't actually work, both in concept and in execution, and write a report detailing that.`,
-      `My experience working on that report is at least a part of what made me interested in software development. I found testing out that tool to be 100 times more interesting than my normal work.`
+      `What my team did was enter in information about all the new car models as they were released. Then we used a tool to create sets of rules for what different options were available with which styles/colors. This rule creation portion allowed customers to build these cars on the Edmunds website.`,
+      `The most interesting thing I did in my time there was a project where I had to test a new feature that our offshore tech team built. This feature attempted to automatize part of our job. That system would parse PDFs and extract the data from it and enter it the system. It then gave a score of to what degree it was confident in it's findings. I had to test it out and write a report detailing my findings.`,
+      `In the end it didn't work. PDFs from different OEMs are too different and change frequently. Other OEMs don't have the data in PDFs at all or will release multiple documents with conflicting data. Theoretically, it could have been improved to help reduce some of the simplest data. But the issue with that was when it came time to writing the rules or option descriptions, if you hadn't done all of the easier data you weren't familiar enough with the car so it would slow down that portion.`,
+      `My experience working on that report is at least a part of what made me interested in software development. I found testing out that new feature to be infinitly more interesting than my normal work.`
     ],
     link: 'https://www.edmunds.com/',
   },
