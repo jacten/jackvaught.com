@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import Title from '../Title/Title.js';
 import s from './contact.module.css';
 
-import { IconGithub, IconLinkedin, IconInstagram, IconTwitter } from '../Icons';
+import { IconGithub, IconLinkedin, IconInstagram, IconTwitter, IconGmail } from '../Icons';
 
 class Contact extends Component {
 
@@ -25,18 +25,18 @@ class Contact extends Component {
       <div className={s.container} id={"contact"}>
         <Title page={'contact'}/>
         <div className={s.card}>
-          <div className={s.inner}>
-            {
-              contactData.map((contact, index) => {
-                return (
-                  <div className={s.contact} key={index}>
+          {
+            contactData.map((contact, index) => {
+              return (
+                <a href={contact.link} className={s.contact}>
+                  <div key={index}>
                     {contact.icon}
                     {contact.site}
                   </div>
-                )
-              })
-            }
-          </div>
+                </a>
+              )
+            })
+          }
         </div>
       </div>
     )
@@ -68,8 +68,8 @@ const contactData = [
   },
   {
     site: 'johnmvaught@gmail.com',
-    link: null,
-    icon: null,  
+    link: 'mailto:johnmvaught@gmail.com',
+    icon: <IconGmail/>,  
   },
 ];
 

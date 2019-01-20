@@ -4,19 +4,12 @@
 }
 
 .card {
-  background-color: var(--transparent-color-dark);
+  /* background-color: var(--transparent-color-dark-md); */
   color: var(--font-color);
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
   border-radius: var(--border-radius);
-  overflow: hidden;
-  justify-content: center;
-  padding: 6rem 0;
-  margin: 2rem;
-  margin-top: 2rem;
-  max-width: 80%;
-  box-shadow: var(--box-shadow-lg);
+  width: auto;
+  margin: 6rem;
+  /* box-shadow: var(--box-shadow-lg); */
   min-height: 60vh;
 } 
 
@@ -31,8 +24,25 @@ svg {
 
 
 .inner {
-  /* background-color: var(--sidenav-color); */
-  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.contact {
+  cursor: pointer;
+  background-color: var(--transparent-color-dark-md);
+  border-radius: var(--border-radius);
+  /* box-shadow: var(--box-shadow); */
+  margin: 2rem;
+  /* border: var(--border-sm); */
+  padding: .3rem 0 .3rem 6rem;
+}
+.contact:hover {
+  background-color: var(--sidenav-color);
+  box-shadow: none;
 }
 
 .body {

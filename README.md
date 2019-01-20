@@ -14,4 +14,6 @@ This project uses [CSS Modules](https://facebook.github.io/create-react-app/docs
 
 It also uses global css variables at the root level. (See the globals.css file)
 
+### SVG Icons
 
+SVGs came from https://www.flaticon.com/authors/google

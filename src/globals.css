@@ -7,6 +7,7 @@
   --transparent-color: rgba(58, 58, 58, 0.404);
   --transparent-color-dark: rgba(0, 0, 0, 0.4);
   --transparent-color-darker: rgba(0, 0, 0, 0.8);
+  --transparent-color-dark-md: rgba(0, 0, 0, 0.5);
   --primary-color: rgb(140, 0, 255);
   --secondary-color: rgb(66, 85, 255);
   --darker-primary: rgb(94, 31, 119);
@@ -15,6 +16,7 @@
   --border-width-lg: .5rem;
 
   --box-shadow: 0 .2rem .4rem 0 rgba(0, 0, 0, 0.055), 0 .2rem .4rem 0 rgba(0, 0, 0, 0.062);
+  --box-shadow-md: 0 1rem 2rem 0 rgba(0, 0, 0, 0.103), 0 1rem 2rem 0 rgba(0, 0, 0, 0.116);
   --box-shadow-lg: 0 2rem 4rem 0 rgba(0, 0, 0, 0.205), 0 2rem 4rem 0 rgba(0, 0, 0, 0.212);
 
   /* spacing */
@@ -40,6 +42,7 @@
   /* defaults */
   color: var(--font-color);
   font-size: 62.5%; /* 1rem === 10px */
+  font-size: 55%; /* 1rem === ???px, I like how this looks better */
 }
 
 .theme1 {
