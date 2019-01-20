@@ -16,4 +16,4 @@ It also uses global css variables at the root level. (See the globals.css file)
 
 ### SVG Icons
 
-SVGs came from https://www.flaticon.com/authors/google
+SVGs came from https://www.flaticon.com/authors/google and from https://github.com/bchiang7/v4
