@@ -81,7 +81,7 @@ class SideNav extends Component {
                 onMouseOver={() => this.handleMouseEnter('about')} 
                 onMouseLeave={() => this.handleMouseLeave('about')} 
                 style={this.shouldChangeColor('about')}
-                className={s.link}>
+                className={`${s.a} ${s.link}`}>
                 about
               </a>
               <a 
@@ -90,7 +90,7 @@ class SideNav extends Component {
                 onMouseOver={() => this.handleMouseEnter('projects')} 
                 onMouseLeave={() => this.handleMouseLeave('projects')} 
                 style={this.shouldChangeColor('projects')}
-                className={s.link}>
+                className={`${s.a} ${s.link}`}>
                 projects
               </a>
               <a 
@@ -99,7 +99,7 @@ class SideNav extends Component {
                 onMouseOver={() => this.handleMouseEnter('experience')} 
                 onMouseLeave={() => this.handleMouseLeave('experience')} 
                 style={this.shouldChangeColor('experience')}
-                className={s.link}>
+                className={`${s.a} ${s.link}`}>
                 experience
               </a>
               <a 
@@ -108,7 +108,7 @@ class SideNav extends Component {
                 onMouseOver={() => this.handleMouseEnter('contact')} 
                 onMouseLeave={() => this.handleMouseLeave('contact')}
                 style={this.shouldChangeColor('contact')}
-                className={s.link}>
+                className={`${s.a} ${s.link}`}>
                 contact
               </a>
               <a 
@@ -116,7 +116,7 @@ class SideNav extends Component {
                 onMouseOver={() => this.handleMouseEnter('resume')} 
                 onMouseLeave={() => this.handleMouseLeave('resume')}
                 style={this.shouldChangeColor('resume')}
-                className={s.resume} 
+                className={`${s.a} ${s.resume}`} 
                 href={resume}>
                 resume
               </a>

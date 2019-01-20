@@ -15,7 +15,7 @@
   background-color: var(--transparent-color-dark-md);
   color: var(--font-color);
   border-radius: var(--border-radius);
-  width: 20rem;
+  width: 19rem;
   margin: 2rem;
   padding: 1rem;
   box-shadow: var(--box-shadow-lg);
@@ -37,7 +37,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 12rem;
+  width: 11rem;
   transition: 1s;
 }
 .contact:hover {

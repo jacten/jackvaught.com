@@ -14,16 +14,21 @@ import {
 } from '../Icons';
 
 class Contact extends Component {
-
   constructor(props) {
     super(props);
-    this.state = { 
-      status: 'Copy?',
+    this.state = {
+      value: '',
     }
   }
 
-  copyToClipboard = (e) => {
-    this.textArea.select();
+  preloadTextbox = (copy) => {
+    this.setState({
+      value: copy
+    })
+  }
+
+  copyToClipboard = () => {
+    this.textArea.select()
     document.execCommand('copy');
     this.setState({ copySuccess: 'copied!' });
   };
@@ -32,21 +37,29 @@ class Contact extends Component {
     return (
       <div className={s.container} id={"contact"}>
         <Title page={'contact'}/>
+          <form>
+            <textarea
+              readOnly
+              className={s.textarea}
+              ref={(textarea) => this.textArea = textarea}
+              value={this.state.value}
+            />
+              </form>
         <div className={s.body}>
           <div className={s.card}>
             {
               contactData.map((contact, index) => {
                 return (
-                  <div key={index} className={s.contact}>
+                  <div key={index} className={s.contact} onMouseOver={() => this.preloadTextbox(contact.copy)}>
                     <div className={s.iconDiv}>
                       {contact.icon(s.icon)}
                     </div>
-                      <div className={s.copyDiv}>
-                      <IconCopy className={s.copy}/>
+                      <div className={s.copyDiv} onClick={this.copyToClipboard}>
+                        <IconCopy className={s.copy}/>
                       </div>
-                      <div className={s.linkDiv}>
-                      <IconLink className={s.link}/>
-                      </div>
+                      <a href={contact.link} className={s.linkDiv}>
+                        <IconLink className={s.link}/>
+                      </a>
                   </div>
                 )
               })
@@ -67,31 +80,31 @@ const contactData = [
   {
     site: 'Github',
     link: 'https://github.com/jacten',
-    username: 'github.com/jacten',
+    copy: 'github.com/jacten',
     icon: (className = '') => <IconGithub className={className}/>,
   },
   {
     site: 'LinkedIn',
     link: 'https://www.linkedin.com/in/jmvaught/',
-    username: 'linkedin.com/in/jmvaught/',
+    copy: 'linkedin.com/in/jmvaught/',
     icon: (className = '') => <IconLinkedin className={className}/>,
   },
   {
     site: 'Twitter',
     link: 'https://twitter.com/Jack_Vaught',
-    username: 'twitter.com/Jack_Vaught',
+    copy: 'twitter.com/Jack_Vaught',
     icon: (className = '') => <IconTwitter className={className}/>,
   },
   {
     site: 'Instagram',
     link: 'https://www.instagram.com/jackvaught/',
-    username: 'instagram.com/jackvaught/',
+    copy: 'instagram.com/jackvaught/',
     icon: (className = '') => <IconInstagram className={className}/>,
   },
   {
     site: 'Gmail',
     link: 'mailto:johnmvaught@gmail.com',
-    username: 'johnmvaught@gmail.com',
+    copy: 'johnmvaught@gmail.com',
     icon: (className = '') => <IconGmail className={className}/>,  
   },
 ];
