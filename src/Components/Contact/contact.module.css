@@ -1,30 +1,33 @@
 .container {
-  min-height: 110vh;
+  height: 110vh;
+  width: 100%;
 }
 
 .body {
-  margin: 2rem;
+  margin: 0;
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-wrap: nowrap;
+  flex-direction: row-reverse;
+  margin: 2rem;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card {
   background-color: var(--transparent-color-dark-md);
   color: var(--font-color);
   border-radius: var(--border-radius);
-  width: 19rem;
-  margin: 2rem;
-  padding: 1rem;
+  width: 12rem;
+  margin: 1rem;
+  padding: .5rem;
   box-shadow: var(--box-shadow-lg);
 }
 
 .status {
-  flex: 1;
-  margin: 2rem 0rem 2rem 20rem;
-  font-size: 15rem;
+  margin: 14rem 2rem;
+  font-size: 6rem;
   font-weight: lighter;
 }
 
@@ -37,18 +40,18 @@
   cursor: pointer;
   background-color: var(--transparent-color-dark-md);
   border-radius: var(--border-radius);
-  margin: 1rem;
-  padding: .3rem 0rem .3rem 6rem;
+  margin: .5rem;
+  padding: .3rem 0rem .3rem 3rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 11rem;
+  width: 8rem;
   transition: 1s;
 }
 .contact:hover {
   background-color: var(--sidenav-color);
-  width: 35rem;
+  width: 30rem;
   transition: 1s;
 }
 
@@ -81,29 +84,9 @@
   opacity: 1;
   transition: visibility .3s linear .3s, opacity .3s linear .3s, fill .1s;
 }
-/* 
-.link:hover, .copy:hover {
-  fill: var(--primary-color);
-} */
-
 
 .copyDiv:hover .copy, .linkDiv:hover .link{
   fill: var(--primary-color);
-}
-
-.body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: calc(100vh - 15rem);
-}
-
-.imgbox {
-  transition: 1s;
-  cursor: copy;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .contact {
@@ -112,25 +95,72 @@
   transition: .5s;
 }
 
-.imgbox:hover .img{
-  width: 20%;
-  transition: .3s;
-}
-
-
 .textarea {
   height: 0px;
   opacity: 0;
 }
-
 /* Tablet */
 @media only screen and (min-width : 30em) {
-
+  .status {
+    margin: 10rem 0 2rem 3rem;
+    width: 100%;
+    font-size: 9rem;
+  }
 }
 
 /* Desktop */
 @media only screen and (min-width : 50em) {
+  
+  .card {
+    width: 19rem;
+    margin: 0 2rem;
+    padding: 1rem;
+  }
+  
+  .status {
+    margin: 6rem 10rem 10rem 22rem;
+    font-size: 15rem;
+  }
+  
+  .status {
+    transition: 1s;
+    text-shadow: .5rem .5rem var(--primary-color), 1rem 1rem var(--secondary-color), 1.5rem 1.5rem var(--primary-color);
+  }
+  
+  .contact {
+    margin: 1rem;
+    padding: .3rem 0rem .3rem 6rem;
+    width: 11rem;
+  }
+  .contact:hover {
+    width: 35rem;
+  }
 
+  .link, .copy, .icon {
+    width: 5rem;
+    height: 8rem;
+  }
+  
+  .contact:hover .link, .contact:hover .icon, .contact:hover .copy {
+    transition: .5s;
+    margin-right: 6rem;
+  }
+  
+  .contact:hover .copy, .contact:hover .link {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility .3s linear .3s, opacity .3s linear .3s, fill .1s;
+  }
+  
+  .copyDiv:hover .copy, .linkDiv:hover .link{
+    fill: var(--primary-color);
+  }
+  
+  .contact {
+    font-size: var(--secondary-fontsize-lg);
+    color: var(--secondary-color);
+    transition: .5s;
+  }
 }
 
 /* XL Desktop */

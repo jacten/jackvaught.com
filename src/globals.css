@@ -48,7 +48,7 @@
 .theme1 {
   --primary-color: rgb(140, 0, 255);
   --secondary-color: rgb(110, 151, 255);
-  --darker-primary: rgb(94, 31, 119);
+  --darker-primary: rgb(113, 44, 139);
   --border-sm: var(--border-width-sm) solid var(--secondary-color);
   --border-lg: var(--border-width-lg) solid var(--secondary-color);
   background: radial-gradient(circle, var(--primary-color) 0%, var(--secondary-color) 100%);
@@ -58,7 +58,7 @@
 .theme2 {
   --primary-color: rgb(0, 140, 255);
   --secondary-color: rgb(189, 228, 163);
-  --darker-primary: rgb(31, 69, 119);
+  --darker-primary: rgb(47, 90, 146);
   --border-sm: var(--border-width-sm) solid var(--secondary-color);
   --border-lg: var(--border-width-lg) solid var(--secondary-color);
   background: radial-gradient(circle, var(--primary-color) 0%, var(--secondary-color) 100%);
@@ -68,7 +68,7 @@
 .theme3 {
   --primary-color: rgb(255, 251, 0);
   --secondary-color: rgb(180, 86, 180);
-  --darker-primary: rgb(119, 106, 31);
+  --darker-primary: rgb(148, 132, 44);
   --border-sm: var(--border-width-sm) solid var(--secondary-color);
   --border-lg: var(--border-width-lg) solid var(--secondary-color);
   background: radial-gradient(circle, var(--primary-color) 0%, var(--secondary-color) 100%);
@@ -78,7 +78,7 @@
 .theme4 {
   --primary-color: rgb(136, 72, 255);
   --secondary-color: rgb(110, 255, 110);
-  --darker-primary: rgb(60, 15, 102);
+  --darker-primary: rgb(98, 42, 150);
   --border-sm: var(--border-width-sm) solid var(--secondary-color);
   --border-lg: var(--border-width-lg) solid var(--secondary-color);
   background: radial-gradient(circle, var(--primary-color) 0%, var(--secondary-color) 100%);
@@ -88,7 +88,7 @@
 .theme5 {
   --primary-color: rgb(23, 162, 255);
   --secondary-color: rgb(255, 230, 0);
-  --darker-primary: rgb(13, 80, 126);
+  --darker-primary: rgb(34, 94, 134);
   --border-sm: var(--border-width-sm) solid var(--secondary-color);
   --border-lg: var(--border-width-lg) solid var(--secondary-color);
   background: radial-gradient(circle, var(--primary-color) 0%, var(--secondary-color) 100%);
@@ -98,7 +98,7 @@
 .theme6 {
   --primary-color: rgb(68, 0, 255);
   --secondary-color: rgb(255, 230, 0);
-  --darker-primary: rgb(51, 18, 128);
+  --darker-primary: rgb(70, 36, 151);
   --border-sm: var(--border-width-sm) solid var(--secondary-color);
   --border-lg: var(--border-width-lg) solid var(--secondary-color);
   background: radial-gradient(circle, var(--primary-color) 0%, var(--secondary-color) 100%);
@@ -109,7 +109,7 @@
 .theme7 {
   --primary-color: rgb(255, 0, 0);
   --secondary-color: rgb(126, 161, 255);
-  --darker-primary: rgb(66, 12, 12);
+  --darker-primary: rgb(109, 20, 20);
   --border-sm: var(--border-width-sm) solid var(--secondary-color);
   --border-lg: var(--border-width-lg) solid var(--secondary-color);
   background: radial-gradient(circle, var(--primary-color) 0%, var(--secondary-color) 100%);

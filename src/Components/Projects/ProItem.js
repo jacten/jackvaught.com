@@ -63,5 +63,3 @@ class ProItem extends Component {
 };
 
 export default ProItem;
-
-// <img src={image} alt={name} className={s.image}/>

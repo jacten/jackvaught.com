@@ -89,7 +89,7 @@ const jobData = [
     bullets: [
       'I got this job straight out of college. I majored in History so IT was a natural next path.',
       'The job consisted of relatively simple IT tasks. I have always been good at computers (or rather, good at googling how to do things) so I found the work to be pretty easy.',
-      'My googling skills continue to be useful in coding.',
+      'These googling skills continue to be useful in coding!',
       `I left this job to move to LA to try to do screenwriting. That didn't work out so well. My father wants to do screenwriting as well and he works as an IT director so I guess being delusional runs in the family.`
     ],
     link: 'https://www.sesp.northwestern.edu/',

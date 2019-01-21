@@ -35,7 +35,7 @@ class Contact extends Component {
   
   render() {
     return (
-      <div className={s.container} id={"contact"}>
+      <div className={s.container} id={'contact'}>
         <Title page={'contact'}/>
           <form>
             <textarea
@@ -44,8 +44,11 @@ class Contact extends Component {
               ref={(textarea) => this.textArea = textarea}
               value={this.state.value}
             />
-              </form>
+          </form>
         <div className={s.body}>
+          <div className={s.status}>
+            Hit Me Up!
+          </div>
           <div className={s.card}>
             {
               contactData.map((contact, index) => {
@@ -54,19 +57,16 @@ class Contact extends Component {
                     <div className={s.iconDiv}>
                       {contact.icon(s.icon)}
                     </div>
-                      <div className={s.copyDiv} onClick={this.copyToClipboard}>
-                        <IconCopy className={s.copy}/>
-                      </div>
                       <a href={contact.link} className={s.linkDiv}>
                         <IconLink className={s.link}/>
                       </a>
+                      <div className={s.copyDiv} onClick={this.copyToClipboard}>
+                        <IconCopy className={s.copy}/>
+                      </div>
                   </div>
                 )
               })
             }
-          </div>
-          <div className={s.status}>
-            Hit Me Up!
           </div>
         </div>
       </div>
