@@ -44,7 +44,7 @@ const projectData = [
     image: natemoji,
   },
   {
-    name: 'MatchaMe (andoid/iOS)',
+    name: 'MatchaMe (android/iOS)',
     link: 'https://github.com/jacten/MobileMM',
     about: [
       'Mobile version of MatchaMe.',
