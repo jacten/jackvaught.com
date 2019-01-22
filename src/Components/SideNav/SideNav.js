@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import s from './sidenav.module.css';
 import hamburger from '../../Assets/hamburger.png';
-import resume from '../../Assets/jack-vaught-resume.pdf';
+import resume from '../../Assets/JackVaughtResume.pdf';
 
 class SideNav extends Component {
   constructor(props) {
@@ -118,7 +118,7 @@ class SideNav extends Component {
                 style={this.shouldChangeColor('resume')}
                 className={`${s.a} ${s.resume}`} 
                 href={resume}>
-                resume
+                résumé
               </a>
             </div>
           }
