@@ -12,7 +12,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .card {
@@ -118,7 +118,7 @@
   }
   
   .status {
-    margin: 6rem 10rem 10rem 22rem;
+    margin: 0rem 10rem 10rem 10rem;
     font-size: 15rem;
   }
   
