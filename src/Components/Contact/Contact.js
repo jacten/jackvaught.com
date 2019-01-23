@@ -1,17 +1,13 @@
 import React, { Component } from 'react';
 
 import Title from '../Title/Title.js';
+import contactData from '../../Data/contactData';
 import s from './contact.module.css';
 
-import { 
-  IconGithub, 
-  IconLinkedin, 
-  IconInstagram, 
-  IconTwitter, 
-  IconGmail, 
+import {
   IconCopy, 
   IconLink,
-} from '../Icons';
+} from '../../Icons';
 
 class Contact extends Component {
   constructor(props) {
@@ -75,36 +71,3 @@ class Contact extends Component {
 }
 
 export default Contact;
-
-const contactData = [
-  {
-    site: 'Gmail',
-    link: 'mailto:johnmvaught@gmail.com',
-    copy: 'johnmvaught@gmail.com',
-    icon: (className = '') => <IconGmail className={className}/>,  
-  },
-  {
-    site: 'Github',
-    link: 'https://github.com/jacten',
-    copy: 'github.com/jacten',
-    icon: (className = '') => <IconGithub className={className}/>,
-  },
-  {
-    site: 'LinkedIn',
-    link: 'https://www.linkedin.com/in/jmvaught/',
-    copy: 'linkedin.com/in/jmvaught/',
-    icon: (className = '') => <IconLinkedin className={className}/>,
-  },
-  {
-    site: 'Twitter',
-    link: 'https://twitter.com/Jack_Vaught',
-    copy: 'twitter.com/Jack_Vaught',
-    icon: (className = '') => <IconTwitter className={className}/>,
-  },
-  {
-    site: 'Instagram',
-    link: 'https://www.instagram.com/jackvaught/',
-    copy: 'instagram.com/jackvaught/',
-    icon: (className = '') => <IconInstagram className={className}/>,
-  },
-];

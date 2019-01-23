@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import s from './sidenav.module.css';
-import { IconHamburger } from '../Icons';
+import { IconHamburger } from '../../Icons';
 import resume from '../../Assets/JackVaughtResume.pdf';
 
 class SideNav extends Component {

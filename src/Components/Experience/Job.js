@@ -1,7 +1,7 @@
 import React from 'react';
 
 import s from './job.module.css';
-import { IconLink } from '../Icons';
+import { IconLink } from '../../Icons';
 
 const Job = ({item}) => {
   const {company, title, dates, location, bullets, link} = item;

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { IconX } from '../Icons';
+import { IconX } from '../../Icons';
 import s from './modal.module.css';
 
 const Modal = ({toggle, image}) => {
