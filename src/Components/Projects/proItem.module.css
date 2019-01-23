@@ -67,23 +67,28 @@
 .a {
   width: 2rem;
   height: 2rem;
-  padding: 1rem;
+  padding: 1.3rem;
   margin: .5rem;
+  background-color: var(--transparent-color-darker);
+  border-radius: var(--border-radius);
+  border: var(--border-width-sm) solid transparent;
+  transition: .5s;
 }
 
 .link {
+  cursor: pointer;
+  fill: var(--font-color);
   width: 2rem;
   height: 2rem;
   transition: .5s;
-  background-color: var(--transparent-color-darker);
-  border-radius: var(--border-radius);
-  padding: 1rem;
-  border: var(--border-width-sm) solid transparent;
 }
 
-.link:hover {
+.a:hover .link {
+  fill: var(--secondary-color);
+}
+
+.a:hover {
   border: var(--border-sm);
-  transition: .5s;
 }
 
 /* Tablet */
@@ -120,6 +125,12 @@
   .a {
     width: 3rem;
     height: 3rem;
+  }
+
+  .link {
+    width: 3rem;
+    height: 3rem;
+    transition: .5s;
   }
 }
 
@@ -164,16 +175,9 @@
     padding: 1rem;
     line-height: 2rem;
   }
-
-  .link {
-    width: 3rem;
-    height: 3rem;
-    transition: .5s;
-  }
 }
 /* Desktop */
 @media only screen and (min-width : 60em) {
-  
   .card {
     max-width: 65rem;
     width: 65rem;

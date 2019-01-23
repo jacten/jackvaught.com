@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import s from './sidenav.module.css';
-import hamburger from '../../Assets/hamburger.png';
+import { IconHamburger } from '../Icons';
 import resume from '../../Assets/JackVaughtResume.pdf';
 
 class SideNav extends Component {
@@ -70,7 +70,8 @@ class SideNav extends Component {
             <div className={s.navContainer}>
           {
             !this.state.sideNav && 
-            <img src={hamburger} alt={"Links!"} className={s.hamburger} onClick={this.burgerToggle}/>
+              <IconHamburger className={s.hamburger}/>
+
           }
           {
             ((this.state.drawerOpen && this.state.showLinks) || this.state.sideNav) &&

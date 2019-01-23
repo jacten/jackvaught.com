@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 
 import Modal from '../Modal/Modal';
 
-import linkIcon from '../../Assets/link.png';
-import galleryIcon from '../../Assets/gallery.png';
+import { IconPhotos, IconLink } from '../Icons';
 
 import s from './proItem.module.css';
 
@@ -31,10 +30,10 @@ class ProItem extends Component {
         <div className={s.image} style={{backgroundImage: `url(${image})`}}>
           <div className={s.links}>
             <a href={link} className={s.a}>
-              <img src={linkIcon} alt={link} className={s.link}/>
+              <IconLink className={s.link}/>
             </a>
             <div className={s.a} onClick={this.toggleModal}>
-              <img src={galleryIcon} alt={'photos'} className={s.link}/>
+              <IconPhotos className={s.link}/>
             </div>
           </div>
           <div className={s.filter}>

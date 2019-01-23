@@ -8,7 +8,8 @@
   z-index: 3;
   position: absolute;
   top: .3rem;
-  left: .4rem;
+  left: .3rem;
+  fill: var(--font-color);
 }
 
 .container, .drawer {
@@ -102,7 +103,7 @@
     width: 4rem;
     height: 4rem;
     top: .6rem;
-    left: 1rem;
+    left: .8rem;
   }
 
   .drawerTitle{

@@ -1,7 +1,7 @@
 import React from 'react';
 
-import linkIcon from '../../Assets/link.png';
 import s from './job.module.css';
+import { IconLink } from '../Icons';
 
 const Job = ({item}) => {
   const {company, title, dates, location, bullets, link} = item;
@@ -11,7 +11,7 @@ const Job = ({item}) => {
         <div className={s.company}>
           {company}
           <a href={link} className={s.a}>
-            <img src={linkIcon} alt={link} className={s.link}/>
+            <IconLink className={s.link}/>
           </a>
         </div>
         <div className={s.title}>

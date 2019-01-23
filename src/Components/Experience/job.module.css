@@ -39,24 +39,25 @@
 }
 
 .a {
-  width: 3rem;
-  height: 3rem;
   float: right;
-  margin-top: -1.4rem;
+  border: var(--border-width-sm) solid transparent;
+  border-radius: var(--border-radius);
+  transition: .5s;
+  margin: .5rem;
 }
+
 .link {
   width: 3rem;
   height: 3rem;
   float: right;
   transition: .5s;
-  border-radius: var(--border-radius);
-  padding: 1rem;
-  border: var(--border-width-sm) solid transparent;
+  padding: 1.2rem;
+  fill: var(--font-color);
 }
 
-.link:hover {
-  border: var(--border-sm);
+.a:hover {
   transition: .5s;
+  border: var(--border-sm);
 }
 
 /* Tablet */
@@ -98,25 +99,9 @@
     padding: 1rem;
     line-height: 2rem;
   }
-  
-  .a {
-    width: 3rem;
-    height: 3rem;
-    float: right;
-  }
   .link {
     width: 3rem;
     height: 3rem;
-    float: right;
-    transition: .5s;
-    border-radius: var(--border-radius);
-    padding: 1rem;
-    border: var(--border-width-sm) solid transparent;
-  }
-  
-  .link:hover {
-    border: var(--border-sm);
-    transition: .5s;
   }
 }
 
@@ -158,26 +143,6 @@
     font-size: var(--body-fontsize-md);
     padding: 1rem;
     line-height: 2rem;
-  }
-  
-  .a {
-    width: 3rem;
-    height: 3rem;
-    float: right;
-  }
-  .link {
-    width: 3rem;
-    height: 3rem;
-    float: right;
-    transition: .5s;
-    border-radius: var(--border-radius);
-    padding: 1rem;
-    border: var(--border-width-sm) solid transparent;
-  }
-  
-  .link:hover {
-    border: var(--border-sm);
-    transition: .5s;
   }
 }
 
