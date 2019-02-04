@@ -60,6 +60,11 @@
   border: var(--border-sm);
 }
 
+.a:hover .link {
+  fill: var(--secondary-color);
+  transition: .5s;
+}
+
 /* Tablet */
 @media only screen and (min-width : 30em) {
   .container {

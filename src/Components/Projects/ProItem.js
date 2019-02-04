@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import Modal from '../Modal/Modal';
 
-import { IconPhotos, IconLink } from '../Icons';
+import { IconPhotos, IconLink } from '../../Icons';
 
 import s from './proItem.module.css';
 

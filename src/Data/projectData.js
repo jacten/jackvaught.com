@@ -1,7 +1,7 @@
-import natemoji from '../Assets/natemoji.png';
-import mmm1 from '../Assets/mmm1.png';
-import matchame1 from '../Assets/matchame1.png';
-import instasmurf from '../Assets/instasmurf.png';
+import natemoji from '../Assets/natemoji/natemoji.png';
+import mmm1 from '../Assets/mmm/mmm2.png';
+import matchame1 from '../Assets/mm/mm1.png';
+import instasmurf from '../Assets/instasmurf/instasmurf.png';
 
 export default [
   {
