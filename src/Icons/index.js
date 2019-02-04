@@ -8,6 +8,8 @@ import IconLink from './link';
 import IconX from './x';
 import IconPhotos from './photos';
 import IconHamburger from './hamburger';
+import IconLeft from './left';
+import IconRight from './right';
 
 export {
   IconGithub,
@@ -20,4 +22,6 @@ export {
   IconX,
   IconPhotos,
   IconHamburger,
+  IconLeft,
+  IconRight,
 };

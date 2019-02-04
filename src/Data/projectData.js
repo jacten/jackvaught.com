@@ -1,6 +1,19 @@
-import natemoji from '../Assets/natemoji/natemoji.png';
-import mmm1 from '../Assets/mmm/mmm2.png';
-import matchame1 from '../Assets/mm/mm1.png';
+import natemoji1 from '../Assets/natemoji/natemoji.png';
+import natemoji2 from '../Assets/natemoji/natemoji2.jpg';
+import natemoji3 from '../Assets/natemoji/natemoji3.PNG';
+
+import mmm1 from '../Assets/mmm/mmm1.png';
+import mmm2 from '../Assets/mmm/mmm2.png';
+import mmm3 from '../Assets/mmm/mmm3.png';
+import mmm4 from '../Assets/mmm/mmm4.png';
+import mmm5 from '../Assets/mmm/mmm5.png';
+
+import mm1 from '../Assets/mm/mm1.png';
+import mm2 from '../Assets/mm/mm2.png';
+import mm3 from '../Assets/mm/mm3.png';
+import mm4 from '../Assets/mm/mm4.png';
+import mm5 from '../Assets/mm/mm5.png';
+
 import instasmurf from '../Assets/instasmurf/instasmurf.png';
 
 export default [
@@ -15,7 +28,11 @@ export default [
       'Java',
       'Swift',
     ],
-    image: natemoji,
+    image: [
+      natemoji1,
+      natemoji2,
+      natemoji3,
+    ],
   },
   {
     name: 'MatchaMe (android/iOS)',
@@ -29,7 +46,13 @@ export default [
       'React-Native',
       'React Navigation',
     ],
-    image: mmm1,
+    image: [
+      mmm1,
+      mmm2,
+      mmm3,
+      mmm4,
+      mmm5,
+    ],
   },
   {
     name: 'MatchaMe (web)',
@@ -43,7 +66,13 @@ export default [
       'socket.io',
       'mySQL',
     ],
-    image: matchame1,
+    image: [
+      mm1,
+      mm2,
+      mm3,
+      mm4,
+      mm5,
+    ],
   },
   {
     name: 'InstaSmurf',
@@ -57,6 +86,8 @@ export default [
       'NodeJS',
       'mongoDB',
     ],
-    image: instasmurf,
+    image: [
+      instasmurf
+    ],
   },
 ];

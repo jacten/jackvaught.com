@@ -9,9 +9,9 @@ import s from './proItem.module.css';
 class ProItem extends Component {
   constructor(props) {
     super(props);
-
     this.state = {
       modalOpen: false,
+      target: 0,
     };
   }
 
@@ -21,13 +21,36 @@ class ProItem extends Component {
     })
   }
 
+  leftArrow = (length) => {
+    let newTarget = ( this.state.target - 1 ) % length;
+    this.setState({
+      target: newTarget,
+    })
+  }
+
+  rightArrow = (length) => {
+    let newTarget = ( this.state.target + 1 ) % length;
+    this.setState({
+      target: newTarget,
+    })
+  }
+
   render() {
     const {project} = this.props;
     const {name, link, about, techstack, image} = project;
+    const {length} = image;
     return (
       <div className={s.card}>
-        { this.state.modalOpen && <Modal toggle={this.toggleModal} image={image}/> }
-        <div className={s.image} style={{backgroundImage: `url(${image})`}}>
+        { 
+          this.state.modalOpen && 
+          <Modal 
+            left={() => this.leftArrow(length)}
+            right={() => this.rightArrow(length)}
+            toggle={this.toggleModal} 
+            image={image[this.state.target]}
+            /> 
+        }
+        <div className={s.image} style={{backgroundImage: `url(${image[0]})`}}>
           <div className={s.links}>
             <a href={link} className={s.a}>
               <IconLink className={s.link}/>
