@@ -24,6 +24,8 @@
   --spacer-lg: 2rem;
 
   /* fonts */
+  --font-family-header: 'Poiret One', cursive;
+  --font-family-body: 'Source Sans Pro', sans-serif;
   /* sm */
   --title-fontsize-sm: 2.8rem;
   --secondary-fontsize-sm: 1.8rem;
@@ -45,9 +47,9 @@
 }
 
 .theme1 {
-  --primary-color: rgb(140, 0, 255);
-  --secondary-color: rgb(110, 151, 255);
-  --darker-primary: rgb(113, 44, 139);
+  --primary-color: rgb(248, 37, 255);
+  --secondary-color: rgb(146, 255, 161);
+  --darker-primary: rgb(158, 38, 112);
   --border-sm: var(--border-width-sm) solid var(--secondary-color);
   --border-lg: var(--border-width-lg) solid var(--secondary-color);
   background: radial-gradient(circle, var(--primary-color) 0%, var(--secondary-color) 100%);
@@ -65,7 +67,7 @@
 }
 
 .theme3 {
-  --primary-color: rgb(255, 251, 0);
+  --primary-color: rgb(240, 213, 62);
   --secondary-color: rgb(180, 86, 180);
   --darker-primary: rgb(148, 132, 44);
   --border-sm: var(--border-width-sm) solid var(--secondary-color);
@@ -126,8 +128,8 @@ body {
   margin: 0;
   padding: 0;
   height: 100vh;
-  font-family: sans-serif;
   background: grey;
+  font-family: var(--font-family-body);
 }
 
 a {
