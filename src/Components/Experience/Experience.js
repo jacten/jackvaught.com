@@ -11,7 +11,31 @@ class Experience extends Component {
 
     this.state = { 
       active: 0,
+      height: 0,
     };
+  }
+
+  resizeHeight = () => {
+    const element = this.cardElement;
+    const currentHeight = element.clientHeight;
+    let nextHeight
+
+    requestAnimationFrame(function() {
+    nextHeight = element.scrollHeight;
+    })
+
+    requestAnimationFrame(function() {
+      element.style.height = currentHeight + 'px';
+      
+      requestAnimationFrame(function() {
+        element.style.height = nextHeight + 'px';
+      });
+      
+      element.addEventListener('transitionend', function eventListener(e) {
+          element.removeEventListener('transitionend', eventListener);
+          element.style.height = null;
+        });
+    })
   }
 
   handleJobClick = (jobIndex) => {
@@ -20,13 +44,15 @@ class Experience extends Component {
         active: jobIndex,
       })
     }
+    this.resizeHeight();
   }
+  
 
   render() {
     return (
       <div className={s.container} id={"experience"}>
         <Title page={'experience'}/>
-        <div className={s.card}>
+        <div ref={(cardElement) => {this.cardElement = cardElement}} className={s.card}>
           <div className={s.sideNav}>
           {
             experienceData.map((job, index) => {

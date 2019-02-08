@@ -8,17 +8,19 @@
   background-color: var(--transparent-color-dark);
   color: var(--font-color);
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
   justify-content: flex-start;
   margin: 1.5rem 1.5rem 3rem 1.5rem;
   max-width: 100%;
-  /* border: var(--border-sm); */
   box-shadow: var(--box-shadow-lg);
   overflow: hidden;
-  transition: 1s;
+  transition: height 0.3s ease-out;
+  height: auto;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 .sideNav {
@@ -30,6 +32,7 @@
   padding-bottom: 2rem;
   width: 100%;
   margin: 0 1rem;
+  min-height: 8rem;
 }
 
 .buttonBox {
@@ -70,6 +73,10 @@
     display: flex;
     flex-direction: row;
   }
+
+  .card {
+    margin: 3rem;
+  }
 }
 
 /* Desktop */
@@ -78,6 +85,7 @@
   .card {
     margin: 4rem auto;
     max-width: 90%;
+    flex-direction: row;
   }
   
   .sideNav {

@@ -68,7 +68,7 @@
 /* Tablet */
 @media only screen and (min-width : 30em) {
   .container {
-    padding: 5rem;
+    padding: 2rem 3rem;
   }
   
   .company {
@@ -113,7 +113,7 @@
 /* Desktop */
 @media only screen and (min-width : 50em) {
   .container {
-    padding: 5rem;
+    padding: 4rem 5rem;
   }
   
   .company {
