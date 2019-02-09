@@ -69,6 +69,12 @@ class SideNav extends Component {
       },500)
     }
   }
+
+  addDelay = (delay) => {
+    return this.state.sideNav
+      ? delay + .5 + 's'
+      : delay + 's'
+  }
   
   render() {
     return (
@@ -88,7 +94,7 @@ class SideNav extends Component {
                 onClick={this.burgerToggle}
                 onMouseOver={() => this.handleMouseEnter('about')} 
                 onMouseLeave={() => this.handleMouseLeave('about')} 
-                style={{...this.shouldChangeColor('about'), animationDelay: '0.4s'}}
+                style={{...this.shouldChangeColor('about'), animationDelay: this.addDelay(.1)}}
                 className={this.state.class}>
                 about
               </a>
@@ -97,7 +103,7 @@ class SideNav extends Component {
                 onClick={this.burgerToggle}
                 onMouseOver={() => this.handleMouseEnter('projects')} 
                 onMouseLeave={() => this.handleMouseLeave('projects')} 
-                style={{...this.shouldChangeColor('projects'), animationDelay: '0.5s'}}
+                style={{...this.shouldChangeColor('projects'), animationDelay: this.addDelay(.2)}}
                 className={this.state.class}>
                 projects
               </a>
@@ -106,7 +112,7 @@ class SideNav extends Component {
                 onClick={this.burgerToggle}
                 onMouseOver={() => this.handleMouseEnter('experience')} 
                 onMouseLeave={() => this.handleMouseLeave('experience')} 
-                style={{...this.shouldChangeColor('experience'), animationDelay: '0.6s'}}
+                style={{...this.shouldChangeColor('experience'), animationDelay: this.addDelay(.3)}}
                 className={this.state.class}>
                 experience
               </a>
@@ -115,7 +121,7 @@ class SideNav extends Component {
                 onClick={this.burgerToggle}
                 onMouseOver={() => this.handleMouseEnter('contact')} 
                 onMouseLeave={() => this.handleMouseLeave('contact')}
-                style={{...this.shouldChangeColor('contact'), animationDelay: '0.7s'}}
+                style={{...this.shouldChangeColor('contact'), animationDelay: this.addDelay(.4)}}
                 className={this.state.class}>
                 contact
               </a>
@@ -123,7 +129,7 @@ class SideNav extends Component {
                 onClick={this.burgerToggle}
                 onMouseOver={() => this.handleMouseEnter('resume')} 
                 onMouseLeave={() => this.handleMouseLeave('resume')}
-                style={{...this.shouldChangeColor('resume'), animationDelay: '0.8s'}}
+                style={{...this.shouldChangeColor('resume'), animationDelay: this.addDelay(.5)}}
                 className={`${this.state.class} ${s.resume}`} 
                 href={resume}>
                 résumé

@@ -16,7 +16,7 @@
 
 .scroll {
   animation: fade-up ease 0.6s forwards;
-  animation-delay: 1s;
+  animation-delay: 0.4s;
 }
 
 @keyframes fade-up {
@@ -64,10 +64,6 @@
   line-height: 1.5rem;
 }
 
-.card {
-
-}
-
 .image {
   float: right;
   margin: 1rem;
@@ -84,7 +80,7 @@
 /* Tablet */
 @media only screen and (min-width : 30em) {
   .container {
-    min-height: 200vh;
+    min-height: 100vh;
     margin-bottom: .6rem;
     max-width: calc(100vw - 6rem);
   }
@@ -114,8 +110,12 @@
 
 /* Desktop */
 @media only screen and (min-width : 50em) {
+  .scroll {
+    animation-delay: 1s;
+  }
+
   .container {
-    min-height: 110vh;
+    min-height: 100vh;
     max-width: calc(100vw - 20rem);
   }
   .card {
