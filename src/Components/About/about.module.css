@@ -37,6 +37,7 @@
 }
 
 .job {
+  font-family: var(--font-family-header);
   border-bottom: var(--border-sm);
 }
 
@@ -47,6 +48,7 @@
 }
 
 .name {
+  font-family: var(--font-family-header);
   font-size: var(--secondary-fontsize-sm);
   padding: var(--spacer-sm) var(--spacer-sm) 0 1rem;
 }

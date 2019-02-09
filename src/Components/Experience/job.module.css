@@ -7,21 +7,25 @@
 .company {
   font-size: var(--title-fontsize-sm);
   padding-bottom: .2rem;
+  font-family: var(--font-family-header);
 }
 
 .title {
   font-size: var(--secondary-fontsize-sm);
   padding-bottom: .5rem;
+  font-family: var(--font-family-header);
 }
 
 .dates {
   font-size: var(--body-fontsize-sm);
   padding-bottom: .5rem;
+  font-family: var(--font-family-header);
 }
 
 .location {
   font-size: var(--body-fontsize-sm);
   padding-bottom: 1rem;
+  font-family: var(--font-family-header);
 }
 
 .header {
