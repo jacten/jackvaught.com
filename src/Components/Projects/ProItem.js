@@ -60,43 +60,45 @@ class ProItem extends Component {
     const {name, link, about, techstack, image} = project;
     const {length} = image;
     return (
-      <div className={this.state.class} ref={(el) => this.proItem = el}>
-        { 
-          this.state.modalOpen && 
-          <Modal 
-            left={() => this.leftArrow(length)}
-            right={() => this.rightArrow(length)}
-            toggle={this.toggleModal} 
-            image={image[this.state.target]}
-            /> 
-        }
-        <div className={s.image} style={{backgroundImage: `url(${image[0]})`}}>
-          <div className={s.links}>
-            <a href={link} className={s.a}>
-              <IconLink className={s.link}/>
-            </a>
-            <div className={s.a} onClick={this.toggleModal}>
-              <IconPhotos className={s.link}/>
-            </div>
-          </div>
-          <div className={s.filter}>
-            <div className={s.header}>
-              <div className={s.name}>
-                {name}
-              </div>
-              <div className={s.tech}>
-                {
-                  techstack.map((tech, index) => {
-                    return <div className={s.techstack} key={index}>{tech}</div>
-                  })
-                }
+      <div className={s.holder}>
+          { 
+            this.state.modalOpen && 
+            <Modal 
+              left={() => this.leftArrow(length)}
+              right={() => this.rightArrow(length)}
+              toggle={this.toggleModal} 
+              image={image[this.state.target]}
+              /> 
+          }
+        <div className={this.state.class} ref={(el) => this.proItem = el}>
+          <div className={s.image} style={{backgroundImage: `url(${image[0]})`}}>
+            <div className={s.links}>
+              <a href={link} className={s.a}>
+                <IconLink className={s.link}/>
+              </a>
+              <div className={s.a} onClick={this.toggleModal}>
+                <IconPhotos className={s.link}/>
               </div>
             </div>
-            {
-              about.map((info, index) => {
-                return <div className={s.about} key={index}>{info}</div>
-              })
-            }
+            <div className={s.filter}>
+              <div className={s.header}>
+                <div className={s.name}>
+                  {name}
+                </div>
+                <div className={s.tech}>
+                  {
+                    techstack.map((tech, index) => {
+                      return <div className={s.techstack} key={index}>{tech}</div>
+                    })
+                  }
+                </div>
+              </div>
+              {
+                about.map((info, index) => {
+                  return <div className={s.about} key={index}>{info}</div>
+                })
+              }
+            </div>
           </div>
         </div>
       </div>
