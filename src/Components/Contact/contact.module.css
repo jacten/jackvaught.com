@@ -4,11 +4,9 @@
 }
 
 .body {
-  margin: 0;
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row-reverse;
-  margin: 2rem;
   height: 100%;
   display: flex;
   justify-content: space-between;
@@ -42,8 +40,8 @@
 }
 
 .status {
-  margin: 14rem 2rem;
-  font-size: 6rem;
+  margin: .5rem;
+  font-size: 8rem;
   font-weight: lighter;
   transform: scaleX(0);
   transition: 1s;
