@@ -15,10 +15,25 @@
 .container, .drawer {
   position: sticky;
   top: 0;
-  background-color: var(--sidenav-color);
   transition: .5s;
   width: 3rem;
   height: 100vh;
+  background-color: var(--sidenav-color);
+}
+
+.scroll {
+  animation: fade-in-right ease 0.4s forwards;
+}
+
+@keyframes fade-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .links {
@@ -59,7 +74,8 @@
   color: var(--font-color);
   display: block;
   transition: 1s;
-  font-family: var(--font-family-header); 
+  font-family: var(--font-family-header);
+  opacity: 0;
 }
 
 .title {

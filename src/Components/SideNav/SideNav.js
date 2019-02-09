@@ -13,11 +13,12 @@ class SideNav extends Component {
       sideNav: false,
       drawerOpen: false,
       showLinks: false,
+      class: `${s.a} ${s.link}`,
     };
   }
 
   handleScroll = (event) => {
-    console.log('sidenav')
+    this.setState({class: `${s.a} ${s.link} ${s.scroll}`})
     window.removeEventListener('scroll', this.handleScroll)
   }
 
@@ -87,8 +88,8 @@ class SideNav extends Component {
                 onClick={this.burgerToggle}
                 onMouseOver={() => this.handleMouseEnter('about')} 
                 onMouseLeave={() => this.handleMouseLeave('about')} 
-                style={this.shouldChangeColor('about')}
-                className={`${s.a} ${s.link}`}>
+                style={{...this.shouldChangeColor('about'), animationDelay: '0.4s'}}
+                className={this.state.class}>
                 about
               </a>
               <a 
@@ -96,8 +97,8 @@ class SideNav extends Component {
                 onClick={this.burgerToggle}
                 onMouseOver={() => this.handleMouseEnter('projects')} 
                 onMouseLeave={() => this.handleMouseLeave('projects')} 
-                style={this.shouldChangeColor('projects')}
-                className={`${s.a} ${s.link}`}>
+                style={{...this.shouldChangeColor('projects'), animationDelay: '0.5s'}}
+                className={this.state.class}>
                 projects
               </a>
               <a 
@@ -105,8 +106,8 @@ class SideNav extends Component {
                 onClick={this.burgerToggle}
                 onMouseOver={() => this.handleMouseEnter('experience')} 
                 onMouseLeave={() => this.handleMouseLeave('experience')} 
-                style={this.shouldChangeColor('experience')}
-                className={`${s.a} ${s.link}`}>
+                style={{...this.shouldChangeColor('experience'), animationDelay: '0.6s'}}
+                className={this.state.class}>
                 experience
               </a>
               <a 
@@ -114,16 +115,16 @@ class SideNav extends Component {
                 onClick={this.burgerToggle}
                 onMouseOver={() => this.handleMouseEnter('contact')} 
                 onMouseLeave={() => this.handleMouseLeave('contact')}
-                style={this.shouldChangeColor('contact')}
-                className={`${s.a} ${s.link}`}>
+                style={{...this.shouldChangeColor('contact'), animationDelay: '0.7s'}}
+                className={this.state.class}>
                 contact
               </a>
               <a 
                 onClick={this.burgerToggle}
                 onMouseOver={() => this.handleMouseEnter('resume')} 
                 onMouseLeave={() => this.handleMouseLeave('resume')}
-                style={this.shouldChangeColor('resume')}
-                className={`${s.a} ${s.resume}`} 
+                style={{...this.shouldChangeColor('resume'), animationDelay: '0.8s'}}
+                className={`${this.state.class} ${s.resume}`} 
                 href={resume}>
                 résumé
               </a>

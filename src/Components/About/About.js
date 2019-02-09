@@ -6,13 +6,21 @@ import jack from '../../Assets/jack2.jpg';
 import s from './about.module.css';
 
 class About extends Component {
+  constructor() {
+    super();
+    this.state = {
+      class: s.card
+    };
+  }
 
   componentDidMount = () => {
     window.addEventListener('scroll', this.handleScroll);
   }
 
   handleScroll = (event) => {
-    console.log('scroll')
+    this.setState({
+      class: `${s.card} ${s.scroll}`
+    })
     window.removeEventListener('scroll', this.handleScroll)
   }
 
@@ -21,7 +29,7 @@ class About extends Component {
       <div className={s.container} id={"about"}>
         <Title page={'about'}/>
         <div className={s.body}> 
-          <div className={s.card}>
+          <div className={this.state.class}>
             <div className={s.description}>
               <div className={s.name}>
                 JACK VAUGHT

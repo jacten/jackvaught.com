@@ -10,8 +10,24 @@
   margin: 2rem;
   margin-top: 2rem;
   max-width: 90%;
-  /* border: var(--border-sm); */
   box-shadow: var(--box-shadow-lg);
+  opacity: 0;
+}
+
+.scroll {
+  animation: fade-up ease 0.6s forwards;
+  animation-delay: 1s;
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .container {
