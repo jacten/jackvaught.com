@@ -14,6 +14,26 @@ class Contact extends Component {
     super(props);
     this.state = {
       value: '',
+      class: null,
+    }
+  }
+
+  componentDidMount = () => {
+    window.addEventListener('scroll', this.handleScroll);
+  }
+  
+  isInViewport = (offset = 0) => {
+    if (!this.contactElement) return false;
+    const top = this.contactElement.getBoundingClientRect().top;
+    return (top + offset) >= 0 && (top - offset) <= window.innerHeight;
+  }
+
+  handleScroll = (event) => {
+    if (this.isInViewport()) {
+      this.setState({
+        class: s.scroll
+      })
+    window.removeEventListener('scroll', this.handleScroll)
     }
   }
 
@@ -39,10 +59,10 @@ class Contact extends Component {
               className={s.textarea}
               ref={(textarea) => this.textArea = textarea}
               value={this.state.value}
-            />
+              />
           </form>
         <div className={s.body}>
-          <div className={s.status}>
+          <div className={`${s.status} ${this.state.class}`} ref={(el) => this.contactElement = el}>
             Hit Me Up!
           </div>
           <div className={s.card}>

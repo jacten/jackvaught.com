@@ -12,7 +12,27 @@ class Experience extends Component {
     this.state = { 
       active: 0,
       height: 0,
+      class: s.card,
     };
+  }
+
+  componentDidMount = () => {
+    window.addEventListener('scroll', this.handleScroll);
+  }
+  
+  isInViewport = (offset = 0) => {
+    if (!this.cardElement) return false;
+    const top = this.cardElement.getBoundingClientRect().top;
+    return (top + offset) >= 0 && (top - offset) <= window.innerHeight;
+  }
+
+  handleScroll = (event) => {
+    if (this.isInViewport()) {
+      this.setState({
+        class: `${s.card} ${s.scroll}`
+      })
+    window.removeEventListener('scroll', this.handleScroll)
+    }
   }
 
   resizeHeight = () => {
@@ -52,7 +72,7 @@ class Experience extends Component {
     return (
       <div className={s.container} id={"experience"}>
         <Title page={'experience'}/>
-        <div ref={(cardElement) => {this.cardElement = cardElement}} className={s.card}>
+        <div ref={(cardElement) => {this.cardElement = cardElement}} className={this.state.class}>
           <div className={s.sideNav}>
           {
             experienceData.map((job, index) => {
