@@ -16,6 +16,11 @@ class SideNav extends Component {
     };
   }
 
+  handleScroll = (event) => {
+    console.log('sidenav')
+    window.removeEventListener('scroll', this.handleScroll)
+  }
+
   handleMouseEnter = (link) => {
     this.setState({hover: link})
   };
@@ -31,8 +36,9 @@ class SideNav extends Component {
   }
 
   componentDidMount = () => {
+    window.addEventListener('scroll', this.handleScroll);
     this.updateSideNav();
-    window.addEventListener("resize", this.updateSideNav);
+    window.addEventListener('resize', this.updateSideNav);
   }
 
   updateSideNav = () => {

@@ -7,6 +7,15 @@ import s from './about.module.css';
 
 class About extends Component {
 
+  componentDidMount = () => {
+    window.addEventListener('scroll', this.handleScroll);
+  }
+
+  handleScroll = (event) => {
+    console.log('scroll')
+    window.removeEventListener('scroll', this.handleScroll)
+  }
+
   render() {
     return (
       <div className={s.container} id={"about"}>

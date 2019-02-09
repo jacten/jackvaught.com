@@ -12,11 +12,16 @@
   font-size: 5rem;
   margin: .5rem;
   font-weight: bold;
+  opacity: 0;
+  animation: fade-in-right ease 0.4s forwards;
 }
 
 .job {
   font-size: 2rem;
   font-weight: bold;
+  opacity: 0;
+  animation: fade-in-right ease 0.4s forwards;
+  animation-delay: 0.2s;
 }
 
 .button {
@@ -27,6 +32,9 @@
   height: 10rem;
   background: transparent;
   transition: 0.3s;
+  opacity: 0;
+  animation: fade-in-right ease 0.4s forwards;
+  animation-delay: 0.4s;
   
 }
 .button:hover {
@@ -34,6 +42,35 @@
   text-shadow: 0 2rem var(--secondary-color), 0 4rem var(--primary-color), 0 6rem var(--secondary-color), 0 8rem var(--primary-color), 0 10rem var(--secondary-color);
   text-decoration:none; 
   cursor:pointer;  
+}
+
+@keyframes fade-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes grow-left {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
 }
 
     /* M */
