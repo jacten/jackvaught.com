@@ -12,21 +12,29 @@ class About extends Component {
       class: s.card
     };
   }
-
+  
   componentDidMount = () => {
     window.addEventListener('scroll', this.handleScroll);
   }
+  
+  isInViewport = (offset = 0) => {
+    if (!this.aboutElement) return false;
+    const top = this.aboutElement.getBoundingClientRect().top;
+    return (top + offset) >= 0 && (top - offset) <= window.innerHeight;
+  }
 
   handleScroll = (event) => {
-    this.setState({
-      class: `${s.card} ${s.scroll}`
-    })
+    if (this.isInViewport()) {
+      this.setState({
+        class: `${s.card} ${s.scroll}`
+      })
     window.removeEventListener('scroll', this.handleScroll)
+    }
   }
 
   render() {
     return (
-      <div className={s.container} id={"about"}>
+      <div className={s.container} id={"about"} ref={(el) => this.aboutElement = el}>
         <Title page={'about'}/>
         <div className={s.body}> 
           <div className={this.state.class}>

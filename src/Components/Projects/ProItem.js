@@ -12,7 +12,27 @@ class ProItem extends Component {
     this.state = {
       modalOpen: false,
       target: 0,
+      class: s.card,
     };
+  }
+
+  componentDidMount = () => {
+    window.addEventListener('scroll', this.handleProItemScroll);
+  }
+
+  isInViewport = (offset = 0) => {
+    if (!this.proItem) return false;
+    const top = this.proItem.getBoundingClientRect().top;
+    return (top + offset) >= 0 && (top - offset) <= window.innerHeight;
+  }
+
+  handleProItemScroll = (event) => {
+    if (this.isInViewport()) {
+      this.setState({
+        class: `${s.card} ${s.scroll}`
+      })
+      window.removeEventListener('scroll', this.handleProItemScroll)
+    } 
   }
 
   toggleModal = () => {
@@ -40,7 +60,7 @@ class ProItem extends Component {
     const {name, link, about, techstack, image} = project;
     const {length} = image;
     return (
-      <div className={s.card}>
+      <div className={this.state.class} ref={(el) => this.proItem = el}>
         { 
           this.state.modalOpen && 
           <Modal 
