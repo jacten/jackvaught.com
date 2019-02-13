@@ -45,7 +45,6 @@
   align-items: center;
   padding-bottom: 2rem;
   width: 100%;
-  margin: 0 1rem;
   min-height: 8rem;
 }
 
@@ -110,6 +109,8 @@
     justify-content: flex-start;
     flex-wrap: wrap;
     min-height: 60vh;
+    margin: 0;
+    padding: 0;
   }
   
   .buttonBox {
