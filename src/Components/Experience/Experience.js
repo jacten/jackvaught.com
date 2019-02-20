@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import Title from '../Title/Title';
 import Job from './Job';
+import { addRef } from '../../Utils/Scroll';
 import experienceData from '../../Data/experienceData';
 import s from './experience.module.css';
 
@@ -18,6 +19,7 @@ class Experience extends Component {
 
   componentDidMount = () => {
     window.addEventListener('scroll', this.handleScroll);
+    addRef('experience', this.experienceElement);
   }
   
   isInViewport = (offset = 0) => {
@@ -70,7 +72,7 @@ class Experience extends Component {
 
   render() {
     return (
-      <div className={s.container} id={"experience"}>
+      <div className={s.container} ref={(el) => {this.experienceElement = el}}>
         <Title page={'experience'}/>
         <div ref={(cardElement) => {this.cardElement = cardElement}} className={this.state.class}>
           <div className={s.sideNav}>

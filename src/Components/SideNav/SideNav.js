@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import s from './sidenav.module.css';
 import { IconHamburger } from '../../Icons';
+import { scrollTo } from '../../Utils/Scroll';
 import resume from '../../Assets/JackVaughtResume.pdf';
 
 class SideNav extends Component {
@@ -52,6 +53,11 @@ class SideNav extends Component {
     }
   }
 
+  handleClick = (ref) => {
+    this.burgerToggle();
+    setTimeout(() => scrollTo(ref), 500);
+  }
+
   burgerToggle = () => {
     if (!this.state.sideNav) {
       this.setState({
@@ -90,8 +96,7 @@ class SideNav extends Component {
             ((this.state.drawerOpen && this.state.showLinks) || this.state.sideNav) &&
             <div className={s.links}>
               <a
-                href={"#about"}
-                onClick={this.burgerToggle}
+                onClick={() => this.handleClick('about')}
                 onMouseOver={() => this.handleMouseEnter('about')} 
                 onMouseLeave={() => this.handleMouseLeave('about')} 
                 style={{...this.shouldChangeColor('about'), animationDelay: this.addDelay(.1)}}
@@ -99,8 +104,7 @@ class SideNav extends Component {
                 about
               </a>
               <a 
-                href={"#projects"}
-                onClick={this.burgerToggle}
+                onClick={() => this.handleClick('projects')}
                 onMouseOver={() => this.handleMouseEnter('projects')} 
                 onMouseLeave={() => this.handleMouseLeave('projects')} 
                 style={{...this.shouldChangeColor('projects'), animationDelay: this.addDelay(.2)}}
@@ -108,8 +112,7 @@ class SideNav extends Component {
                 projects
               </a>
               <a 
-                href={"#experience"}
-                onClick={this.burgerToggle}
+                onClick={() => this.handleClick('experience')}
                 onMouseOver={() => this.handleMouseEnter('experience')} 
                 onMouseLeave={() => this.handleMouseLeave('experience')} 
                 style={{...this.shouldChangeColor('experience'), animationDelay: this.addDelay(.3)}}
@@ -117,8 +120,7 @@ class SideNav extends Component {
                 experience
               </a>
               <a 
-                href={"#contact"}
-                onClick={this.burgerToggle}
+                onClick={() => this.handleClick('contact')}
                 onMouseOver={() => this.handleMouseEnter('contact')} 
                 onMouseLeave={() => this.handleMouseLeave('contact')}
                 style={{...this.shouldChangeColor('contact'), animationDelay: this.addDelay(.4)}}

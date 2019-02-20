@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import Title from '../Title/Title.js';
+import { addRef } from '../../Utils/Scroll';
 import contactData from '../../Data/contactData';
 import s from './contact.module.css';
 
@@ -20,11 +21,12 @@ class Contact extends Component {
 
   componentDidMount = () => {
     window.addEventListener('scroll', this.handleScroll);
+    addRef('contact', this.contactElement);
   }
   
   isInViewport = (offset = 0) => {
-    if (!this.contactElement) return false;
-    const top = this.contactElement.getBoundingClientRect().top;
+    if (!this.textElement) return false;
+    const top = this.textElement.getBoundingClientRect().top;
     return (top + offset) >= 0 && (top - offset) <= window.innerHeight;
   }
 
@@ -51,7 +53,7 @@ class Contact extends Component {
   
   render() {
     return (
-      <div className={s.container} id={'contact'}>
+      <div className={s.container} ref={(el) => this.contactElement = el}>
         <Title page={'contact'}/>
           <form>
             <textarea
@@ -62,7 +64,7 @@ class Contact extends Component {
               />
           </form>
         <div className={s.body}>
-          <div className={`${s.status} ${this.state.class}`} ref={(el) => this.contactElement = el}>
+          <div className={`${s.status} ${this.state.class}`} ref={(el) => this.textElement = el}>
             Hit Me Up!
           </div>
           <div className={s.card}>

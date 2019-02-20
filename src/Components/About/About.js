@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 
 import Title from '../Title/Title.js';
 import aboutData from '../../Data/aboutData';
+import { addRef } from '../../Utils/Scroll';
+
 import jack from '../../Assets/jack2.jpg';
 import s from './about.module.css';
 
@@ -15,6 +17,7 @@ class About extends Component {
   
   componentDidMount = () => {
     window.addEventListener('scroll', this.handleScroll);
+    addRef('about', this.aboutElement);
   }
   
   isInViewport = (offset = 0) => {
@@ -34,7 +37,7 @@ class About extends Component {
 
   render() {
     return (
-      <div className={s.container} id={"about"} ref={(el) => this.aboutElement = el}>
+      <div className={s.container} ref={(el) => this.aboutElement = el}>
         <Title page={'about'}/>
         <div className={s.body}> 
           <div className={this.state.class}>
