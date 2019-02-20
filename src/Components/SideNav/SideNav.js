@@ -55,7 +55,9 @@ class SideNav extends Component {
 
   handleClick = (ref) => {
     this.burgerToggle();
-    setTimeout(() => scrollTo(ref), 500);
+    this.state.sideNav 
+      ? scrollTo(ref)
+      : setTimeout(() => scrollTo(ref), 500);
   }
 
   burgerToggle = () => {
