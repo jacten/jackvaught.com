@@ -21,7 +21,7 @@
   margin: 1rem;
   padding: .5rem;
   box-shadow: var(--box-shadow-lg);
-  z-index: 999;
+  z-index: 900;
 }
 
 @keyframes grow-left {

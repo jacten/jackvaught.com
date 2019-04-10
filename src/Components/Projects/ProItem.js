@@ -41,15 +41,18 @@ class ProItem extends Component {
     })
   }
 
+  //modulo hack for negative looping
+  mod = (n, m) => ((n % m) + m) % m;
+
   leftArrow = (length) => {
-    let newTarget = ( this.state.target - 1 ) % length;
+    let newTarget = this.mod(( this.state.target - 1 ),length);
     this.setState({
       target: newTarget,
     })
   }
 
   rightArrow = (length) => {
-    let newTarget = ( this.state.target + 1 ) % length;
+    let newTarget = this.mod(( this.state.target + 1 ),length);
     this.setState({
       target: newTarget,
     })
